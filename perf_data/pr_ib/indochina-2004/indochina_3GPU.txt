@@ -1,0 +1,889 @@
+global [2 of 3] group [2 of 3], local[0  of 1]
+[2 of 3] has GPU 1, set on 0, device name Tesla V100-SXM2-16GB, bus id 4, clockrate 1530000
+PE: 2 deviceCount 1 set on device 2 device name Tesla V100-SXM2-16GB
+global [0 of 3] group [0 of 3], local[0  of 1]
+[0 of 3] has GPU 1, set on 0, device name Tesla V100-SXM2-16GB, bus id 4, clockrate 1530000
+graph /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr partition scheme 0 iteration 50 num worklist 1 rounds 10 INTER_BATCH_SIZE 16 FETCH SIZE 32 iteration ratio 0
+PE: 0 deviceCount 1 set on device 0 device name Tesla V100-SXM2-16GB
+global [1 of 3] group [1 of 3], local[0  of 1]
+[1 of 3] has GPU 1, set on 0, device name Tesla V100-SXM2-16GB, bus id 4, clockrate 1530000
+PE: 1 deviceCount 1 set on device 1 device name Tesla V100-SXM2-16GB
+Vertices: 7414866 Edges: 191606827
+[PE 0]
+Vertices: 2471622 Edges: 40371589
+[PE 1]
+Vertices: 2471622 Edges: 48073885
+Partition table:
+0  2471622  4943244  7414866  
+[PE 2]
+Vertices: 2471622 Edges: 103161353
+num_aggregate_queues 2, local_queues 1, total_queues 5
+num_aggregate_queues 2, local_queues 1, total_queues 5
+num_aggregate_queues 2, local_queues 1, total_queues 5
+pe 1, map size 33554432
+pe 0, map size 33554432
+pe 2, map size 33554432
+pe 1, start 2471622, end 4943244, nodes 2471622, real_size 77239, size_ifact 77248
+pe 0, start 0, end 2471622, nodes 2471622, real_size 77239, size_ifact 77248
+[PE 0]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 total num wl 	 recv capacity 	  min iter of wl 	 lambda 	 epsilon
+ 0 	   7414866 	         0 	 2471622 	 2471622 	 79091904 	       5 	 8388608 	      50 		 0.8500 	 0.0100
+[PE 1]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 total num wl 	 recv capacity 	  min iter of wl 	 lambda 	 epsilon
+ 1 	   7414866 	   2471622 	 4943244 	 2471622 	 79091904 	       5 	 8388608 	      50 		 0.8500 	 0.0100
+pe 2, start 4943244, end 7414866, nodes 2471622, real_size 77239, size_ifact 77248
+[PE 2]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 total num wl 	 recv capacity 	  min iter of wl 	 lambda 	 epsilon
+ 2 	   7414866 	   4943244 	 7414866 	 2471622 	 79091904 	       5 	 8388608 	      50 		 0.8500 	 0.0100
+highest prio -5, lowest prio 0
+highest prio -5, lowest prio 0
+highest prio -5, lowest prio 0
+launch with 1 block with 32 threads
+start Agent at PE 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+launch with 1 block with 32 threads
+start Agent at PE 2
+pe 1, recv_q 0, recv_end 42585, pr.wl.num_local_queues 1
+pe 1, recv_q 1, recv_end 30056, pr.wl.num_local_queues 1
+pe 0, recv_q 0, recv_end 43095, pr.wl.num_local_queues 1
+pe 0, recv_q 1, recv_end 28185, pr.wl.num_local_queues 1
+pe 2, recv_q 0, recv_end 28801, pr.wl.num_local_queues 1
+pe 2, recv_q 1, recv_end 33455, pr.wl.num_local_queues 1
+[PE 0]
+[PE 1]
+PE 0, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, aggregation queue empty: start = end 0
+PE 0, aggregation queue empty: start = end 0
+PE 1, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, aggregation queue empty: start = end 0
+PE 1, aggregation queue empty: start = end 0
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, aggregation queue empty: start = end 0
+PE 2, aggregation queue empty: start = end 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+recv_star 0x2000e2950680
+launch with 1 block with 32 threads
+start Agent at PE 0
+recv_star 0x2000e2950680
+launch with 1 block with 32 threads
+start Agent at PE 2
+recv_star 0x2000e2950680
+[PE 0]
+time    48.05,      283 kernels,      652 kernels
+[PE 1]
+time    39.63,      142 kernels,      661 kernels
+[PE 1]
+end:    10680416,   299988
+start:  10680416,   299988
+[PE 0]
+end:    10857599,   254287
+start:  10857599,   254287
+[PE 1]
+size:         0,        0
+[PE 2]
+time    39.23,       87 kernels,      698 kernels
+[PE 0]
+size:         0,        0
+[PE 1]
+PE 1, Local Queue 0, capacity: 79091904, end = start: 10680416, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608 end_alloc: 0, end: 299995, start: 299988, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 184489, start_alloc: 0
+PE 1, aggregation queue not empty: protect 254287, start 254287, end 254287
+PE 1, aggregation queue not empty: protect 247616, start 247616, end 247616
+[PE 0]
+[PE 2]
+end:     9618315,   193652
+start:   9618315,   193652
+[PE 2]
+size:         0,        0
+PE 0, Local Queue 0, capacity: 79091904, end = start: 10857599, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 254287, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 152176, start_alloc: 0
+PE 0, aggregation queue not empty: protect 299988, start 299995, end 299995
+PE 0, aggregation queue not empty: protect 193652, start 193652, end 193652
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904, end = start: 9618315, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 193652, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 247616, start_alloc: 0
+PE 2, aggregation queue not empty: protect 152176, start 152176, end 152176
+PE 2, aggregation queue not empty: protect 184489, start 184489, end 184489
+launch with 1 block with 32 threads
+start Agent at PE 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+launch with 1 block with 32 threads
+start Agent at PE 2
+pe 1, recv_q 0, recv_end 42585, pr.wl.num_local_queues 1
+pe 1, recv_q 1, recv_end 30056, pr.wl.num_local_queues 1
+pe 0, recv_q 0, recv_end 43095, pr.wl.num_local_queues 1
+pe 0, recv_q 1, recv_end 28185, pr.wl.num_local_queues 1
+pe 2, recv_q 0, recv_end 28801, pr.wl.num_local_queues 1
+pe 2, recv_q 1, recv_end 33455, pr.wl.num_local_queues 1
+[PE 0]
+[PE 1]
+PE 0, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, aggregation queue empty: start = end 0
+PE 0, aggregation queue empty: start = end 0
+PE 1, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, aggregation queue empty: start = end 0
+PE 1, aggregation queue empty: start = end 0
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, aggregation queue empty: start = end 0
+PE 2, aggregation queue empty: start = end 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+recv_star 0x2000e2950680
+launch with 1 block with 32 threads
+start Agent at PE 0
+recv_star 0x2000e2950680
+launch with 1 block with 32 threads
+start Agent at PE 2
+recv_star 0x2000e2950680
+[PE 0]
+time    48.86,      279 kernels,      643 kernels
+[PE 1]
+time    48.36,      148 kernels,      662 kernels
+[PE 1]
+end:    10661157,   301677
+start:  10661157,   301677
+[PE 0]
+end:    10870674,   251639
+start:  10870674,   251639
+[PE 1]
+size:         0,        0
+[PE 2]
+time    40.76,       85 kernels,      700 kernels
+[PE 1]
+[PE 0]
+size:         0,        0
+PE 1, Local Queue 0, capacity: 79091904, end = start: 10661157, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 301677, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 185447, start_alloc: 0
+PE 1, aggregation queue not empty: protect 251639, start 251639, end 251639
+PE 1, aggregation queue not empty: protect 245666, start 245666, end 245666
+[PE 0]
+[PE 2]
+end:     9623760,   193875
+start:   9623760,   193875
+[PE 2]
+size:         0,        0
+PE 0, Local Queue 0, capacity: 79091904, end = start: 10870674, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 251639, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 152564, start_alloc: 0
+PE 0, aggregation queue not empty: protect 301677, start 301677, end 301677
+PE 0, aggregation queue not empty: protect 193875, start 193875, end 193875
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904, end = start: 9623760, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 193875, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 245666, start_alloc: 0
+PE 2, aggregation queue not empty: protect 152564, start 152564, end 152564
+PE 2, aggregation queue not empty: protect 185447, start 185447, end 185447
+launch with 1 block with 32 threads
+start Agent at PE 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+launch with 1 block with 32 threads
+start Agent at PE 2
+pe 1, recv_q 0, recv_end 42585, pr.wl.num_local_queues 1
+pe 1, recv_q 1, recv_end 30056, pr.wl.num_local_queues 1
+pe 0, recv_q 0, recv_end 43095, pr.wl.num_local_queues 1
+pe 0, recv_q 1, recv_end 28185, pr.wl.num_local_queues 1
+pe 2, recv_q 0, recv_end 28801, pr.wl.num_local_queues 1
+pe 2, recv_q 1, recv_end 33455, pr.wl.num_local_queues 1
+[PE 0]
+PE 0, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, aggregation queue empty: start = end 0
+PE 0, aggregation queue empty: start = end 0
+[PE 1]
+PE 1, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, aggregation queue empty: start = end 0
+PE 1, aggregation queue empty: start = end 0
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, aggregation queue empty: start = end 0
+PE 2, aggregation queue empty: start = end 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+launch with 1 block with 32 threads
+start Agent at PE 0
+recv_star 0x2000e2950680
+launch with 1 block with 32 threads
+start Agent at PE 2
+recv_star 0x2000e2950680
+recv_star 0x2000e2950680
+[PE 1]
+time    46.49,      148 kernels,      678 kernels
+[PE 0]
+time    47.93,      283 kernels,      649 kernels
+[PE 1]
+end:    10678952,   299869
+start:  10678952,   299869
+[PE 0]
+end:    10858471,   254756
+start:  10858471,   254756
+[PE 1]
+size:         0,        0
+[PE 2]
+time    40.42,       88 kernels,      692 kernels
+[PE 1]
+[PE 0]
+size:         0,        0
+PE 1, Local Queue 0, capacity: 79091904, end = start: 10678952, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 299869, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 184553, start_alloc: 0
+PE 1, aggregation queue not empty: protect 254756, start 254756, end 254756
+PE 1, aggregation queue not empty: protect 247977, start 247977, end 247977
+[PE 0]
+[PE 2]
+end:     9620442,   194814
+start:   9620442,   194814
+[PE 2]
+size:         0,        0
+PE 0, Local Queue 0, capacity: 79091904, end = start: 10858471, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 254756, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 151622, start_alloc: 0
+PE 0, aggregation queue not empty: protect 299869, start 299869, end 299869
+PE 0, aggregation queue not empty: protect 194814, start 194814, end 194814
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904, end = start: 9620442, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 194814, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 247977, start_alloc: 0
+PE 2, aggregation queue not empty: protect 151622, start 151622, end 151622
+PE 2, aggregation queue not empty: protect 184553, start 184553, end 184553
+launch with 1 block with 32 threads
+start Agent at PE 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+launch with 1 block with 32 threads
+start Agent at PE 2
+pe 1, recv_q 0, recv_end 42585, pr.wl.num_local_queues 1
+pe 1, recv_q 1, recv_end 30056, pr.wl.num_local_queues 1
+pe 0, recv_q 0, recv_end 43095, pr.wl.num_local_queues 1
+pe 0, recv_q 1, recv_end 28185, pr.wl.num_local_queues 1
+pe 2, recv_q 0, recv_end 28801, pr.wl.num_local_queues 1
+pe 2, recv_q 1, recv_end 33455, pr.wl.num_local_queues 1
+[PE 0]
+[PE 1]
+PE 0, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, aggregation queue empty: start = end 0
+PE 0, aggregation queue empty: start = end 0
+PE 1, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, aggregation queue empty: start = end 0
+PE 1, aggregation queue empty: start = end 0
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, aggregation queue empty: start = end 0
+PE 2, aggregation queue empty: start = end 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+launch with 1 block with 32 threads
+start Agent at PE 0
+recv_star 0x2000e2950680
+recv_star 0x2000e2950680
+launch with 1 block with 32 threads
+start Agent at PE 2
+recv_star 0x2000e2950680
+[PE 0]
+time    45.53,      253 kernels,      638 kernels
+[PE 1]
+time    43.95,      155 kernels,      653 kernels
+[PE 1]
+end:    10672320,   298855
+start:  10672320,   298855
+[PE 2]
+time    41.09,       84 kernels,      708 kernels
+[PE 0]
+end:    10863568,   253976
+start:  10863568,   253976
+[PE 1]
+size:         0,        0
+[PE 0]
+size:         0,        0
+[PE 2]
+end:     9620541,   193587
+start:   9620541,   193587
+[PE 1]
+[PE 0]
+[PE 2]
+size:         0,        0
+PE 1, Local Queue 0, capacity: 79091904, end = start: 10672320, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 298855, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 185276, start_alloc: 0
+PE 1, aggregation queue not empty: protect 253976, start 253976, end 253976
+PE 1, aggregation queue not empty: protect 246864, start 246864, end 246864
+PE 0, Local Queue 0, capacity: 79091904, end = start: 10863568, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 253976, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 152672, start_alloc: 0
+PE 0, aggregation queue not empty: protect 298855, start 298855, end 298855
+PE 0, aggregation queue not empty: protect 193587, start 193587, end 193587
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904, end = start: 9620541, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 193587, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 246864, start_alloc: 0
+PE 2, aggregation queue not empty: protect 152672, start 152672, end 152672
+PE 2, aggregation queue not empty: protect 185276, start 185276, end 185276
+launch with 1 block with 32 threads
+start Agent at PE 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+launch with 1 block with 32 threads
+start Agent at PE 2
+pe 0, recv_q 0, recv_end 43095, pr.wl.num_local_queues 1
+pe 0, recv_q 1, recv_end 28185, pr.wl.num_local_queues 1
+pe 1, recv_q 0, recv_end 42585, pr.wl.num_local_queues 1
+pe 1, recv_q 1, recv_end 30056, pr.wl.num_local_queues 1
+pe 2, recv_q 0, recv_end 28801, pr.wl.num_local_queues 1
+pe 2, recv_q 1, recv_end 33455, pr.wl.num_local_queues 1
+[PE 0]
+PE 0, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, aggregation queue empty: start = end 0
+PE 0, aggregation queue empty: start = end 0
+[PE 1]
+PE 1, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, aggregation queue empty: start = end 0
+PE 1, aggregation queue empty: start = end 0
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, aggregation queue empty: start = end 0
+PE 2, aggregation queue empty: start = end 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+launch with 1 block with 32 threads
+start Agent at PE 0
+recv_star 0x2000e2950680
+recv_star 0x2000e2950680
+launch with 1 block with 32 threads
+start Agent at PE 2
+recv_star 0x2000e2950680
+[PE 0]
+time    48.32,      278 kernels,      649 kernels
+[PE 1]
+time    46.10,      149 kernels,      670 kernels
+[PE 0]
+end:    10857584,   253730
+start:  10857584,   253730
+[PE 1]
+end:    10678339,   299191
+start:  10678339,   299191
+[PE 2]
+time    39.51,       90 kernels,      692 kernels
+[PE 1]
+size:         0,        0
+[PE 0]
+size:         0,        0
+[PE 2]
+end:     9617881,   194213
+start:   9617881,   194213
+[PE 1]
+PE 1, Local Queue 0, capacity: 79091904, end = start: 10678339, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 299191, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 184905, start_alloc: 0
+PE 1, aggregation queue not empty: protect 253730, start 253730, end 253730
+PE 1, aggregation queue not empty: protect 247465, start 247465, end 247465
+[PE 0]
+[PE 2]
+size:         0,        0
+PE 0, Local Queue 0, capacity: 79091904, end = start: 10857584, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 253730, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 152003, start_alloc: 0
+PE 0, aggregation queue not empty: protect 299191, start 299191, end 299191
+PE 0, aggregation queue not empty: protect 194213, start 194215, end 194215
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904, end = start: 9617881, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608 end_alloc: 0, end: 194215, start: 194213, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 247465, start_alloc: 0
+PE 2, aggregation queue not empty: protect 152003, start 152003, end 152003
+PE 2, aggregation queue not empty: protect 184905, start 184905, end 184905
+launch with 1 block with 32 threads
+start Agent at PE 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+launch with 1 block with 32 threads
+start Agent at PE 2
+pe 1, recv_q 0, recv_end 42585, pr.wl.num_local_queues 1
+pe 1, recv_q 1, recv_end 30056, pr.wl.num_local_queues 1
+pe 0, recv_q 0, recv_end 43095, pr.wl.num_local_queues 1
+pe 0, recv_q 1, recv_end 28185, pr.wl.num_local_queues 1
+pe 2, recv_q 0, recv_end 28801, pr.wl.num_local_queues 1
+pe 2, recv_q 1, recv_end 33455, pr.wl.num_local_queues 1
+[PE 0]
+[PE 1]
+PE 0, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, aggregation queue empty: start = end 0
+PE 0, aggregation queue empty: start = end 0
+PE 1, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, aggregation queue empty: start = end 0
+PE 1, aggregation queue empty: start = end 0
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, aggregation queue empty: start = end 0
+PE 2, aggregation queue empty: start = end 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+launch with 1 block with 32 threads
+start Agent at PE 0
+recv_star 0x2000e2950680
+recv_star 0x2000e2950680
+launch with 1 block with 32 threads
+start Agent at PE 2
+recv_star 0x2000e2950680
+[PE 1]
+time    40.31,      142 kernels,      667 kernels
+[PE 0]
+time    48.57,      290 kernels,      650 kernels
+[PE 1]
+end:    10676166,   298224
+start:  10676166,   298224
+[PE 2]
+time    40.38,       84 kernels,      711 kernels
+[PE 0]
+end:    10862786,   254481
+start:  10862786,   254481
+[PE 1]
+size:         0,        0
+[PE 1]
+[PE 0]
+size:         0,        0
+PE 1, Local Queue 0, capacity: 79091904, end = start: 10676166, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608 end_alloc: 0, end: 298234, start: 298224, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 184498, start_alloc: 0
+PE 1, aggregation queue not empty: protect 254481, start 254481, end 254481
+PE 1, aggregation queue not empty: protect 247793, start 247793, end 247793
+[PE 0]
+[PE 2]
+end:     9617057,   194848
+start:   9617057,   194848
+[PE 2]
+size:         0,        0
+PE 0, Local Queue 0, capacity: 79091904, end = start: 10862786, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 254481, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 152132, start_alloc: 0
+PE 0, aggregation queue not empty: protect 298224, start 298234, end 298234
+PE 0, aggregation queue not empty: protect 194848, start 194849, end 194849
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904, end = start: 9617057, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608 end_alloc: 0, end: 194849, start: 194848, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 247793, start_alloc: 0
+PE 2, aggregation queue not empty: protect 152132, start 152132, end 152132
+PE 2, aggregation queue not empty: protect 184498, start 184498, end 184498
+launch with 1 block with 32 threads
+start Agent at PE 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+launch with 1 block with 32 threads
+start Agent at PE 2
+pe 0, recv_q 0, recv_end 43095, pr.wl.num_local_queues 1
+pe 0, recv_q 1, recv_end 28185, pr.wl.num_local_queues 1
+pe 1, recv_q 0, recv_end 42585, pr.wl.num_local_queues 1
+pe 1, recv_q 1, recv_end 30056, pr.wl.num_local_queues 1
+pe 2, recv_q 0, recv_end 28801, pr.wl.num_local_queues 1
+pe 2, recv_q 1, recv_end 33455, pr.wl.num_local_queues 1
+[PE 0]
+PE 0, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, aggregation queue empty: start = end 0
+PE 0, aggregation queue empty: start = end 0
+[PE 1]
+PE 1, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, aggregation queue empty: start = end 0
+PE 1, aggregation queue empty: start = end 0
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, aggregation queue empty: start = end 0
+PE 2, aggregation queue empty: start = end 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+launch with 1 block with 32 threads
+start Agent at PE 0
+recv_star 0x2000e2950680
+launch with 1 block with 32 threads
+start Agent at PE 2
+recv_star 0x2000e2950680
+recv_star 0x2000e2950680
+[PE 0]
+time    48.33,      281 kernels,      650 kernels
+[PE 1]
+time    47.42,      155 kernels,      666 kernels
+[PE 1]
+end:    10672714,   299766
+start:  10672714,   299766
+[PE 0]
+end:    10856908,   253852
+start:  10856908,   253852
+[PE 2]
+time    39.69,       86 kernels,      690 kernels
+[PE 1]
+size:         0,        0
+[PE 1]
+[PE 0]
+size:         0,        0
+[PE 2]
+end:     9621668,   194023
+start:   9621668,   194023
+PE 1, Local Queue 0, capacity: 79091904, end = start: 10672714, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 299766, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 184755, start_alloc: 0
+PE 1, aggregation queue not empty: protect 253852, start 253852, end 253852
+PE 1, aggregation queue not empty: protect 246956, start 246956, end 246956
+[PE 0]
+[PE 2]
+size:         0,        0
+PE 0, Local Queue 0, capacity: 79091904, end = start: 10856908, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 253852, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 152137, start_alloc: 0
+PE 0, aggregation queue not empty: protect 299766, start 299766, end 299766
+PE 0, aggregation queue not empty: protect 194023, start 194024, end 194024
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904, end = start: 9621668, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608 end_alloc: 0, end: 194024, start: 194023, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 246956, start_alloc: 0
+PE 2, aggregation queue not empty: protect 152137, start 152137, end 152137
+PE 2, aggregation queue not empty: protect 184755, start 184755, end 184755
+launch with 1 block with 32 threads
+start Agent at PE 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+launch with 1 block with 32 threads
+start Agent at PE 2
+pe 1, recv_q 0, recv_end 42585, pr.wl.num_local_queues 1
+pe 1, recv_q 1, recv_end 30056, pr.wl.num_local_queues 1
+pe 0, recv_q 0, recv_end 43095, pr.wl.num_local_queues 1
+pe 0, recv_q 1, recv_end 28185, pr.wl.num_local_queues 1
+pe 2, recv_q 0, recv_end 28801, pr.wl.num_local_queues 1
+pe 2, recv_q 1, recv_end 33455, pr.wl.num_local_queues 1
+[PE 0]
+[PE 1]
+PE 0, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, aggregation queue empty: start = end 0
+PE 0, aggregation queue empty: start = end 0
+PE 1, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, aggregation queue empty: start = end 0
+PE 1, aggregation queue empty: start = end 0
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, aggregation queue empty: start = end 0
+PE 2, aggregation queue empty: start = end 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+recv_star 0x2000e2950680
+launch with 1 block with 32 threads
+start Agent at PE 0
+recv_star 0x2000e2950680
+launch with 1 block with 32 threads
+start Agent at PE 2
+recv_star 0x2000e2950680
+[PE 0]
+time    49.27,      293 kernels,      650 kernels
+[PE 1]
+time    48.37,      161 kernels,      666 kernels
+[PE 1]
+end:    10681926,   299073
+start:  10681926,   299073
+[PE 0]
+end:    10852060,   255633
+start:  10852060,   255633
+[PE 2]
+time    40.85,       87 kernels,      703 kernels
+[PE 1]
+size:         0,        0
+[PE 0]
+size:         0,        0
+[PE 1]
+PE 1, Local Queue 0, capacity: 79091904, end = start: 10681926, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 299073, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 184968, start_alloc: 0
+PE 1, aggregation queue not empty: protect 255633, start 255633, end 255633
+PE 1, aggregation queue not empty: protect 248050, start 248051, end 248051
+[PE 0]
+[PE 2]
+end:     9620122,   192770
+start:   9620122,   192770
+[PE 2]
+size:         0,        0
+PE 0, Local Queue 0, capacity: 79091904, end = start: 10852060, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 255633, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 152184, start_alloc: 0
+PE 0, aggregation queue not empty: protect 299073, start 299073, end 299073
+PE 0, aggregation queue not empty: protect 192770, start 192770, end 192770
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904, end = start: 9620122, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 192770, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608 end_alloc: 0, end: 248051, start: 248050, start_alloc: 0
+PE 2, aggregation queue not empty: protect 152184, start 152184, end 152184
+PE 2, aggregation queue not empty: protect 184968, start 184968, end 184968
+launch with 1 block with 32 threads
+start Agent at PE 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+launch with 1 block with 32 threads
+start Agent at PE 2
+pe 1, recv_q 0, recv_end 42585, pr.wl.num_local_queues 1
+pe 1, recv_q 1, recv_end 30056, pr.wl.num_local_queues 1
+pe 0, recv_q 0, recv_end 43095, pr.wl.num_local_queues 1
+pe 0, recv_q 1, recv_end 28185, pr.wl.num_local_queues 1
+pe 2, recv_q 0, recv_end 28801, pr.wl.num_local_queues 1
+pe 2, recv_q 1, recv_end 33455, pr.wl.num_local_queues 1
+[PE 0]
+[PE 1]
+PE 0, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, aggregation queue empty: start = end 0
+PE 0, aggregation queue empty: start = end 0
+PE 1, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, aggregation queue empty: start = end 0
+PE 1, aggregation queue empty: start = end 0
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, aggregation queue empty: start = end 0
+PE 2, aggregation queue empty: start = end 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+recv_star 0x2000e2950680
+launch with 1 block with 32 threads
+start Agent at PE 0
+recv_star 0x2000e2950680
+launch with 1 block with 32 threads
+start Agent at PE 2
+recv_star 0x2000e2950680
+[PE 0]
+time    48.82,      284 kernels,      650 kernels
+[PE 1]
+time    48.83,      148 kernels,      661 kernels
+[PE 1]
+end:    10666588,   300644
+start:  10666588,   300644
+[PE 0]
+end:    10855793,   253921
+start:  10855793,   253921
+[PE 1]
+size:         0,        0
+[PE 2]
+time    40.79,       81 kernels,      701 kernels
+[PE 1]
+[PE 0]
+size:         0,        0
+PE 1, Local Queue 0, capacity: 79091904, end = start: 10666588, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 300644, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 185342, start_alloc: 0
+PE 1, aggregation queue not empty: protect 253921, start 253921, end 253921
+PE 1, aggregation queue not empty: protect 246245, start 246245, end 246245
+[PE 2]
+end:     9622027,   193176
+start:   9622027,   193176
+[PE 0]
+[PE 2]
+size:         0,        0
+PE 0, Local Queue 0, capacity: 79091904, end = start: 10855793, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 253921, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 152517, start_alloc: 0
+PE 0, aggregation queue not empty: protect 300644, start 300644, end 300644
+PE 0, aggregation queue not empty: protect 193176, start 193176, end 193176
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904, end = start: 9622027, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 193176, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 246245, start_alloc: 0
+PE 2, aggregation queue not empty: protect 152517, start 152517, end 152517
+PE 2, aggregation queue not empty: protect 185342, start 185342, end 185342
+launch with 1 block with 32 threads
+start Agent at PE 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+launch with 1 block with 32 threads
+start Agent at PE 2
+pe 1, recv_q 0, recv_end 42585, pr.wl.num_local_queues 1
+pe 1, recv_q 1, recv_end 30056, pr.wl.num_local_queues 1
+pe 0, recv_q 0, recv_end 43095, pr.wl.num_local_queues 1
+pe 0, recv_q 1, recv_end 28185, pr.wl.num_local_queues 1
+pe 2, recv_q 0, recv_end 28801, pr.wl.num_local_queues 1
+pe 2, recv_q 1, recv_end 33455, pr.wl.num_local_queues 1
+[PE 0]
+PE 0, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 0, aggregation queue empty: start = end 0
+PE 0, aggregation queue empty: start = end 0
+[PE 1]
+PE 1, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 1, aggregation queue empty: start = end 0
+PE 1, aggregation queue empty: start = end 0
+[PE 2]
+PE 2, Local Queue 0, capacity: 79091904 end_alloc: 2471622, end: 2471622, end_max: 2471622, end_count: 2471622, start: 0, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608, end = start: 0, start_alloc: 0
+PE 2, aggregation queue empty: start = end 0
+PE 2, aggregation queue empty: start = end 0
+launch with 1 block with 32 threads
+start Agent at PE 1
+recv_star 0x2000e2950680
+launch with 1 block with 32 threads
+start Agent at PE 0
+launch with 1 block with 32 threads
+start Agent at PE 2
+recv_star 0x2000e2950680
+recv_star 0x2000e2950680
+[PE 1]
+time    47.93,      152 kernels,      658 kernels
+[PE 0]
+time    48.83,      282 kernels,      644 kernels
+[PE 1]
+end:    10671360,   299545
+start:  10671360,   299545
+[PE 0]
+end:    10849861,   254236
+start:  10849861,   254236
+[PE 2]
+time    37.39,       88 kernels,      676 kernels
+[PE 1]
+size:         0,        0
+[PE 0]
+size:         0,        0
+[PE 1]
+PE 1, Local Queue 0, capacity: 79091904, end = start: 10671360, start_alloc: 0
+PE 1, Recv Queue 0, capacity: 8388608, end = start: 299545, start_alloc: 0
+PE 1, Recv Queue 1, capacity: 8388608, end = start: 185511, start_alloc: 0
+PE 1, aggregation queue not empty: protect 254236, start 254236, end 254236
+PE 1, aggregation queue not empty: protect 246521, start 246522, end 246522
+[PE 0]
+[PE 2]
+end:     9619437,   192784
+start:   9619437,   192784
+[PE 2]
+size:         0,        0
+[PE 1]
+ave time:    45.74
+PE 0, Local Queue 0, capacity: 79091904, end = start: 10849861, start_alloc: 0
+PE 0, Recv Queue 0, capacity: 8388608, end = start: 254236, start_alloc: 0
+PE 0, Recv Queue 1, capacity: 8388608, end = start: 152426, start_alloc: 0
+PE 0, aggregation queue not empty: protect 299545, start 299545, end 299545
+PE 0, aggregation queue not empty: protect 192784, start 192785, end 192785
+[PE 1]
+ave workload: 11158651
+[PE 2]
+[PE 0]
+ave time:    48.25
+PE 2, Local Queue 0, capacity: 79091904, end = start: 9619437, start_alloc: 0
+PE 2, Recv Queue 0, capacity: 8388608 end_alloc: 0, end: 192785, start: 192784, start_alloc: 0
+PE 2, Recv Queue 1, capacity: 8388608 end_alloc: 0, end: 246522, start: 246521, start_alloc: 0
+PE 2, aggregation queue not empty: protect 152426, start 152426, end 152426
+PE 2, aggregation queue not empty: protect 185511, start 185511, end 185511
+[PE 0]
+ave workload: 11264824
+[PE 2]
+ave time:    40.01
+[PE 2]
+ave workload: 10061014
+[PE 0]
+cpu total res 24665.3535, cpu total rank 4876187.0000, total mass 5040622.7162
+gpu total res 9794.0693, gpu total rank 1567684.5000, total mass 1632978.3060
+res diff 5059.8667, rank diff 10653.7773, max rank 16.0797 (host 1267.9176, device 1251.8379)
+0 number of res larger than epsilon, cpu totalwork 26354080
+Print the first 20 rank: 
+host:
+0.151614 0.16841 0.187456 0.170024 0.216144 0.16841 0.602961 0.532896 0.156071 0.298602 0.161232 0.161232 0.161232 0.174826 0.161232 0.161232 0.161232 0.161232 0.161232 0.161232 
+device:
+0.151614 0.168214 0.184323 0.169828 0.213555 0.168214 0.597145 0.537251 0.156071 0.297737 0.156071 0.156071 0.156071 0.173808 0.156071 0.156071 0.156071 0.156071 0.156071 0.156071 
+[PE 1]
+cpu total res 24665.3535, cpu total rank 4876187.0000, total mass 5040622.7162
+gpu total res 9677.0547, gpu total rank 1618560.8750, total mass 1683074.5832
+res diff 5019.7041, rank diff 10916.7979, max rank 21.8379 (host 4714.1548, device 4692.3169)
+0 number of res larger than epsilon, cpu totalwork 26354080
+Print the first 20 rank: 
+host:
+1.37816 0.536875 0.309257 0.536875 0.596375 0.309257 0.309257 0.246243 0.356762 0.254653 0.252109 0.246243 0.356762 0.254653 0.252109 0.246243 0.356762 0.254653 0.252109 1.36425 
+device:
+1.37954 0.537386 0.31517 0.537386 0.606778 0.31517 0.31517 0.24792 0.353228 0.251115 0.252113 0.24792 0.353228 0.251115 0.252113 0.24792 0.353228 0.251115 0.252113 1.37414 
+[PE 1]
+End program 1
+[PE 0]
+End program 0
+[PE 2]
+cpu total res 24665.3535, cpu total rank 4876187.0000, total mass 5040622.7162
+gpu total res 9733.1094, gpu total rank 1625280.0000, total mass 1690167.4061
+res diff 4986.7529, rank diff 11517.8672, max rank 28.0708 (host 2816.4941, device 2788.4233)
+0 number of res larger than epsilon, cpu totalwork 26354080
+Print the first 20 rank: 
+host:
+0.551571 0.188017 0.622053 0.918298 0.18635 0.589419 0.907937 0.601177 0.588145 0.627607 1.15086 0.57942 1.27239 3.21007 1.29892 0.175756 1.28344 0.197431 0.19587 1.15928 
+device:
+0.547827 0.189163 0.615094 0.911867 0.187872 0.590608 0.895939 0.589469 0.580695 0.613453 1.14046 0.571483 1.26195 3.18183 1.283 0.171608 1.26724 0.197142 0.190763 1.13783 
+[PE 2]
+End program 2
+PR destructor is called
+PR destructor is called
+PR destructor is called
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@batch1>
+Subject: Job 1924069: <pr2_queue_indochina_3GPU> in cluster <summit> Done
+
+Job <pr2_queue_indochina_3GPU> was submitted from host <login4> by user <yuxinc> in cluster <summit> at Wed Mar 16 22:04:27 2022
+Job was executed on host(s) <1*batch1>, in queue <batch>, as user <yuxinc> in cluster <summit> at Wed Mar 16 22:05:40 2022
+                            <42*a05n06>
+                            <42*a05n07>
+                            <42*a05n08>
+</ccs/home/yuxinc> was used as the home directory.
+</gpfs/alpine/bif115/scratch/yuxinc/pr_inf_3> was used as the working directory.
+Started at Wed Mar 16 22:05:40 2022
+Terminated at Wed Mar 16 22:06:44 2022
+Results reported at Wed Mar 16 22:06:44 2022
+
+The output (if any) is above this job summary.
+
