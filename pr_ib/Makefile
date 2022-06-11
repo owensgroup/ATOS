@@ -79,5 +79,30 @@ examples : $(TESTBIN)
 	mkdir -p `dirname $@`
 	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -DWAITTIMES=${WAITTIMES} -DINTERBATCHSIZE=${INTERBATCHSIZE} -rdc=true $< -o $@ $(TESTLDFLAGS)
 
+
+FETCHSIZE := 256
+TESTBIN  := $(patsubst %.cu, %_${FETCHSIZE}_$(WAITTIMES)_${INTERBATCHSIZE}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
+
+$(info $(TESTBIN))
+examples : $(TESTBIN)
+
+%_${FETCHSIZE}_$(WAITTIMES)_${INTERBATCHSIZE} : %.cu
+	@printf "Compiling %-25s > %-25s\n" $< $@
+	mkdir -p `dirname $@`
+	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -DWAITTIMES=${WAITTIMES} -DINTERBATCHSIZE=${INTERBATCHSIZE} -rdc=true $< -o $@ $(TESTLDFLAGS)
+
+
+FETCHSIZE := 512
+TESTBIN  := $(patsubst %.cu, %_${FETCHSIZE}_$(WAITTIMES)_${INTERBATCHSIZE}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
+
+$(info $(TESTBIN))
+examples : $(TESTBIN)
+
+%_${FETCHSIZE}_$(WAITTIMES)_${INTERBATCHSIZE} : %.cu
+	@printf "Compiling %-25s > %-25s\n" $< $@
+	mkdir -p `dirname $@`
+	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -DWAITTIMES=${WAITTIMES} -DINTERBATCHSIZE=${INTERBATCHSIZE} -rdc=true $< -o $@ $(TESTLDFLAGS)
+
+
 clean : 
 	rm -rf $(TESTBIN)
