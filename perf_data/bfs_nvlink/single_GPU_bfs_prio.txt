@@ -1,0 +1,110 @@
+./test_bfs_32 -f /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr -o 4 -i 10 -rounds 20 -q 1
+set on device 0
+num of block: 280  num of threads per block: 256
+file: /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr start from 0: 0 write profile file: 0 280x256 min iter 10 option 4 number of queues 1 FETCH SIZE 32 BLOCK SIZE 512
+Vertices: 4847571 Edges: 68475391
+wl_size: 9695142
+source 0
+Ave. Time: 10.8798
+Ave. Workload(vertices): 4425742
+Ave. Workload(edges): 68519580
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+Print the first 20 depth: 
+host:
+0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+device:
+0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+./test_bfs_32 -f /data/yuxin/3_graph_dataset/hollywood-2009.csr -o 4 -i 10 -rounds 20 -q 1
+srun: job 77891 queued and waiting for resources
+srun: job 77891 has been allocated resources
+set on device 0
+num of block: 280  num of threads per block: 256
+file: /data/yuxin/3_graph_dataset/hollywood-2009.csr start from 0: 0 write profile file: 0 280x256 min iter 10 option 4 number of queues 1 FETCH SIZE 32 BLOCK SIZE 512
+Vertices: 1139905 Edges: 112751422
+wl_size: 2279810
+source 0
+Ave. Time: 4.71076
+Ave. Workload(vertices): 1144274
+Ave. Workload(edges): 127050329
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+Print the first 20 depth: 
+host:
+0 1 1 1 5 5 5 5 6 6 6 6 6 6 6 6 6 6 6 6 
+device:
+0 1 1 1 5 5 5 5 6 6 6 6 6 6 6 6 6 6 6 6 
+./test_bfs_64 -f /data/yuxin/3_graph_dataset/indochina-2004.csr -o 4 -r 40 -i 10 -rounds 20 -q 1
+srun: job 77892 queued and waiting for resources
+srun: job 77892 has been allocated resources
+set on device 0
+num of block: 280  num of threads per block: 256
+file: /data/yuxin/3_graph_dataset/indochina-2004.csr start from 0: 0 write profile file: 0 280x256 min iter 10 option 4 number of queues 1 FETCH SIZE 64 BLOCK SIZE 512
+Vertices: 7414866 Edges: 191606827
+wl_size: 14829732
+source 40
+Ave. Time: 7.52666
+Ave. Workload(vertices): 7217247
+Ave. Workload(edges): 187040773
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+Print the first 20 depth: 
+host:
+11 12 8 11 8 12 12 11 12 11 12 12 12 10 12 12 12 12 12 12 
+device:
+11 12 8 11 8 12 12 11 12 11 12 12 12 10 12 12 12 12 12 12 
+./test_bfs_64 -f /data/yuxin/3_graph_dataset/road_usa.csr -o 4 -i 10 -rounds 20 -q 1
+srun: job 77893 queued and waiting for resources
+srun: job 77893 has been allocated resources
+set on device 0
+num of block: 280  num of threads per block: 256
+file: /data/yuxin/3_graph_dataset/road_usa.csr start from 0: 0 write profile file: 0 280x256 min iter 10 option 4 number of queues 1 FETCH SIZE 64 BLOCK SIZE 512
+Vertices: 23947347 Edges: 57708624
+wl_size: 47894694
+source 0
+Ave. Time: 173.534
+Ave. Workload(vertices): 23959976
+Ave. Workload(edges): 57740426
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+Print the first 20 depth: 
+host:
+0 1 123 41 124 123 128 129 123 122 123 122 3 120 121 126 127 128 123 120 
+device:
+0 1 123 41 124 123 128 129 123 122 123 122 3 120 121 126 127 128 123 120 
+./test_bfs_128 -f /data/yuxin/3_graph_dataset/osm-eur.csr -o 4 -i 100 -rounds 20 -q 1
+srun: job 77894 queued and waiting for resources
+srun: job 77894 has been allocated resources
+set on device 0
+num of block: 280  num of threads per block: 256
+file: /data/yuxin/3_graph_dataset/osm-eur.csr start from 0: 0 write profile file: 0 280x256 min iter 100 option 4 number of queues 1 FETCH SIZE 128 BLOCK SIZE 512
+Vertices: 173789185 Edges: 347997111
+wl_size: 347578370
+source 0
+Ave. Time: 613.357
+Ave. Workload(vertices): 173806246
+Ave. Workload(edges): 348032688
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+Print the first 20 depth: 
+host:
+0 220 5097 5100 5125 5131 5130 3578 3580 3582 3577 3580 3580 3583 3581 3599 3599 3595 3588 3580 
+device:
+0 220 5097 5100 5125 5131 5130 3578 3580 3582 3577 3580 3580 3583 3581 3599 3599 3595 3588 3580 
+yuxin420@daisy:~/daisy/docker-mount/async-queue-paper/bfs$ ./test_bfs_32 -f /data/yuxin/3_graph_dataset/twitter.csr -o 4 -i 300 -rounds 20 -q 1
+set on device 0
+num of block: 280  num of threads per block: 256
+file: /data/yuxin/3_graph_dataset/twitter.csr start from 0: 0 write profile file: 0 280x256 min iter 300 option 4 number of queues 1 FETCH SIZE 32 BLOCK SIZE 512
+Vertices: 51161011 Edges: 1963031615
+wl_size: 102322022
+source 0
+Ave. Time: 1257.85
+Ave. Workload(vertices): 58437294
+Ave. Workload(edges): 2854962771
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+Print the first 20 depth: 
+host:
+0 2 4 4 4 3 4 3 4 3 4 5 5 3 4 4 4 4 4 51161012 
+device:
+0 2 4 4 4 3 4 3 4 3 4 5 5 3 4 4 4 4 4 51161012 

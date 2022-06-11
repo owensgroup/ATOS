@@ -1,0 +1,930 @@
+/home/yuxin420/daisy/docker-mount/async-queue-paper/bfs/test_bfs_cta -f /data/yuxin/3_graph_dataset/road_usa.csr -o 3 -q 1 -i 7000 -rounds 100
+num of block: 160  num of threads per block: 640
+file: /data/yuxin/3_graph_dataset/road_usa.csr start from 0: 0 write profile file: 0 160x640 min iter 7000 option 3
+Vertices: 23947347 Edges: 57708624
+wl_size: 35921020
+min_iter: 7000
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.5032
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.3747
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.3541
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.286
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.25
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 40.8266
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1625
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.2304
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0484
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.235
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1998
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.2159
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.2823
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.4095
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0998
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1263
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.105
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.3285
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.4434
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0101
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1491
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.5492
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0609
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.3184
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0842
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 40.8299
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.4746
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0995
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1807
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.6734
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.2524
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.2176
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.7374
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 42.5283
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0433
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.6974
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 40.9085
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.2486
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.2388
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1981
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.2638
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1789
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 16.5147
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 42.0999
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0883
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1445
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 40.9682
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1799
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.2678
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.5287
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1788
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0875
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 40.9864
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.5824
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1012
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.4644
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.2475
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 40.9349
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0754
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.7697
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.159
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0664
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 40.8424
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1024
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0032
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.3617
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.4188
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 40.8508
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 42.0088
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 40.9703
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.2004
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 40.9611
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 40.9542
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1098
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.3743
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.3873
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1205
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1443
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.9354
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 40.9284
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0223
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0228
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1371
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.3418
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.2729
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 40.9256
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.2501
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 40.9896
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.3505
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.2508
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.3204
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0666
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0747
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1075
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1358
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.3113
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0465
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.0346
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 41.1941
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 42.2125
+Ave. Time: 40.9961
+Queue 0, capacity: 35921020, end=start: 24718447
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+Print the first 20 depth: 
+host:
+0 1 123 41 124 123 128 129 123 122 123 122 3 120 121 126 127 128 123 120 
+device:
+0 1 123 41 124 123 128 129 123 122 123 122 3 120 121 126 127 128 123 120 
+/home/yuxin420/daisy/docker-mount/async-queue-paper/bfs/test_bfs_cta -f /data/yuxin/3_graph_dataset/hollywood-2009.csr -o 3 -q 1 -i 50 -rounds 100
+num of block: 160  num of threads per block: 640
+file: /data/yuxin/3_graph_dataset/hollywood-2009.csr start from 0: 0 write profile file: 0 160x640 min iter 50 option 3
+Vertices: 1139905 Edges: 112751422
+wl_size: 1709857
+min_iter: 50
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.18282
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.24842
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.97965
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.28576
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.1913
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.06598
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.19174
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.0281
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.22752
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.21488
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.99718
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.15251
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.94371
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.18579
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.19552
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.03059
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.25936
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.95859
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.17229
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.20288
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.92413
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.24317
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.99834
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.16758
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.33459
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.98112
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.22317
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.20125
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.95667
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.29485
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.02176
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.23571
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.168
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.05872
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.24784
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.86163
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.17475
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.19773
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.03654
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.18675
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.94022
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.15648
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.13907
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.16605
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.13418
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.96576
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.10656
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.16272
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.05267
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.23795
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.06646
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.18211
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.19546
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.98426
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.17798
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.00928
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.23021
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.19709
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.03562
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.1775
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.00531
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.15894
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.25107
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.02931
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.30602
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.98525
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.1591
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.17136
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.97741
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.19978
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.0208
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.25398
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.2439
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.03898
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.30307
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.26918
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.06682
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.23552
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.03107
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.28061
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.18128
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.00022
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.14397
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.95648
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.17123
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.66074
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.00342
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.16394
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.04544
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.17488
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.27741
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.12726
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.23078
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.99824
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.09357
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.0607
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.97533
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.14528
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 5.92429
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 6.03264
+Ave. Time: 6.12901
+Queue 0, capacity: 1709857, end=start: 1231918
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+Print the first 20 depth: 
+host:
+0 1 1 1 5 5 5 5 6 6 6 6 6 6 6 6 6 6 6 6 
+device:
+0 1 1 1 5 5 5 5 6 6 6 6 6 6 6 6 6 6 6 6 
+/home/yuxin420/daisy/docker-mount/async-queue-paper/bfs/test_bfs_cta -f /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr -o 3 -q 1 -i 50 -rounds 100
+num of block: 160  num of threads per block: 640
+file: /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr start from 0: 0 write profile file: 0 160x640 min iter 50 option 3
+Vertices: 4847571 Edges: 68475391
+wl_size: 7271356
+min_iter: 50
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.3766
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.8141
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1444
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0283
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.037
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1051
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.8901
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.2665
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.9837
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.9039
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.9212
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0107
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.194
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0442
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.312
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.3308
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1625
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0708
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.2267
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0616
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.134
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1382
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.7615
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.5385
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.9563
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1095
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.208
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0259
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.296
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 15.0046
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.2379
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.3052
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.9683
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0862
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0607
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1684
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.2053
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0246
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.2226
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.072
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1457
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.8192
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1893
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.2467
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1889
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.9313
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.9738
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.3042
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.2201
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0413
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.3661
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.2219
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.293
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.2155
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0815
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0588
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.9428
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1349
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.3776
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.8871
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.198
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1575
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.3132
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.3545
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0422
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.4283
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.3753
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.069
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.2959
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1279
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1452
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.3237
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.8501
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.3244
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.119
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.2026
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.4408
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.9669
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.5004
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1726
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.3718
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.2258
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0162
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.2192
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.276
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.3976
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.3238
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0335
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.2788
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1756
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.342
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.166
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0943
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.1913
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.008
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.332
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.3216
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0592
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0767
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 12.0236
+Ave. Time: 12.1939
+Queue 0, capacity: 7271356, end=start: 4645167
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+Print the first 20 depth: 
+host:
+0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+device:
+0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+/home/yuxin420/daisy/docker-mount/async-queue-paper/bfs/test_bfs_cta -f /data/yuxin/3_graph_dataset/indochina-2004.csr -o 3 -q 1 -i 70 -r 40 -rounds 100
+num of block: 160  num of threads per block: 640
+file: /data/yuxin/3_graph_dataset/indochina-2004.csr start from 0: 0 write profile file: 0 160x640 min iter 70 option 3
+Vertices: 7414866 Edges: 191606827
+wl_size: 11122299
+min_iter: 70
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6674
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7895
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.502
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7014
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6975
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.574
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6709
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4852
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7563
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.2748
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4499
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6956
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7214
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4972
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7055
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4285
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6965
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6632
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.5046
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6556
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4236
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7369
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7018
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4481
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6953
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.5043
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7394
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6583
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.535
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7377
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4285
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7261
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.9744
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4825
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.8637
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.5209
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7284
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6869
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.5158
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7438
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4629
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6633
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.677
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4921
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7018
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.5245
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6672
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7497
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.5128
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7414
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4737
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7476
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.8368
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.5523
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6581
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.494
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.8069
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4361
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6396
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7087
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4981
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7329
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6489
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.5828
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7858
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4825
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7008
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 11.3453
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4443
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6847
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6204
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.8523
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7171
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4932
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7008
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.5037
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7612
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6811
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.5645
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.691
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.8318
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7779
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.688
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4912
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7638
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.5222
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7248
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6752
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.5351
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.763
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.5644
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6949
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.7073
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.5195
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6689
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4514
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.6015
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.5841
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 10.4137
+Ave. Time: 10.6501
+Queue 0, capacity: 11122299, end=start: 7216355
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+Print the first 20 depth: 
+host:
+11 12 8 11 8 12 12 11 12 11 12 12 12 10 12 12 12 12 12 12 
+device:
+11 12 8 11 8 12 12 11 12 11 12 12 12 10 12 12 12 12 12 12 
+yuxin420@daisy:~/daisy/docker-mount/async-queue-paper/bfs$ ./test_bfs_cta_32 -f /data/yuxin/3_graph_dataset/twitter.csr -i 100 -rounds 10
+num of block: 160  num of threads per block: 640
+file: /data/yuxin/3_graph_dataset/twitter.csr start from 0: 0 write profile file: 0 160x640 min iter 100 option 1
+Vertices: 51161011 Edges: 1963031615
+wl_size: 76741516
+min_iter: 100
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 1327.27
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 1338.65
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 1327.68
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 1339.43
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 1337.27
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 1336.11
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 1430.24
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 1431.35
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 1341.33
+numBlock 160 numThread 640 fetch size 32 share memory size(bytes) 0
+Time: 1322.14
+Ave. Time: 1353.15
+Queue 0, capacity: 76741516, end=start: 58513930
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+Print the first 20 depth: 
+host:
+0 2 4 4 4 3 4 3 4 3 4 5 5 3 4 4 4 4 4 51161012 
+device:
+0 2 4 4 4 3 4 3 4 3 4 5 5 3 4 4 4 4 4 51161012 
+yuxin420@daisy:~/daisy/docker-mount/async-queue-paper/bfs$ ./test_bfs_cta_128 -f  /data/yuxin/3_graph_dataset/osm-eur.csr -i 40000 -rounds 10
+num of block: 160  num of threads per block: 576
+file: /data/yuxin/3_graph_dataset/osm-eur.csr start from 0: 0 write profile file: 0 160x576 min iter 40000 option 1
+Vertices: 173789185 Edges: 347997111
+wl_size: 260683777
+min_iter: 40000
+numBlock 160 numThread 576 fetch size 128 share memory size(bytes) 0
+Time: 216.625
+numBlock 160 numThread 576 fetch size 128 share memory size(bytes) 0
+Time: 215.956
+numBlock 160 numThread 576 fetch size 128 share memory size(bytes) 0
+Time: 216.497
+numBlock 160 numThread 576 fetch size 128 share memory size(bytes) 0
+Time: 214.112
+numBlock 160 numThread 576 fetch size 128 share memory size(bytes) 0
+Time: 214.279
+numBlock 160 numThread 576 fetch size 128 share memory size(bytes) 0
+Time: 214.3
+numBlock 160 numThread 576 fetch size 128 share memory size(bytes) 0
+Time: 215.457
+numBlock 160 numThread 576 fetch size 128 share memory size(bytes) 0
+Time: 219.815
+numBlock 160 numThread 576 fetch size 128 share memory size(bytes) 0
+Time: 216.834
+numBlock 160 numThread 576 fetch size 128 share memory size(bytes) 0
+Time: 215.267
+Ave. Time: 215.914
+Queue 0, capacity: 260683777, end=start: 178633585
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+Print the first 20 depth: 
+host:
+0 220 5097 5100 5125 5131 5130 3578 3580 3582 3577 3580 3580 3583 3581 3599 3599 3595 3588 3580 
+device:
+0 220 5097 5100 5125 5131 5130 3578 3580 3582 3577 3580 3580 3583 3581 3599 3599 3595 3588 3580 
