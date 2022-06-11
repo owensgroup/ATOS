@@ -78,5 +78,65 @@ examples : $(TESTBIN)
 	mkdir -p `dirname $@`
 	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -DROUND=${ROUND} -rdc=true $< -o $@ $(TESTLDFLAGS) 
 
+
+FETCHSIZE := 64
+TESTBIN   := $(patsubst %.cu, %_${FETCHSIZE}_${ROUND}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
+$(info $(TESTBIN))
+
+examples : $(TESTBIN) 
+
+%_${FETCHSIZE}_${ROUND} : %.cu
+	@printf "Compiling %-25s > %-25s\n" $< $@
+	mkdir -p `dirname $@`
+	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -DROUND=${ROUND} -rdc=true $< -o $@ $(TESTLDFLAGS) 
+
+FETCHSIZE := 128
+TESTBIN   := $(patsubst %.cu, %_${FETCHSIZE}_${ROUND}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
+$(info $(TESTBIN))
+
+examples : $(TESTBIN) 
+
+%_${FETCHSIZE}_${ROUND} : %.cu
+	@printf "Compiling %-25s > %-25s\n" $< $@
+	mkdir -p `dirname $@`
+	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -DROUND=${ROUND} -rdc=true $< -o $@ $(TESTLDFLAGS) 
+
+FETCHSIZE := 256
+TESTBIN   := $(patsubst %.cu, %_${FETCHSIZE}_${ROUND}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
+$(info $(TESTBIN))
+
+examples : $(TESTBIN) 
+
+%_${FETCHSIZE}_${ROUND} : %.cu
+	@printf "Compiling %-25s > %-25s\n" $< $@
+	mkdir -p `dirname $@`
+	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -DROUND=${ROUND} -rdc=true $< -o $@ $(TESTLDFLAGS) 
+
+FETCHSIZE := 128
+ROUND := 2
+TESTBIN   := $(patsubst %.cu, %_${FETCHSIZE}_${ROUND}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
+$(info $(TESTBIN))
+
+examples : $(TESTBIN) 
+
+%_${FETCHSIZE}_${ROUND} : %.cu
+	@printf "Compiling %-25s > %-25s\n" $< $@
+	mkdir -p `dirname $@`
+	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -DROUND=${ROUND} -rdc=true $< -o $@ $(TESTLDFLAGS) 
+
+FETCHSIZE := 256
+ROUND := 2
+TESTBIN   := $(patsubst %.cu, %_${FETCHSIZE}_${ROUND}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
+$(info $(TESTBIN))
+
+examples : $(TESTBIN) 
+
+%_${FETCHSIZE}_${ROUND} : %.cu
+	@printf "Compiling %-25s > %-25s\n" $< $@
+	mkdir -p `dirname $@`
+	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -DROUND=${ROUND} -rdc=true $< -o $@ $(TESTLDFLAGS) 
+
+
+
 clean : 
 	rm -rf $(TESTBIN)
