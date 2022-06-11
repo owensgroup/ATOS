@@ -1,0 +1,343 @@
+num of block: 280  num of threads per block: 576
+file: /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr  lambda: 0.85 epsilon: 0.01 start from 0: 0 write profile file: 0 280x576 min iter 10 option 4 num of queues ued 1
+FETCH SIZE 32 BLOCK SIZE 512
+Vertices: 4847571 Edges: 68475391
+wl_size: 77561136
+Queue 0, capacity: 77561136, end=start: 33758459
+Time: 119.418
+workload: 33758459
+Queue 0, capacity: 77561136, end=start: 33756642
+Time: 116.228
+workload: 33756642
+Queue 0, capacity: 77561136, end=start: 33756310
+Time: 116.255
+workload: 33756310
+Queue 0, capacity: 77561136, end=start: 33755607
+Time: 116.36
+workload: 33755607
+Queue 0, capacity: 77561136, end=start: 33759351
+Time: 116.483
+workload: 33759351
+Queue 0, capacity: 77561136, end=start: 33760381
+Time: 116.404
+workload: 33760381
+Queue 0, capacity: 77561136, end=start: 33758705
+Time: 116.151
+workload: 33758705
+Queue 0, capacity: 77561136, end=start: 33761054
+Time: 116.152
+workload: 33761054
+Queue 0, capacity: 77561136, end=start: 33758321
+Time: 116.175
+workload: 33758321
+Queue 0, capacity: 77561136, end=start: 33759684
+Time: 116.111
+workload: 33759684
+Queue 0, capacity: 77561136, end=start: 33752814
+Time: 116.126
+workload: 33752814
+Queue 0, capacity: 77561136, end=start: 33758028
+Time: 116.194
+workload: 33758028
+Queue 0, capacity: 77561136, end=start: 33757596
+Time: 116.29
+workload: 33757596
+Queue 0, capacity: 77561136, end=start: 33758908
+Time: 116.433
+workload: 33758908
+Queue 0, capacity: 77561136, end=start: 33756526
+Time: 116.21
+workload: 33756526
+Queue 0, capacity: 77561136, end=start: 33760453
+Time: 116.312
+workload: 33760453
+Queue 0, capacity: 77561136, end=start: 33759331
+Time: 116.348
+workload: 33759331
+Queue 0, capacity: 77561136, end=start: 33759435
+Time: 116.28
+workload: 33759435
+Queue 0, capacity: 77561136, end=start: 33755369
+Time: 116.586
+workload: 33755369
+Queue 0, capacity: 77561136, end=start: 33759475
+Time: 116.499
+workload: 33759475
+Ave. Time: 116.451
+Ave. Workload: 33758122
+srun: job 77897 queued and waiting for resources
+srun: job 77897 has been allocated resources
+num of block: 280  num of threads per block: 576
+file: /data/yuxin/3_graph_dataset/hollywood-2009.csr  lambda: 0.85 epsilon: 0.01 start from 0: 0 write profile file: 0 280x576 min iter 10 option 4 num of queues ued 1
+FETCH SIZE 32 BLOCK SIZE 512
+Vertices: 1139905 Edges: 112751422
+wl_size: 18238480
+Queue 0, capacity: 18238480, end=start: 12180738
+Time: 75.3705
+workload: 12180738
+Queue 0, capacity: 18238480, end=start: 12178925
+Time: 72.233
+workload: 12178925
+Queue 0, capacity: 18238480, end=start: 12183787
+Time: 72.6702
+workload: 12183787
+Queue 0, capacity: 18238480, end=start: 12185172
+Time: 72.6661
+workload: 12185172
+Queue 0, capacity: 18238480, end=start: 12179956
+Time: 72.6538
+workload: 12179956
+Queue 0, capacity: 18238480, end=start: 12181835
+Time: 72.2145
+workload: 12181835
+Queue 0, capacity: 18238480, end=start: 12180866
+Time: 73.1535
+workload: 12180866
+Queue 0, capacity: 18238480, end=start: 12177948
+Time: 72.5023
+workload: 12177948
+Queue 0, capacity: 18238480, end=start: 12180399
+Time: 72.3517
+workload: 12180399
+Queue 0, capacity: 18238480, end=start: 12179919
+Time: 72.2248
+workload: 12179919
+Queue 0, capacity: 18238480, end=start: 12180424
+Time: 72.3354
+workload: 12180424
+Queue 0, capacity: 18238480, end=start: 12177441
+Time: 72.2248
+workload: 12177441
+Queue 0, capacity: 18238480, end=start: 12176521
+Time: 72.2709
+workload: 12176521
+Queue 0, capacity: 18238480, end=start: 12181160
+Time: 72.2401
+workload: 12181160
+Queue 0, capacity: 18238480, end=start: 12182056
+Time: 72.3118
+workload: 12182056
+Queue 0, capacity: 18238480, end=start: 12181564
+Time: 72.6815
+workload: 12181564
+Queue 0, capacity: 18238480, end=start: 12179098
+Time: 72.2545
+workload: 12179098
+Queue 0, capacity: 18238480, end=start: 12181127
+Time: 72.1766
+workload: 12181127
+Queue 0, capacity: 18238480, end=start: 12180213
+Time: 72.4552
+workload: 12180213
+Queue 0, capacity: 18238480, end=start: 12182941
+Time: 72.0394
+workload: 12182941
+Ave. Time: 72.5515
+Ave. Workload: 12180604
+srun: job 77898 queued and waiting for resources
+srun: job 77898 has been allocated resources
+num of block: 280  num of threads per block: 576
+file: /data/yuxin/3_graph_dataset/indochina-2004.csr  lambda: 0.85 epsilon: 0.01 start from 0: 0 write profile file: 0 280x576 min iter 10 option 4 num of queues ued 1
+FETCH SIZE 128 BLOCK SIZE 512
+Vertices: 7414866 Edges: 191606827
+wl_size: 118637856
+Queue 0, capacity: 118637856, end=start: 32475755
+Time: 52.5732
+workload: 32475755
+Queue 0, capacity: 118637856, end=start: 32500372
+Time: 49.4643
+workload: 32500372
+Queue 0, capacity: 118637856, end=start: 32482745
+Time: 49.5596
+workload: 32482745
+Queue 0, capacity: 118637856, end=start: 32487206
+Time: 49.3855
+workload: 32487206
+Queue 0, capacity: 118637856, end=start: 32489108
+Time: 49.4592
+workload: 32489108
+Queue 0, capacity: 118637856, end=start: 32484459
+Time: 51.1631
+workload: 32484459
+Queue 0, capacity: 118637856, end=start: 32473129
+Time: 49.4182
+workload: 32473129
+Queue 0, capacity: 118637856, end=start: 32490095
+Time: 49.8176
+workload: 32490095
+Queue 0, capacity: 118637856, end=start: 32500435
+Time: 49.0271
+workload: 32500435
+Queue 0, capacity: 118637856, end=start: 32493931
+Time: 49.323
+workload: 32493931
+Queue 0, capacity: 118637856, end=start: 32494705
+Time: 49.279
+workload: 32494705
+Queue 0, capacity: 118637856, end=start: 32494517
+Time: 49.3834
+workload: 32494517
+Queue 0, capacity: 118637856, end=start: 32492888
+Time: 49.5114
+workload: 32492888
+Queue 0, capacity: 118637856, end=start: 32491939
+Time: 49.1121
+workload: 32491939
+Queue 0, capacity: 118637856, end=start: 32498910
+Time: 49.2667
+workload: 32498910
+Queue 0, capacity: 118637856, end=start: 32475372
+Time: 49.2954
+workload: 32475372
+Queue 0, capacity: 118637856, end=start: 32494426
+Time: 49.41
+workload: 32494426
+Queue 0, capacity: 118637856, end=start: 32468273
+Time: 49.3076
+workload: 32468273
+Queue 0, capacity: 118637856, end=start: 32485965
+Time: 49.706
+workload: 32485965
+Queue 0, capacity: 118637856, end=start: 32479562
+Time: 49.3179
+workload: 32479562
+Ave. Time: 49.639
+Ave. Workload: 32487689
+srun: job 77899 queued and waiting for resources
+srun: job 77899 has been allocated resources
+num of block: 280  num of threads per block: 576
+file: /data/yuxin/3_graph_dataset/road_usa.csr  lambda: 0.85 epsilon: 0.01 start from 0: 0 write profile file: 0 280x576 min iter 10 option 4 num of queues ued 1
+FETCH SIZE 128 BLOCK SIZE 512
+Vertices: 23947347 Edges: 57708624
+wl_size: 383157552
+Queue 0, capacity: 383157552, end=start: 343171928
+Time: 115.102
+workload: 343171928
+Queue 0, capacity: 383157552, end=start: 343063430
+Time: 112.64
+workload: 343063430
+Queue 0, capacity: 383157552, end=start: 343076846
+Time: 112.604
+workload: 343076846
+Queue 0, capacity: 383157552, end=start: 343059128
+Time: 112.541
+workload: 343059128
+Queue 0, capacity: 383157552, end=start: 343096253
+Time: 112.578
+workload: 343096253
+Queue 0, capacity: 383157552, end=start: 343097048
+Time: 112.642
+workload: 343097048
+Queue 0, capacity: 383157552, end=start: 342994824
+Time: 112.621
+workload: 342994824
+Queue 0, capacity: 383157552, end=start: 343088976
+Time: 112.542
+workload: 343088976
+Queue 0, capacity: 383157552, end=start: 343023287
+Time: 112.736
+workload: 343023287
+Queue 0, capacity: 383157552, end=start: 343204006
+Time: 112.643
+workload: 343204006
+Queue 0, capacity: 383157552, end=start: 343131351
+Time: 112.599
+workload: 343131351
+Queue 0, capacity: 383157552, end=start: 343011942
+Time: 112.579
+workload: 343011942
+Queue 0, capacity: 383157552, end=start: 343050346
+Time: 112.523
+workload: 343050346
+Queue 0, capacity: 383157552, end=start: 342961257
+Time: 112.602
+workload: 342961257
+Queue 0, capacity: 383157552, end=start: 342926038
+Time: 112.665
+workload: 342926038
+Queue 0, capacity: 383157552, end=start: 343083107
+Time: 112.623
+workload: 343083107
+Queue 0, capacity: 383157552, end=start: 343069755
+Time: 112.505
+workload: 343069755
+Queue 0, capacity: 383157552, end=start: 343022122
+Time: 112.565
+workload: 343022122
+Queue 0, capacity: 383157552, end=start: 343065687
+Time: 112.75
+workload: 343065687
+Queue 0, capacity: 383157552, end=start: 343059372
+Time: 112.587
+workload: 343059372
+Ave. Time: 112.732
+Ave. Workload: 343062835
+srun: job 77900 queued and waiting for resources
+srun: job 77900 has been allocated resources
+num of block: 280  num of threads per block: 576
+file: /data/yuxin/3_graph_dataset/osm-eur.csr  lambda: 0.85 epsilon: 0.01 start from 0: 0 write profile file: 0 280x576 min iter 10 option 4 num of queues ued 1
+FETCH SIZE 128 BLOCK SIZE 512
+Vertices: 173789185 Edges: 347997111
+wl_size: 2780626960
+Queue 0, capacity: 2780626960, end=start: 2773482335
+Time: 993.554
+workload: 2773482335
+Queue 0, capacity: 2780626960, end=start: 2773726645
+Time: 994.018
+workload: 2773726645
+Queue 0, capacity: 2780626960, end=start: 2774021393
+Time: 991.739
+workload: 2774021393
+Queue 0, capacity: 2780626960, end=start: 2773536697
+Time: 996.968
+workload: 2773536697
+Queue 0, capacity: 2780626960, end=start: 2773668537
+Time: 990.633
+workload: 2773668537
+Queue 0, capacity: 2780626960, end=start: 2773335528
+Time: 990.87
+workload: 2773335528
+Queue 0, capacity: 2780626960, end=start: 2774528196
+Time: 990.724
+workload: 2774528196
+Queue 0, capacity: 2780626960, end=start: 2774330170
+Time: 992.634
+workload: 2774330170
+Queue 0, capacity: 2780626960, end=start: 2774301739
+Time: 992.226
+workload: 2774301739
+Queue 0, capacity: 2780626960, end=start: 2773276147
+Time: 994.732
+workload: 2773276147
+Queue 0, capacity: 2780626960, end=start: 2773173870
+Time: 990.819
+workload: 2773173870
+Queue 0, capacity: 2780626960, end=start: 2773485996
+Time: 990.88
+workload: 2773485996
+Queue 0, capacity: 2780626960, end=start: 2773621606
+Time: 991.067
+workload: 2773621606
+Queue 0, capacity: 2780626960, end=start: 2773949985
+Time: 992.939
+workload: 2773949985
+Queue 0, capacity: 2780626960, end=start: 2773192125
+Time: 993.084
+workload: 2773192125
+Queue 0, capacity: 2780626960, end=start: 2773562626
+Time: 992.16
+workload: 2773562626
+Queue 0, capacity: 2780626960, end=start: 2774143989
+Time: 990.946
+workload: 2774143989
+Queue 0, capacity: 2780626960, end=start: 2773216082
+Time: 991.037
+workload: 2773216082
+Queue 0, capacity: 2780626960, end=start: 2774068828
+Time: 991.868
+workload: 2774068828
+Queue 0, capacity: 2780626960, end=start: 2773969525
+Time: 991.798
+workload: 2773969525
+Ave. Time: 992.235
+Ave. Workload: 2773729600
