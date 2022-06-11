@@ -1,0 +1,1943 @@
+/home/yuxin420/pkg/openmpi-4.0.5/build-gcc-9.3/bin/mpirun -n 2 ./test_bfs_priority_queue_128 -file /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr -v 1 -partition 3 -rounds 10 -iter 10 -check 1 -threshold 4 -delta 1 
+graph /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr partition scheme 3 iteration 10 source 0 threshold 4 threshold increment value 1 rounds 10 FETCH SIZE 128 iteration ratio 0
+PE: 0 deviceCount 4 set on device 0 device name NVIDIA Tesla V100-DGXS-32GB
+PE: 1 deviceCount 4 set on device 1 device name NVIDIA Tesla V100-DGXS-32GB
+Vertices: 4847571 Edges: 68475391
+read metis file: /data/yuxin/3_graph_dataset/soc-LiveJournal1_2_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/soc-LiveJournal1_2_metis_mega.txt
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+[PE 0]
+Vertices: 2353074 Edges: 35111690
+[PE 1]
+Vertices: 2494497 Edges: 33363701
+Partition table:
+0  2353074  4847571  
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     0	             0	         1	           0	                  0	        0
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     1	             0	            0	     0	       1	                         0	        0
+[PE 0]
+number of PEs in the system: 2
+my PE id in the system: 0
+         0	           0	                  0	        0
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     1	       0	                         0	        0
+[PE 1]
+number of PEs in the system: 2
+my PE id in the system: 1
+number of queue pairs per PE : 1
+number of queue paris in total: 1
+capacity of each send/recv queue : 4988994
+[PE 1]
+PE 1 Clear! send and remote processed: 0
+[PE 1]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 1 	   4847571 	   2353074 	 4847571 	 2494497 	 9977988
+PE 1, new_source 2353074
+pe 1, p 0, get_pe 0
+number of queue pairs per PE : 1
+number of queue paris in total: 1
+capacity of each send/recv queue : 4988994
+[PE 0]
+PE 0 Clear! send and remote processed: 0
+[PE 0]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 0 	   4847571 	         0 	 2353074 	 2353074 	 9412296
+PE 0, new_source 2353074
+pe 0, p 0, get_pe 1
+pe 1, end_iter 10
+pe 0, end_iter 10
+[PE 0]
+time     6.90,       41 kernels
+[PE 1]
+time     6.88,       49 kernels
+[PE 1]
+end:  1078676  1098006   206316
+start:  1078676  1098006   206316
+size:        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1078676 	  1078676 	  1078676 	  1078676 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1098006 	  1098006 	  1098006 	  1098006 
+[PE 1]
+PE 1 send_alloc_end: 313536 end: 0 remote processed: 0
+[PE 1]
+total:  2382998
+[PE 0]
+end:  1261994   732212   313536
+start:  1261994   732212   313536
+size:        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1261994 	  1261994 	  1261994 	  1261994 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   732212 	   732212 	   732212 	   732212 
+[PE 0]
+PE 0 send_alloc_end: 206316 end: 0 remote processed: 0
+[PE 0]
+total:  2307742
+pe 1, end_iter 10
+pe 0, end_iter 10
+[PE 0]
+time     6.65,       53 kernels
+[PE 1]
+time     6.64,       35 kernels
+[PE 1]
+end:  1076170  1094130   210986
+start:  1076170  1094130   210986
+size:        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1076170 	  1076170 	  1076170 	  1076170 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1094130 	  1094130 	  1094130 	  1094130 
+[PE 0]
+end:  1225244   760392   301062
+start:  1225244   760392   301062
+size:        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1225244 	  1225244 	  1225244 	  1225244 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   760392 	   760392 	   760392 	   760392 
+[PE 0]
+PE 0 send_alloc_end: 210986 end: 0 remote processed: 0
+[PE 1]
+[PE 0]
+total:  2286698
+pe 0, end_iter 10
+PE 1 send_alloc_end: 301062 end: 0 remote processed: 0
+[PE 1]
+total:  2381286
+pe 1, end_iter 10
+[PE 0]
+time     6.63,       51 kernels
+[PE 1]
+time     6.61,       35 kernels
+[PE 1]
+end:  1076223  1093605   208043
+start:  1076223  1093605   208043
+size:        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1076223 	  1076223 	  1076223 	  1076223 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1093605 	  1093605 	  1093605 	  1093605 
+[PE 0]
+end:  1219095   764130   302667
+start:  1219095   764130   302667
+size:        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1219095 	  1219095 	  1219095 	  1219095 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   764130 	   764130 	   764130 	   764130 
+[PE 0]
+[PE 1]
+PE 1 send_alloc_end: 302667 end: 0 remote processed: 0
+[PE 1]
+total:  2377871
+PE 0 send_alloc_end: 208043 end: 0 remote processed: 0
+[PE 0]
+total:  2285892
+pe 1, end_iter 10
+pe 0, end_iter 10
+[PE 0]
+time     6.71,       48 kernels
+[PE 1]
+time     6.70,       37 kernels
+[PE 1]
+end:  1077987  1096994   213460
+start:  1077987  1096994   213460
+size:        0        0        0
+[PE 0]
+end:  1246077   748102   304060
+start:  1246077   748102   304060
+size:        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1246077 	  1246077 	  1246077 	  1246077 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   748102 	   748102 	   748102 	   748102 
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1077987 	  1077987 	  1077987 	  1077987 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1096994 	  1096994 	  1096994 	  1096994 
+[PE 1]
+PE 1 send_alloc_end: 304060 end: 0 remote processed: 0
+[PE 1]
+total:  2388441
+[PE 0]
+PE 0 send_alloc_end: 213460 end: 0 remote processed: 0
+[PE 0]
+total:  2298239
+pe 1, end_iter 10
+pe 0, end_iter 10
+[PE 0]
+time     6.96,       40 kernels
+[PE 1]
+time     6.93,       53 kernels
+[PE 1]
+end:  1079215  1097273   204770
+start:  1079215  1097273   204770
+size:        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1079215 	  1079215 	  1079215 	  1079215 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1097273 	  1097273 	  1097273 	  1097273 
+[PE 0]
+end:  1286655   716754   320360
+start:  1286655   716754   320360
+size:        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1286655 	  1286655 	  1286655 	  1286655 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   716754 	   716754 	   716754 	   716754 
+[PE 1]
+PE 1 send_alloc_end: 320360 end: 0 remote processed: 0
+[PE 1]
+total:  2381258
+[PE 0]
+PE 0 send_alloc_end: 204770 end: 0 remote processed: 0
+[PE 0]
+total:  2323769
+pe 1, end_iter 10
+pe 0, end_iter 10
+[PE 0]
+time     6.69,       45 kernels
+[PE 1]
+time     6.71,       39 kernels
+[PE 1]
+end:  1077400  1095221   211667
+start:  1077400  1095221   211667
+size:        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+[PE 0]
+end:  1247420   744591   303571
+start:  1247420   744591   303571
+size:        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1247420 	  1247420 	  1247420 	  1247420 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   744591 	   744591 	   744591 	   744591 
+       0 	        0 	  1077400 	  1077400 	  1077400 	  1077400 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1095221 	  1095221 	  1095221 	  1095221 
+[PE 1]
+PE 1 send_alloc_end: 303573 end: 0 remote processed: 0
+[PE 1]
+total:  2384288
+pe 1, end_iter 10
+[PE 0]
+PE 0 send_alloc_end: 211667 end: 0 remote processed: 0
+[PE 0]
+total:  2295582
+pe 0, end_iter 10
+[PE 0]
+time     6.65,       55 kernels
+[PE 1]
+time     6.64,       34 kernels
+[PE 1]
+end:  1077814  1094545   211478
+start:  1077814  1094545   211478
+size:        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+[PE 0]
+end:  1218108   766054   299923
+start:  1218108   766054   299923
+size:        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1218108 	  1218108 	  1218108 	  1218108 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   766054 	   766054 	   766054 	   766054 
+       0 	        0 	  1077814 	  1077814 	  1077814 	  1077814 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1094545 	  1094545 	  1094545 	  1094545 
+[PE 1]
+PE 1 send_alloc_end: 299923 end: 0 remote processed: 0
+[PE 1]
+total:  2383837
+pe 1, end_iter 10
+[PE 0]
+PE 0 send_alloc_end: 211478 end: 0 remote processed: 0
+[PE 0]
+total:  2284085
+pe 0, end_iter 10
+[PE 0]
+time     6.68,       47 kernels
+[PE 1]
+time     6.66,       37 kernels
+[PE 1]
+end:  1077529  1094337   204422
+start:  1077529  1094337   204422
+size:        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+[PE 0]
+end:  1244004   745823   309226
+start:  1244004   745823   309226
+size:        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1244004 	  1244004 	  1244004 	  1244004 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   745823 	   745823 	   745823 	   745823 
+       0 	        0 	  1077529 	  1077529 	  1077529 	  1077529 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1094337 	  1094337 	  1094337 	  1094337 
+[PE 1]
+PE 1 send_alloc_end: 309226 end: 0 remote processed: 0
+[PE 1]
+total:  2376288
+pe 1, end_iter 10
+[PE 0]
+PE 0 send_alloc_end: 204422 end: 0 remote processed: 0
+[PE 0]
+total:  2299053
+pe 0, end_iter 10
+[PE 0]
+time     6.63,       59 kernels
+[PE 1]
+time     6.61,       36 kernels
+[PE 1]
+end:  1076611  1093219   207334
+start:  1076611  1093219   207334
+size:        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+[PE 0]
+end:  1203403   770399   301476
+start:  1203403   770399   301476
+size:        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1203403 	  1203403 	  1203403 	  1203403 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   770399 	   770399 	   770399 	   770399 
+       0 	        0 	  1076611 	  1076611 	  1076611 	  1076611 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1093219 	  1093219 	  1093219 	  1093219 
+[PE 1]
+PE 1 send_alloc_end: 301476 end: 0 remote processed: 0
+[PE 1]
+total:  2377164
+pe 1, end_iter 10
+[PE 0]
+PE 0 send_alloc_end: 207334 end: 0 remote processed: 0
+[PE 0]
+total:  2275278
+pe 0, end_iter 10
+[PE 0]
+time     6.77,       45 kernels
+[PE 1]
+time     6.72,       39 kernels
+[PE 1]
+end:  1075988  1095022   211288
+start:  1075988  1095022   211288
+size:        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+[PE 0]
+end:  1252377   746402   304919
+start:  1252377   746402   304919
+size:        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1252377 	  1252377 	  1252377 	  1252377 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   746402 	   746402 	   746402 	   746402 
+       0 	        0 	  1075988 	  1075988 	  1075988 	  1075988 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	  1095022 	  1095022 	  1095022 	  1095022 
+[PE 1]
+PE 1 send_alloc_end: 304921 end: 0 remote processed: 0
+[PE 1]
+total:  2382298
+[PE 1]
+ave time:     6.71
+[PE 1]
+ave workload: 2381572
+[PE 0]
+PE 0 send_alloc_end: 211288 end: 0 remote processed: 0
+[PE 0]
+total:  2303698
+[PE 0]
+ave time:     6.73
+[PE 0]
+ave workload: 2296003
+[PE 0]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 4400347
+Print the first 20 depth: 
+host:
+5 4 4 5 4 4 3 3 3 3 3 3 3 4 4 4 4 4 4 4 
+device:
+5 4 4 5 4 4 3 3 3 3 3 3 3 4 4 4 4 4 4 4 
+[PE 1]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 4400347
+Print the first 20 depth: 
+host:
+0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+device:
+0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+[PE 0]
+End program 0
+[PE 1]
+End program 1
+/home/yuxin420/pkg/openmpi-4.0.5/build-gcc-9.3/bin/mpirun -n 3 ./test_bfs_priority_queue_128 -file /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr -v 1 -partition 3 -rounds 10 -iter 10 -check 1 -threshold 4 -delta 1
+graph /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr partition scheme 3 iteration 10 source 0 threshold 4 threshold increment value 1 rounds 10 FETCH SIZE 128 iteration ratio 0
+PE: 0 deviceCount 4 set on device 0 device name NVIDIA Tesla V100-DGXS-32GB
+PE: 2 deviceCount 4 set on device 2 device name NVIDIA Tesla V100-DGXS-32GB
+PE: 1 deviceCount 4 set on device 1 device name NVIDIA Tesla V100-DGXS-32GB
+Vertices: 4847571 Edges: 68475391
+read metis file: /data/yuxin/3_graph_dataset/soc-LiveJournal1_3_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/soc-LiveJournal1_3_metis_mega.txt
+reading METIS parititon data in 64 bits
+read metis file: /data/yuxin/3_graph_dataset/soc-LiveJournal1_3_metis_mega.txt
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+[PE 0]
+Vertices: 1568717 Edges: 25729612
+[PE 1]
+Vertices: 1664413 Edges: 24344811
+[PE 2]
+Vertices: 1614441 Edges: 18400968
+Partition table:
+0  1568717  3233130  4847571  
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     0	             0	         1	           0	                  0	        0
+            1	     0	             0	         2	           1	                  0	        1
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     0	       1	                         0	        0
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     1	             0	         0	           0	                  0	        0
+            1	     1	             1	         2	           1	                  1	        1
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     1	       0	                         0	        0
+            1	     1	       2	                         1	        1
+[PE 1]
+number of PEs in the system: 3
+my PE id in the system: 1
+number of queue pairs per PE : 1
+number of queue paris in total: 2
+capacity of each send/recv queue : 3328826
+[PE 1]
+PE 1 Clear! send and remote processed: 0
+PE 1 Clear! send and remote processed: 0
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     2	             1	         0	           0	                  1	        0
+            1	     2	             1	         1	           1	                  1	        1
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     2	       0	                         0	        1
+            1	     2	       1	                         1	        1
+[PE 2]
+number of PEs in the system: 3
+my PE id in the system: 2
+number of queue pairs per PE : 1
+number of queue paris in total: 2
+capacity of each send/recv queue : 3328826
+[PE 2]
+PE 2 Clear! send and remote processed: 0
+PE 2 Clear! send and remote processed: 0
+            1	     0	       2	                         1	        0
+[PE 0]
+number of PEs in the system: 3
+my PE id in the system: 0
+number of queue pairs per PE : 1
+number of queue paris in total: 2
+capacity of each send/recv queue : 3328826
+[PE 0]
+PE 0 Clear! send and remote processed: 0
+PE 0 Clear! send and remote processed: 0
+[PE 2]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 2 	   4847571 	   3233130 	 4847571 	 1614441 	 6457764
+PE 2, new_source 1568717
+[PE 1]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 1 	   4847571 	   1568717 	 3233130 	 1664413 	 6657652
+PE 1, new_source 1568717
+[PE 0]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 0 	   4847571 	         0 	 1568717 	 1568717 	 6274868
+PE 0, new_source 1568717
+pe 1, p 0, get_pe 0
+pe 1, p 1, get_pe 2
+pe 2, p 0, get_pe 0
+pe 2, p 1, get_pe 1
+pe 0, p 0, get_pe 1
+pe 0, p 1, get_pe 2
+pe 2, end_iter 10
+pe 1, end_iter 10
+pe 0, end_iter 10
+[PE 0]
+time     4.88,       61 kernels
+[PE 1]
+time     4.88,       48 kernels
+[PE 1]
+end:   666005   777343    68569   123459
+start:   666005   777343    68569   123459
+size:        0        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+[PE 2]
+time     4.83,      101 kernels
+[PE 2]
+end:   808890   528874    78925   186253
+start:   808890   528874    78925   186253
+size:        0        0        0        0
+[PE 0]
+end:   819966   502631   142420   152939
+start:   819966   502631   142420   152939
+size:        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   819966 	   819966 	   819966 	   819966 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   502631 	   502631 	   502631 	   502631 
+       0 	        0 	   666005 	   666005 	   666005 	   666005 
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   808890 	   808890 	   808890 	   808890 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   528874 	   528874 	   528874 	   528874 
+[PE 2]
+PE 2 send_alloc_end: 152939 end: 0 remote processed: 0
+PE 2 send_alloc_end: 123459 end: 0 remote processed: 0
+[PE 2]
+total:  1602942
+pe 2, end_iter 10
+[PE 0]
+PE 0 send_alloc_end: 68569 end: 0 remote processed: 0
+PE 0 send_alloc_end: 78925 end: 0 remote processed: 0
+[PE 0]
+total:  1617956
+pe 0, end_iter 10
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   777343 	   777343 	   777343 	   777343 
+[PE 1]
+PE 1 send_alloc_end: 142420 end: 0 remote processed: 0
+PE 1 send_alloc_end: 186253 end: 0 remote processed: 0
+[PE 1]
+total:  1635376
+pe 1, end_iter 10
+[PE 0]
+time     4.78,       67 kernels
+[PE 1]
+time     4.76,       43 kernels
+[PE 1]
+end:   663956   776516    68596   122318
+start:   663956   776516    68596   122318
+size:        0        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   663956 	   663956 	   663956 	   663956 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+[PE 2]
+time     4.65,       94 kernels
+[PE 2]
+end:   809160   528998    80576   185084
+start:   809160   528998    80576   185084
+size:        0        0        0        0
+[PE 0]
+end:   809993   514701   139919   149379
+start:   809993   514701   139919   149379
+size:        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   809993 	   809993 	   809993 	   809993 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   514701 	   514701 	   514701 	   514701 
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   809160 	   809160 	   809160 	   809160 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   528998 	   528998 	   528998 	   528998 
+[PE 2]
+PE 2 send_alloc_end: 149379 end: 0 remote processed: 0
+PE 2 send_alloc_end: 122318 end: 0 remote processed: 0
+[PE 2]
+total:  1603818
+pe 2, end_iter 10
+       0 	        0 	   776516 	   776516 	   776516 	   776516 
+[PE 1]
+PE 1 send_alloc_end: 139919 end: 0 remote processed: 0
+PE 1 send_alloc_end: 185084 end: 0 remote processed: 0
+[PE 1]
+total:  1631386
+pe 1, end_iter 10
+[PE 0]
+PE 0 send_alloc_end: 68596 end: 0 remote processed: 0
+PE 0 send_alloc_end: 80577 end: 0 remote processed: 0
+[PE 0]
+total:  1613992
+pe 0, end_iter 10
+[PE 0]
+time     4.83,       63 kernels
+[PE 1]
+time     4.82,       45 kernels
+[PE 1]
+end:   665167   775316    70748   121494
+start:   665167   775316    70748   121494
+size:        0        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+[PE 2]
+time     4.69,      101 kernels
+[PE 2]
+end:   796625   562865    82796   185093
+start:   796625   562865    82796   185093
+size:        0        0        0        0
+[PE 0]
+end:   817279   464087   140877   146895
+start:   817279   464087   140877   146895
+size:        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   817279 	   817279 	   817279 	   817279 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   464087 	   464087 	   464087 	   464087 
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   796625 	   796625 	   796625 	   796625 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   562865 	   562865 	   562865 	   562865 
+[PE 2]
+PE 2 send_alloc_end: 146895 end: 0 remote processed: 0
+PE 2 send_alloc_end: 121494 end: 0 remote processed: 0
+[PE 2]
+total:  1627379
+       0 	        0 	   665167 	   665167 	   665167 	   665167 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   775316 	   775316 	   775316 	   775316 
+[PE 1]
+PE 1 send_alloc_end: 140877 end: 0 remote processed: 0
+PE 1 send_alloc_end: 185093 end: 0 remote processed: 0
+[PE 1]
+total:  1632725
+[PE 0]
+PE 0 send_alloc_end: 70748 end: 0 remote processed: 0
+PE 0 send_alloc_end: 82797 end: 0 remote processed: 0
+[PE 0]
+total:  1569138
+pe 1, end_iter 10
+pe 2, end_iter 10
+pe 0, end_iter 10
+[PE 0]
+time     4.82,       65 kernels
+[PE 2]
+time     4.76,       97 kernels
+[PE 2]
+end:   812028   542350    77687   186217
+start:   812028   542350    77687   186217
+size:        0        0        0        0
+[PE 1]
+time     4.82,       44 kernels
+[PE 1]
+end:   664479   775343    69452   123034
+start:   664479   775343    69452   123034
+size:        0        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+[PE 0]
+end:   809729   474325   140973   153721
+start:   809729   474325   140973   153721
+size:        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   809729 	   809729 	   809729 	   809729 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   474325 	   474325 	   474325 	   474325 
+       0 	        0 	   664479 	   664479 	   664479 	   664479 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   775343 	   775343 	   775343 	   775343 
+[PE 1]
+PE 1 send_alloc_end: 140973 end: 0 remote processed: 0
+PE 1 send_alloc_end: 186217 end: 0 remote processed: 0
+[PE 1]
+total:  1632308
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   812028 	   812028 	   812028 	   812028 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   542350 	   542350 	   542350 	   542350 
+[PE 2]
+PE 2 send_alloc_end: 153721 end: 0 remote processed: 0
+PE 2 send_alloc_end: 123034 end: 0 remote processed: 0
+[PE 2]
+total:  1618282
+[PE 0]
+PE 0 send_alloc_end: 69452 end: 0 remote processed: 0
+PE 0 send_alloc_end: 77687 end: 0 remote processed: 0
+[PE 0]
+total:  1578748
+pe 2, end_iter 10
+pe 1, end_iter 10
+pe 0, end_iter 10
+[PE 0]
+time     4.86,       58 kernels
+[PE 1]
+time     4.85,       46 kernels
+[PE 1]
+end:   668029   782305    70224   127342
+start:   668029   782305    70224   127342
+size:        0        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+[PE 2]
+time     4.81,      102 kernels
+[PE 2]
+end:   811665   537686    80947   183180
+start:   811665   537686    80947   183180
+size:        0        0        0        0
+[PE 0]
+end:   824264   495009   142117   153392
+start:   824264   495009   142117   153392
+size:        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   824264 	   824264 	   824264 	   824264 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   495009 	   495009 	   495009 	   495009 
+       0 	        0 	   668029 	   668029 	   668029 	   668029 
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   811665 	   811665 	   811665 	   811665 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   537686 	   537686 	   537686 	   537686 
+[PE 2]
+PE 2 send_alloc_end: 153392 end: 0 remote processed: 0
+PE 2 send_alloc_end: 127342 end: 0 remote processed: 0
+[PE 2]
+total:  1613478
+pe 2, end_iter 10
+[PE 0]
+PE 0 send_alloc_end: 70224 end: 0 remote processed: 0
+PE 0 send_alloc_end: 80947 end: 0 remote processed: 0
+[PE 0]
+total:  1614782
+pe 0, end_iter 10
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   782305 	   782305 	   782305 	   782305 
+[PE 1]
+PE 1 send_alloc_end: 142117 end: 0 remote processed: 0
+PE 1 send_alloc_end: 183180 end: 0 remote processed: 0
+[PE 1]
+total:  1647900
+pe 1, end_iter 10
+[PE 0]
+time     4.80,       61 kernels
+[PE 1]
+time     4.76,       44 kernels
+[PE 1]
+end:   664732   774811    69763   121808
+start:   664732   774811    69763   121808
+size:        0        0        0        0
+[PE 2]
+time     4.67,       97 kernels
+[PE 2]
+end:   802647   544710    80742   186041
+start:   802647   544710    80742   186041
+size:        0        0        0        0
+[PE 0]
+end:   812777   512769   141122   149711
+start:   812777   512769   141122   149711
+size:        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   812777 	   812777 	   812777 	   812777 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   802647 	   802647 	   802647 	   802647 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   544710 	   544710 	   544710 	   544710 
+[PE 2]
+PE 2 send_alloc_end: 149711 end: 0 remote processed: 0
+PE 2 send_alloc_end: 121808 end: 0 remote processed: 0
+[PE 2]
+total:  1614140
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   664732 	   664732 	   664732 	   664732 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   774811 	   774811 	   774811 	   774811 
+[PE 1]
+PE 1 send_alloc_end: 141122 end: 0 remote processed: 0
+PE 1 send_alloc_end: 186041 end: 0 remote processed: 0
+[PE 1]
+total:  1631114
+       0 	        0 	   512769 	   512769 	   512769 	   512769 
+[PE 0]
+PE 0 send_alloc_end: 69763 end: 0 remote processed: 0
+PE 0 send_alloc_end: 80743 end: 0 remote processed: 0
+[PE 0]
+total:  1616379
+pe 1, end_iter 10
+pe 2, end_iter 10
+pe 0, end_iter 10
+[PE 0]
+time     4.87,       56 kernels
+[PE 2]
+time     4.78,      108 kernels
+[PE 2]
+end:   797404   557524    78661   185311
+start:   797404   557524    78661   185311
+size:        0        0        0        0
+[PE 1]
+time     4.87,       46 kernels
+[PE 1]
+end:   662926   772972    64668   123756
+start:   662926   772972    64668   123756
+size:        0        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+[PE 0]
+end:   827197   496825   144536   153177
+start:   827197   496825   144536   153177
+size:        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   827197 	   827197 	   827197 	   827197 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   496825 	   496825 	   496825 	   496825 
+       0 	        0 	   662926 	   662926 	   662926 	   662926 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   772972 	   772972 	   772972 	   772972 
+[PE 1]
+PE 1 send_alloc_end: 144536 end: 0 remote processed: 0
+PE 1 send_alloc_end: 185311 end: 0 remote processed: 0
+[PE 1]
+total:  1624322
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   797404 	   797404 	   797404 	   797404 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   557524 	   557524 	   557524 	   557524 
+[PE 2]
+PE 2 send_alloc_end: 153177 end: 0 remote processed: 0
+PE 2 send_alloc_end: 123756 end: 0 remote processed: 0
+[PE 2]
+total:  1618900
+[PE 0]
+PE 0 send_alloc_end: 64668 end: 0 remote processed: 0
+PE 0 send_alloc_end: 78662 end: 0 remote processed: 0
+[PE 0]
+total:  1621735
+pe 2, end_iter 10
+pe 1, end_iter 10
+pe 0, end_iter 10
+[PE 0]
+time     4.82,       54 kernels
+[PE 1]
+time     4.81,       46 kernels
+[PE 1]
+end:   666019   779051    67213   123618
+start:   666019   779051    67213   123618
+size:        0        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+[PE 2]
+time     4.79,      103 kernels
+[PE 2]
+end:   811481   526498    78662   184904
+start:   811481   526498    78662   184904
+size:        0        0        0        0
+[PE 0]
+end:   819625   499820   142743   154864
+start:   819625   499820   142743   154864
+size:        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   819625 	   819625 	   819625 	   819625 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   499820 	   499820 	   499820 	   499820 
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   811481 	   811481 	   811481 	   811481 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   526498 	   526498 	   526498 	   526498 
+[PE 2]
+PE 2 send_alloc_end: 154864 end: 0 remote processed: 0
+PE 2 send_alloc_end: 123618 end: 0 remote processed: 0
+[PE 2]
+total:  1601545
+       0 	        0 	   666019 	   666019 	   666019 	   666019 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   779051 	   779051 	   779051 	   779051 
+[PE 1]
+PE 1 send_alloc_end: 142743 end: 0 remote processed: 0
+PE 1 send_alloc_end: 184904 end: 0 remote processed: 0
+[PE 1]
+total:  1635901
+[PE 0]
+PE 0 send_alloc_end: 67213 end: 0 remote processed: 0
+PE 0 send_alloc_end: 78662 end: 0 remote processed: 0
+[PE 0]
+total:  1617052
+pe 1, end_iter 10
+pe 2, end_iter 10
+pe 0, end_iter 10
+[PE 0]
+time     4.91,       58 kernels
+[PE 2]
+time     4.86,      111 kernels
+[PE 2]
+end:   805043   543360    78767   184322
+start:   805043   543360    78767   184322
+size:        0        0        0        0
+[PE 1]
+time     4.90,       51 kernels
+[PE 1]
+end:   666949   779257    68488   126059
+start:   666949   779257    68488   126059
+size:        0        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   666949 	   666949 	   666949 	   666949 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+[PE 0]
+end:   826836   496099   143715   154612
+start:   826836   496099   143715   154612
+size:        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   826836 	   826836 	   826836 	   826836 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   496099 	   496099 	   496099 	   496099 
+       0 	        0 	   779257 	   779257 	   779257 	   779257 
+[PE 1]
+PE 1 send_alloc_end: 143715 end: 0 remote processed: 0
+PE 1 send_alloc_end: 184322 end: 0 remote processed: 0
+[PE 1]
+total:  1640753
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   805043 	   805043 	   805043 	   805043 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   543360 	   543360 	   543360 	   543360 
+[PE 2]
+PE 2 send_alloc_end: 154612 end: 0 remote processed: 0
+PE 2 send_alloc_end: 126059 end: 0 remote processed: 0
+[PE 2]
+total:  1611492
+[PE 0]
+PE 0 send_alloc_end: 68488 end: 0 remote processed: 0
+PE 0 send_alloc_end: 78767 end: 0 remote processed: 0
+[PE 0]
+total:  1621262
+pe 2, end_iter 10
+pe 1, end_iter 10
+pe 0, end_iter 10
+[PE 0]
+time     4.90,       54 kernels
+[PE 1]
+time     4.90,       48 kernels
+[PE 1]
+end:   666329   773394    67925   123029
+start:   666329   773394    67925   123029
+size:        0        0        0        0
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   666329 	   666329 	   666329 	   666329 
+[PE 2]
+time     4.80,      111 kernels
+[PE 2]
+end:   794149   556782    80119   185326
+start:   794149   556782    80119   185326
+size:        0        0        0        0
+[PE 0]
+end:   822352   496395   143618   151486
+start:   822352   496395   143618   151486
+size:        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   822352 	   822352 	   822352 	   822352 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   496395 	   496395 	   496395 	   496395 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   794149 	   794149 	   794149 	   794149 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   556782 	   556782 	   556782 	   556782 
+[PE 2]
+PE 2 send_alloc_end: 151486 end: 0 remote processed: 0
+PE 2 send_alloc_end: 123029 end: 0 remote processed: 0
+[PE 2]
+total:  1616376
+[PE 2]
+ave time:     4.76
+[PE 2]
+ave workload: 1612835
+[PE 0]
+PE 0 send_alloc_end: 67925 end: 0 remote processed: 0
+PE 0 send_alloc_end: 80120 end: 0 remote processed: 0
+[PE 0]
+total:  1613851
+[PE 0]
+ave time:     4.85
+[PE 0]
+ave workload: 1608489
+[PE 0]
+       0 	        0 	   773394 	   773394 	   773394 	   773394 
+[PE 1]
+PE 1 send_alloc_end: 143618 end: 0 remote processed: 0
+PE 1 send_alloc_end: 185326 end: 0 remote processed: 0
+[PE 1]
+total:  1630677
+[PE 1]
+ave time:     4.84
+[PE 1]
+ave workload: 1634246
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 4400347
+Print the first 20 depth: 
+host:
+3 4 5 4 4 4 4 4 5 5 4 3 5 6 3 4 4 4 5 4 
+device:
+3 4 5 4 4 4 4 4 5 5 4 3 5 6 3 4 4 4 5 4 
+[PE 1]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 4400347
+Print the first 20 depth: 
+host:
+0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+device:
+0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+[PE 2]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 4400347
+Print the first 20 depth: 
+host:
+4 4 5 5 6 6 4 3 4 4 4 6 4 4 4 2 3 6 3 3 
+device:
+4 4 5 5 6 6 4 3 4 4 4 6 4 4 4 2 3 6 3 3 
+[PE 0]
+End program 0
+[PE 1]
+End program 1
+[PE 2]
+End program 2
+$MPI_HOME/bin/mpirun -n 4 ./test_bfs_priority_queue_128 -file /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr -v 1 -partition 3 -rounds 10 -iter 10 -check 1 -threshold 4 -delta 1
+PE: 2 deviceCount 4 set on device 2 device name NVIDIA Tesla V100-DGXS-32GB
+PE: 3 deviceCount 4 set on device 3 device name NVIDIA Tesla V100-DGXS-32GB
+graph /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr partition scheme 3 iteration 10 source 0 threshold 4 threshold increment value 1 rounds 10 FETCH SIZE 128 iteration ratio 0
+PE: 0 deviceCount 4 set on device 0 device name NVIDIA Tesla V100-DGXS-32GB
+PE: 1 deviceCount 4 set on device 1 device name NVIDIA Tesla V100-DGXS-32GB
+Vertices: 4847571 Edges: 68475391
+read metis file: /data/yuxin/3_graph_dataset/soc-LiveJournal1_4_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/soc-LiveJournal1_4_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/soc-LiveJournal1_4_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/soc-LiveJournal1_4_metis_mega.txt
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+[PE 0]
+Vertices: 1238791 Edges: 14935187
+[PE 1]
+Vertices: 1176537 Edges: 21594598
+[PE 2]
+Vertices: 1183933 Edges: 14673831
+[PE 3]
+Vertices: 1248310 Edges: 17271775
+Partition table:
+0  1238791  2415328  3599261  4847571  
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     2	             1	         0	           0	                  1	        0
+            1	     2	             1	         1	           1	                  1	        1
+            2	     2	             2	         3	           2	                  2	        2
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     3	             2	         0	           0	                  2	        0
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     2	       0	                         0	        1
+            1	     2	       1	                         1	        1
+            2	     2	       3	                         2	        2
+            1	     3	             2	         1	           1	                  2	        1
+            2	     3	             2	         2	           2	                  2	        2
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     3	       0	                         0	        2
+            1	     3	       1	                         1	        2
+            2	     3	       2	                         2	        2
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     1	             0	         0	           0	                  0	        0
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     0	             0	         1	           0	                  0	        0
+            1	     0	             0	         2	           1	                  0	        1
+            2	     0	             0	         3	           2	                  0	        2
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     0	       1	                         0	        0
+            1	     0	       2	                         1	        0
+            2	     0	       3	                         2	        0
+            1	     1	             1	         2	           1	                  1	        1
+[PE 0]
+number of PEs in the system: 4
+my PE id in the system: 0
+number of queue pairs per PE : 1
+number of queue paris in total: 3
+capacity of each send/recv queue : 2496620
+            2	     1	             1	         3	           2	                  1	        2
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     1	       0	                         0	        0
+            1	     1	       2	                         1	        1
+            2	     1	       3	                         2	        1
+[PE 1]
+number of PEs in the system: 4
+my PE id in the system: 1
+number of queue pairs per PE : 1
+number of queue paris in total: 3
+capacity of each send/recv queue : 2496620
+[PE 2]
+number of PEs in the system: 4
+my PE id in the system: 2
+number of queue pairs per PE : 1
+number of queue paris in total: 3
+capacity of each send/recv queue : 2496620
+[PE 3]
+number of PEs in the system: 4
+my PE id in the system: 3
+number of queue pairs per PE : 1
+number of queue paris in total: 3
+capacity of each send/recv queue : 2496620
+[PE 0]
+PE 0 Clear! send and remote processed: 0
+PE 0 Clear! send and remote processed: 0
+PE 0 Clear! send and remote processed: 0
+[PE 1]
+PE 1 Clear! send and remote processed: 0
+PE 1 Clear! send and remote processed: 0
+PE 1 Clear! send and remote processed: 0
+[PE 2]
+PE 2 Clear! send and remote processed: 0
+PE 2 Clear! send and remote processed: 0
+PE 2 Clear! send and remote processed: 0
+[PE 3]
+PE 3 Clear! send and remote processed: 0
+PE 3 Clear! send and remote processed: 0
+PE 3 Clear! send and remote processed: 0
+[PE 0]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 0 	   4847571 	         0 	 1238791 	 1238791 	 4955164
+[PE 1]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 1 	   4847571 	   1238791 	 2415328 	 1176537 	 4706148
+[PE 2]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 2 	   4847571 	   2415328 	 3599261 	 1183933 	 4735732
+[PE 3]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 3 	   4847571 	   3599261 	 4847571 	 1248310 	 4993240
+PE 2, new_source 3599261
+PE 0, new_source 3599261
+PE 1, new_source 3599261
+PE 3, new_source 3599261
+pe 3, p 0, get_pe 0
+pe 3, p 1, get_pe 1
+pe 3, p 2, get_pe 2
+pe 1, p 0, get_pe 0
+pe 1, p 1, get_pe 2
+pe 1, p 2, get_pe 3
+pe 2, p 0, get_pe 0
+pe 2, p 1, get_pe 1
+pe 2, p 2, get_pe 3
+pe 0, p 0, get_pe 1
+pe 0, p 1, get_pe 2
+pe 0, p 2, get_pe 3
+pe 3, end_iter 10
+pe 1, end_iter 10
+pe 2, end_iter 10
+pe 0, end_iter 10
+[PE 0]
+time     4.05,      118 kernels
+[PE 1]
+time     4.04,       86 kernels
+[PE 2]
+time     4.03,      125 kernels
+[PE 3]
+time     4.06,       73 kernels
+[PE 0]
+end:   644808   425516    42791    55875    94243
+start:   644808   425516    42791    55875    94243
+size:        0        0        0        0        0
+[PE 1]
+end:   642103   335550    84084    59393    73424
+start:   642103   335550    84084    59393    73424
+size:        0        0        0        0        0
+[PE 2]
+end:   562263   448932    81683    48352   102312
+start:   562263   448932    81683    48352   102312
+size:        0        0        0        0        0
+[PE 3]
+end:   460804   611345    85340    48607    76715
+start:   460804   611345    85340    48607    76715
+size:        0        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   644808 	   644808 	   644808 	   644808 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   425516 	   425516 	   425516 	   425516 
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   642103 	   642103 	   642103 	   642103 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   335550 	   335550 	   335550 	   335550 
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   562263 	   562263 	   562263 	   562263 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   448932 	   448932 	   448932 	   448932 
+[PE 3]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   460804 	   460804 	   460804 	   460804 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   611345 	   611345 	   611345 	   611345 
+[PE 0]
+PE 0 send_alloc_end: 84085 end: 0 remote processed: 0
+PE 0 send_alloc_end: 81685 end: 0 remote processed: 0
+PE 0 send_alloc_end: 85340 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 42791 end: 0 remote processed: 0
+PE 1 send_alloc_end: 48352 end: 0 remote processed: 0
+PE 1 send_alloc_end: 48607 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 55875 end: 0 remote processed: 0
+PE 2 send_alloc_end: 59393 end: 0 remote processed: 0
+PE 2 send_alloc_end: 76715 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 94243 end: 0 remote processed: 0
+PE 3 send_alloc_end: 73424 end: 0 remote processed: 0
+PE 3 send_alloc_end: 102313 end: 0 remote processed: 0
+[PE 0]
+total:  1263233
+[PE 1]
+total:  1194554
+[PE 2]
+total:  1243542
+[PE 3]
+total:  1282811
+pe 0, end_iter 10
+pe 1, end_iter 10
+pe 2, end_iter 10
+pe 3, end_iter 10
+[PE 0]
+time     4.06,      124 kernels
+[PE 1]
+time     4.06,       80 kernels
+[PE 2]
+time     4.09,      132 kernels
+[PE 3]
+time     4.02,       69 kernels
+[PE 0]
+end:   634623   439822    44512    58088    93969
+start:   634623   439822    44512    58088    93969
+size:        0        0        0        0        0
+[PE 1]
+end:   651847   326816    83192    60460    74023
+start:   651847   326816    83192    60460    74023
+size:        0        0        0        0        0
+[PE 2]
+end:   569793   431827    79204    47975   101155
+start:   569793   431827    79204    47975   101155
+size:        0        0        0        0        0
+[PE 3]
+end:   546610   610901    84657    48837    78873
+start:   546610   610901    84657    48837    78873
+size:        0        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   634623 	   634623 	   634623 	   634623 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   439822 	   439822 	   439822 	   439822 
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   651847 	   651847 	   651847 	   651847 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   326816 	   326816 	   326816 	   326816 
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   569793 	   569793 	   569793 	   569793 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   431827 	   431827 	   431827 	   431827 
+[PE 3]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   546610 	   546610 	   546610 	   546610 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   610901 	   610901 	   610901 	   610901 
+[PE 0]
+PE 0 send_alloc_end: 83192 end: 0 remote processed: 0
+PE 0 send_alloc_end: 79204 end: 0 remote processed: 0
+PE 0 send_alloc_end: 84657 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 44512 end: 0 remote processed: 0
+PE 1 send_alloc_end: 47975 end: 0 remote processed: 0
+PE 1 send_alloc_end: 48837 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 58088 end: 0 remote processed: 0
+PE 2 send_alloc_end: 60460 end: 0 remote processed: 0
+PE 2 send_alloc_end: 78874 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 93969 end: 0 remote processed: 0
+PE 3 send_alloc_end: 74023 end: 0 remote processed: 0
+PE 3 send_alloc_end: 101156 end: 0 remote processed: 0
+[PE 0]
+total:  1271014
+[PE 1]
+total:  1196338
+[PE 2]
+total:  1229954
+[PE 3]
+total:  1369878
+pe 0, end_iter 10
+pe 1, end_iter 10
+pe 2, end_iter 10
+pe 3, end_iter 10
+[PE 0]
+time     3.93,      114 kernels
+[PE 1]
+time     3.96,       96 kernels
+[PE 2]
+time     3.95,      127 kernels
+[PE 3]
+time     3.95,       65 kernels
+[PE 0]
+end:   644202   417538    41486    56902    94116
+start:   644202   417538    41486    56902    94116
+size:        0        0        0        0        0
+[PE 1]
+end:   615814   357839    84325    59822    72402
+start:   615814   357839    84325    59822    72402
+size:        0        0        0        0        0
+[PE 2]
+end:   495215   467412    81536    46770   101922
+start:   495215   467412    81536    46770   101922
+size:        0        0        0        0        0
+[PE 3]
+end:   543999   609191    85294    47818    77705
+start:   543999   609191    85294    47818    77705
+size:        0        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   644202 	   644202 	   644202 	   644202 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   417538 	   417538 	   417538 	   417538 
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   615814 	   615814 	   615814 	   615814 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   357839 	   357839 	   357839 	   357839 
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   495215 	   495215 	   495215 	   495215 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   467412 	   467412 	   467412 	   467412 
+[PE 3]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   543999 	   543999 	   543999 	   543999 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   609191 	   609191 	   609191 	   609191 
+[PE 0]
+PE 0 send_alloc_end: 84325 end: 0 remote processed: 0
+PE 0 send_alloc_end: 81536 end: 0 remote processed: 0
+PE 0 send_alloc_end: 85294 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 41486 end: 0 remote processed: 0
+PE 1 send_alloc_end: 46770 end: 0 remote processed: 0
+PE 1 send_alloc_end: 47818 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 56902 end: 0 remote processed: 0
+PE 2 send_alloc_end: 59822 end: 0 remote processed: 0
+PE 2 send_alloc_end: 77705 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 94116 end: 0 remote processed: 0
+PE 3 send_alloc_end: 72402 end: 0 remote processed: 0
+PE 3 send_alloc_end: 101923 end: 0 remote processed: 0
+[PE 0]
+total:  1254244
+[PE 1]
+total:  1190202
+[PE 2]
+total:  1192855
+[PE 3]
+total:  1364007
+pe 0, end_iter 10
+pe 1, end_iter 10
+pe 2, end_iter 10
+pe 3, end_iter 10
+[PE 0]
+time     4.06,      122 kernels
+[PE 1]
+time     4.06,       86 kernels
+[PE 2]
+time     4.05,      129 kernels
+[PE 3]
+time     4.03,       69 kernels
+[PE 0]
+end:   644692   432953    42672    57251    94568
+start:   644692   432953    42672    57251    94568
+size:        0        0        0        0        0
+[PE 1]
+end:   639571   336337    84011    60435    73347
+start:   639571   336337    84011    60435    73347
+size:        0        0        0        0        0
+[PE 2]
+end:   569602   426964    80543    47062   101726
+start:   569602   426964    80543    47062   101726
+size:        0        0        0        0        0
+[PE 3]
+end:   460932   618856    85861    48759    78079
+start:   460932   618856    85861    48759    78079
+size:        0        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   644692 	   644692 	   644692 	   644692 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   432953 	   432953 	   432953 	   432953 
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   639571 	   639571 	   639571 	   639571 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   336337 	   336337 	   336337 	   336337 
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   569602 	   569602 	   569602 	   569602 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   426964 	   426964 	   426964 	   426964 
+[PE 3]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   460932 	   460932 	   460932 	   460932 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   618856 	   618856 	   618856 	   618856 
+[PE 0]
+PE 0 send_alloc_end: 84012 end: 0 remote processed: 0
+PE 0 send_alloc_end: 80545 end: 0 remote processed: 0
+PE 0 send_alloc_end: 85861 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 42672 end: 0 remote processed: 0
+PE 1 send_alloc_end: 47062 end: 0 remote processed: 0
+PE 1 send_alloc_end: 48759 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 57251 end: 0 remote processed: 0
+PE 2 send_alloc_end: 60435 end: 0 remote processed: 0
+PE 2 send_alloc_end: 78079 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 94568 end: 0 remote processed: 0
+PE 3 send_alloc_end: 73347 end: 0 remote processed: 0
+PE 3 send_alloc_end: 101727 end: 0 remote processed: 0
+[PE 0]
+total:  1272136
+[PE 1]
+total:  1193701
+[PE 2]
+total:  1225897
+[PE 3]
+total:  1292487
+pe 0, end_iter 10
+pe 1, end_iter 10
+pe 2, end_iter 10
+pe 3, end_iter 10
+[PE 0]
+time     4.10,      116 kernels
+[PE 1]
+time     4.07,       93 kernels
+[PE 2]
+time     4.07,      134 kernels
+[PE 3]
+time     4.07,       69 kernels
+[PE 0]
+end:   633017   441770    45608    57425    94017
+start:   633017   441770    45608    57425    94017
+size:        0        0        0        0        0
+[PE 1]
+end:   634241   340299    81350    58989    72883
+start:   634241   340299    81350    58989    72883
+size:        0        0        0        0        0
+[PE 2]
+end:   560237   439493    79565    49673   101877
+start:   560237   439493    79565    49673   101877
+size:        0        0        0        0        0
+[PE 3]
+end:   546675   608867    83251    50464    77315
+start:   546675   608867    83251    50464    77315
+size:        0        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   633017 	   633017 	   633017 	   633017 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   441770 	   441770 	   441770 	   441770 
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   634241 	   634241 	   634241 	   634241 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   340299 	   340299 	   340299 	   340299 
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   560237 	   560237 	   560237 	   560237 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   439493 	   439493 	   439493 	   439493 
+[PE 3]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   546675 	   546675 	   546675 	   546675 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   608867 	   608867 	   608867 	   608867 
+[PE 0]
+PE 0 send_alloc_end: 81350 end: 0 remote processed: 0
+PE 0 send_alloc_end: 79567 end: 0 remote processed: 0
+PE 0 send_alloc_end: 83251 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 45608 end: 0 remote processed: 0
+PE 1 send_alloc_end: 49673 end: 0 remote processed: 0
+PE 1 send_alloc_end: 50464 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 57425 end: 0 remote processed: 0
+PE 2 send_alloc_end: 58989 end: 0 remote processed: 0
+PE 2 send_alloc_end: 77315 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 94017 end: 0 remote processed: 0
+PE 3 send_alloc_end: 72883 end: 0 remote processed: 0
+PE 3 send_alloc_end: 101877 end: 0 remote processed: 0
+[PE 0]
+total:  1271837
+[PE 1]
+total:  1187762
+[PE 2]
+total:  1230845
+[PE 3]
+total:  1366572
+pe 0, end_iter 10
+pe 1, end_iter 10
+pe 2, end_iter 10
+pe 3, end_iter 10
+[PE 0]
+time     3.94,      115 kernels
+[PE 1]
+time     3.94,       91 kernels
+[PE 2]
+time     3.93,      128 kernels
+[PE 3]
+time     3.94,       69 kernels
+[PE 0]
+end:   637765   432518    42068    57558    94442
+start:   637765   432518    42068    57558    94442
+size:        0        0        0        0        0
+[PE 1]
+end:   625461   391679    83831    60119    73007
+start:   625461   391679    83831    60119    73007
+size:        0        0        0        0        0
+[PE 2]
+end:   570357   429168    80703    46895   101602
+start:   570357   429168    80703    46895   101602
+size:        0        0        0        0        0
+[PE 3]
+end:   458400   617537    84820    47855    78741
+start:   458400   617537    84820    47855    78741
+size:        0        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   637765 	   637765 	   637765 	   637765 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   432518 	   432518 	   432518 	   432518 
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   625461 	   625461 	   625461 	   625461 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   391679 	   391679 	   391679 	   391679 
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   570357 	   570357 	   570357 	   570357 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   429168 	   429168 	   429168 	   429168 
+[PE 3]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   458400 	   458400 	   458400 	   458400 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   617537 	   617537 	   617537 	   617537 
+[PE 0]
+PE 0 send_alloc_end: 83831 end: 0 remote processed: 0
+PE 0 send_alloc_end: 80703 end: 0 remote processed: 0
+PE 0 send_alloc_end: 84820 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 42068 end: 0 remote processed: 0
+PE 1 send_alloc_end: 46895 end: 0 remote processed: 0
+PE 1 send_alloc_end: 47855 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 57558 end: 0 remote processed: 0
+PE 2 send_alloc_end: 60119 end: 0 remote processed: 0
+PE 2 send_alloc_end: 78741 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 94442 end: 0 remote processed: 0
+PE 3 send_alloc_end: 73007 end: 0 remote processed: 0
+PE 3 send_alloc_end: 101602 end: 0 remote processed: 0
+[PE 0]
+total:  1264351
+[PE 1]
+total:  1234097
+[PE 2]
+total:  1228725
+[PE 3]
+total:  1287353
+pe 0, end_iter 10
+pe 1, end_iter 10
+pe 2, end_iter 10
+pe 3, end_iter 10
+[PE 0]
+time     4.13,      129 kernels
+[PE 1]
+time     4.13,       79 kernels
+[PE 2]
+time     4.14,      141 kernels
+[PE 3]
+time     4.13,       76 kernels
+[PE 0]
+end:   642090   427573    44747    60475    94919
+start:   642090   427573    44747    60475    94919
+size:        0        0        0        0        0
+[PE 1]
+end:   658683   325660    83033    62002    74478
+start:   658683   325660    83033    62002    74478
+size:        0        0        0        0        0
+[PE 2]
+end:   570433   423321    76321    47414   102366
+start:   570433   423321    76321    47414   102366
+size:        0        0        0        0        0
+[PE 3]
+end:   542182   607586    81200    49629    78624
+start:   542182   607586    81200    49629    78624
+size:        0        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   642090 	   642090 	   642090 	   642090 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   427573 	   427573 	   427573 	   427573 
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   658683 	   658683 	   658683 	   658683 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   325660 	   325660 	   325660 	   325660 
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   570433 	   570433 	   570433 	   570433 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   423321 	   423321 	   423321 	   423321 
+[PE 3]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   542182 	   542182 	   542182 	   542182 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   607586 	   607586 	   607586 	   607586 
+[PE 0]
+PE 0 send_alloc_end: 83033 end: 0 remote processed: 0
+PE 0 send_alloc_end: 76322 end: 0 remote processed: 0
+PE 0 send_alloc_end: 81200 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 44747 end: 0 remote processed: 0
+PE 1 send_alloc_end: 47414 end: 0 remote processed: 0
+PE 1 send_alloc_end: 49629 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 60475 end: 0 remote processed: 0
+PE 2 send_alloc_end: 62002 end: 0 remote processed: 0
+PE 2 send_alloc_end: 78624 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 94919 end: 0 remote processed: 0
+PE 3 send_alloc_end: 74478 end: 0 remote processed: 0
+PE 3 send_alloc_end: 102367 end: 0 remote processed: 0
+[PE 0]
+total:  1269804
+[PE 1]
+total:  1203856
+[PE 2]
+total:  1219855
+[PE 3]
+total:  1359221
+pe 0, end_iter 10
+pe 1, end_iter 10
+pe 2, end_iter 10
+pe 3, end_iter 10
+[PE 0]
+time     3.92,      115 kernels
+[PE 1]
+time     3.92,       86 kernels
+[PE 2]
+time     3.91,      127 kernels
+[PE 3]
+time     3.91,       65 kernels
+[PE 0]
+end:   639974   442926    43777    58746    93479
+start:   639974   442926    43777    58746    93479
+size:        0        0        0        0        0
+[PE 1]
+end:   623487   348262    81729    60250    72195
+start:   623487   348262    81729    60250    72195
+size:        0        0        0        0        0
+[PE 2]
+end:   570113   422378    78775    47590   100492
+start:   570113   422378    78775    47590   100492
+size:        0        0        0        0        0
+[PE 3]
+end:   460715   618521    83208    50097    78943
+start:   460715   618521    83208    50097    78943
+size:        0        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   639974 	   639974 	   639974 	   639974 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   442926 	   442926 	   442926 	   442926 
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   623487 	   623487 	   623487 	   623487 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   348262 	   348262 	   348262 	   348262 
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   570113 	   570113 	   570113 	   570113 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   422378 	   422378 	   422378 	   422378 
+[PE 3]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   460715 	   460715 	   460715 	   460715 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   618521 	   618521 	   618521 	   618521 
+[PE 0]
+PE 0 send_alloc_end: 81729 end: 0 remote processed: 0
+PE 0 send_alloc_end: 78775 end: 0 remote processed: 0
+PE 0 send_alloc_end: 83208 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 43777 end: 0 remote processed: 0
+PE 1 send_alloc_end: 47590 end: 0 remote processed: 0
+PE 1 send_alloc_end: 50097 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 58746 end: 0 remote processed: 0
+PE 2 send_alloc_end: 60250 end: 0 remote processed: 0
+PE 2 send_alloc_end: 78943 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 93479 end: 0 remote processed: 0
+PE 3 send_alloc_end: 72195 end: 0 remote processed: 0
+PE 3 send_alloc_end: 100492 end: 0 remote processed: 0
+[PE 0]
+total:  1278902
+[PE 1]
+total:  1185923
+[PE 2]
+total:  1219348
+[PE 3]
+total:  1291484
+pe 0, end_iter 10
+pe 1, end_iter 10
+pe 2, end_iter 10
+pe 3, end_iter 10
+[PE 0]
+time     3.99,      121 kernels
+[PE 1]
+time     4.02,       74 kernels
+[PE 2]
+time     3.99,      126 kernels
+[PE 3]
+time     3.97,       71 kernels
+[PE 0]
+end:   650862   411139    43275    57173    95210
+start:   650862   411139    43275    57173    95210
+size:        0        0        0        0        0
+[PE 1]
+end:   647741   368307    85186    60992    74709
+start:   647741   368307    85186    60992    74709
+size:        0        0        0        0        0
+[PE 2]
+end:   573324   413726    81114    47846   104025
+start:   573324   413726    81114    47846   104025
+size:        0        0        0        0        0
+[PE 3]
+end:   542727   610768    85921    47534    76776
+start:   542727   610768    85921    47534    76776
+size:        0        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   650862 	   650862 	   650862 	   650862 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   411139 	   411139 	   411139 	   411139 
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   647741 	   647741 	   647741 	   647741 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   368307 	   368307 	   368307 	   368307 
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   573324 	   573324 	   573324 	   573324 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   413726 	   413726 	   413726 	   413726 
+[PE 3]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   542727 	   542727 	   542727 	   542727 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   610768 	   610768 	   610768 	   610768 
+[PE 0]
+PE 0 send_alloc_end: 85186 end: 0 remote processed: 0
+PE 0 send_alloc_end: 81114 end: 0 remote processed: 0
+PE 0 send_alloc_end: 85921 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 43275 end: 0 remote processed: 0
+PE 1 send_alloc_end: 47846 end: 0 remote processed: 0
+PE 1 send_alloc_end: 47534 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 57173 end: 0 remote processed: 0
+PE 2 send_alloc_end: 60992 end: 0 remote processed: 0
+PE 2 send_alloc_end: 76776 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 95210 end: 0 remote processed: 0
+PE 3 send_alloc_end: 74709 end: 0 remote processed: 0
+PE 3 send_alloc_end: 104026 end: 0 remote processed: 0
+[PE 0]
+total:  1257659
+[PE 1]
+total:  1236935
+[PE 2]
+total:  1220035
+[PE 3]
+total:  1363726
+pe 0, end_iter 10
+pe 1, end_iter 10
+pe 2, end_iter 10
+pe 3, end_iter 10
+[PE 0]
+time     3.97,      119 kernels
+[PE 1]
+time     3.98,       92 kernels
+[PE 2]
+time     3.98,      130 kernels
+[PE 3]
+time     3.96,       67 kernels
+[PE 0]
+end:   645533   432926    45039    57171    93699
+start:   645533   432926    45039    57171    93699
+size:        0        0        0        0        0
+[PE 1]
+end:   634116   342096    81979    58973    72382
+start:   634116   342096    81979    58973    72382
+size:        0        0        0        0        0
+[PE 2]
+end:   564307   429725    80310    49106   100797
+start:   564307   429725    80310    49106   100797
+size:        0        0        0        0        0
+[PE 3]
+end:   464477   621618    85283    50372    78312
+start:   464477   621618    85283    50372    78312
+size:        0        0        0        0        0
+[PE 0]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   645533 	   645533 	   645533 	   645533 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   432926 	   432926 	   432926 	   432926 
+[PE 1]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   634116 	   634116 	   634116 	   634116 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   342096 	   342096 	   342096 	   342096 
+[PE 2]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   564307 	   564307 	   564307 	   564307 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   429725 	   429725 	   429725 	   429725 
+[PE 3]
+high: start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   464477 	   464477 	   464477 	   464477 
+low:  start 	 start_alloc 	   end_alloc 	      end 	   end_max 	 end_count
+       0 	        0 	   621618 	   621618 	   621618 	   621618 
+[PE 0]
+PE 0 send_alloc_end: 81979 end: 0 remote processed: 0
+PE 0 send_alloc_end: 80310 end: 0 remote processed: 0
+PE 0 send_alloc_end: 85283 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 45039 end: 0 remote processed: 0
+PE 1 send_alloc_end: 49106 end: 0 remote processed: 0
+PE 1 send_alloc_end: 50372 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 57171 end: 0 remote processed: 0
+PE 2 send_alloc_end: 58973 end: 0 remote processed: 0
+PE 2 send_alloc_end: 78312 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 93699 end: 0 remote processed: 0
+PE 3 send_alloc_end: 72382 end: 0 remote processed: 0
+PE 3 send_alloc_end: 100797 end: 0 remote processed: 0
+[PE 0]
+total:  1274368
+[PE 1]
+total:  1189546
+[PE 2]
+total:  1224245
+[PE 3]
+total:  1300062
+[PE 0]
+ave time:     4.02
+[PE 1]
+ave time:     4.02
+[PE 2]
+ave time:     4.01
+[PE 3]
+ave time:     4.01
+[PE 0]
+ave workload: 1267754
+[PE 1]
+ave workload: 1201291
+[PE 2]
+ave workload: 1223530
+[PE 3]
+ave workload: 1327760
+[PE 0]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 4400347
+Print the first 20 depth: 
+host:
+4 5 6 6 4 4 6 4 4 3 2 3 3 3 4 4 4 5 4 4 
+device:
+4 5 6 6 4 4 6 4 4 3 2 3 3 3 4 4 4 5 4 4 
+[PE 1]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 4400347
+Print the first 20 depth: 
+host:
+1 4 4 4 3 3 3 3 4 4 4 4 4 4 4 4 4 5 5 5 
+device:
+1 4 4 4 3 3 3 3 4 4 4 4 4 4 4 4 4 5 5 5 
+[PE 2]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 4400347
+Print the first 20 depth: 
+host:
+1 1 5 5 2 3 4 4 4 3 4 4 4 4 5 4 5 5 4 4 
+device:
+1 1 5 5 2 3 4 4 4 3 4 4 4 4 5 4 5 5 4 4 
+[PE 3]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 4400347
+Print the first 20 depth: 
+host:
+0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+device:
+0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+[PE 0]
+End program 0
+[PE 1]
+End program 1
+[PE 2]
+End program 2
+[PE 3]
+End program 3
+

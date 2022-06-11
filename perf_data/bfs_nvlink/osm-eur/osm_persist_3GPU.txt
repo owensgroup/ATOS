@@ -1,0 +1,382 @@
+global [2 of 3] group [0 of 1], local[2  of 3]
+[2 of 3] has GPU 3, set on 2, device name Tesla V100-DGXS-32GB, bus id 14, clockrate 1297000
+PE: 2 deviceCount 3 set on device 2 device name Tesla V100-DGXS-32GB
+global [1 of 3] group [0 of 1], local[1  of 3]
+[1 of 3] has GPU 3, set on 1, device name Tesla V100-DGXS-32GB, bus id 8, clockrate 1297000
+global [0 of 3] group [0 of 1], local[0  of 3]
+[0 of 3] has GPU 3, set on 0, device name Tesla V100-DGXS-32GB, bus id 7, clockrate 1297000
+PE: 1 deviceCount 3 set on device 1 device name Tesla V100-DGXS-32GB
+graph /data/yuxin/3_graph_dataset/osm-eur.csr partition scheme 3 iteration 50000 source 0 num worklist 1 rounds 10 FETCH SIZE 128 iteration ratio 1
+PE: 0 deviceCount 3 set on device 0 device name Tesla V100-DGXS-32GB
+Vertices: 173789185 Edges: 347997111
+read metis file: /data/yuxin/3_graph_dataset/osm-eur_3_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/osm-eur_3_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/osm-eur_3_metis_mega.txt
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+[PE 0]
+Vertices: 57929714 Edges: 118611943
+[PE 1]
+Vertices: 57929655 Edges: 114929942
+[PE 2]
+Vertices: 57929816 Edges: 114455226
+Partition table:
+0  57929714  115859369  173789185  
+[PE 0]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 0 	 173789185 	         0 	 57929714 	 57929714 	 173789142 	       1 	   50000
+[PE 1]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 1 	 173789185 	  57929714 	 115859369 	 57929655 	 173788965 	       1 	   50000
+[PE 2]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 2 	 173789185 	 115859369 	 173789185 	 57929816 	 173789448 	       1 	   50000
+PE 0, new_source 57929714
+PE 2, new_source 57929714
+PE 1, new_source 57929714
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time   208.09
+[PE 1]
+time   209.95
+[PE 2]
+time   208.47
+[PE 0]
+pe 0 receive:    383     31
+[PE 1]
+pe 1 receive:    392    420
+[PE 2]
+pe 2 receive:     22    584
+[PE 0]
+0th queue:
+Queue 0, capacity: 173789142, end=start: 62080298
+[PE 1]
+0th queue:
+Queue 0, capacity: 173788965, end=start: 63448043
+[PE 2]
+0th queue:
+Queue 0, capacity: 173789448, end=start: 64560482
+[PE 0]
+pe 0 Send:    392     22
+[PE 1]
+pe 1 Send:    383    584
+[PE 2]
+pe 2 Send:     31    420
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time   210.34
+[PE 1]
+time   209.20
+[PE 2]
+time   206.79
+[PE 0]
+pe 0 receive:    388     29
+[PE 1]
+pe 1 receive:    396    442
+[PE 2]
+pe 2 receive:     21    601
+[PE 0]
+0th queue:
+Queue 0, capacity: 173789142, end=start: 65400244
+[PE 1]
+0th queue:
+Queue 0, capacity: 173788965, end=start: 62100048
+[PE 2]
+0th queue:
+Queue 0, capacity: 173789448, end=start: 61275320
+[PE 0]
+pe 0 Send:    396     21
+[PE 1]
+pe 1 Send:    388    601
+[PE 2]
+pe 2 Send:     29    442
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time   208.10
+[PE 1]
+time   208.62
+[PE 2]
+time   206.70
+[PE 0]
+pe 0 receive:    388     30
+[PE 1]
+pe 1 receive:    403    439
+[PE 2]
+pe 2 receive:     22    609
+[PE 0]
+0th queue:
+Queue 0, capacity: 173789142, end=start: 62651854
+[PE 1]
+0th queue:
+Queue 0, capacity: 173788965, end=start: 60220235
+[PE 2]
+0th queue:
+Queue 0, capacity: 173789448, end=start: 61263680
+[PE 0]
+pe 0 Send:    403     22
+[PE 1]
+pe 1 Send:    388    609
+[PE 2]
+pe 2 Send:     30    439
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time   211.07
+[PE 1]
+time   208.84
+[PE 2]
+time   206.93
+[PE 0]
+pe 0 receive:    387     29
+[PE 1]
+pe 1 receive:    399    450
+[PE 2]
+pe 2 receive:     22    604
+[PE 0]
+0th queue:
+Queue 0, capacity: 173789142, end=start: 67221626
+[PE 1]
+0th queue:
+Queue 0, capacity: 173788965, end=start: 61122628
+[PE 2]
+0th queue:
+Queue 0, capacity: 173789448, end=start: 61637041
+[PE 0]
+pe 0 Send:    399     22
+[PE 1]
+pe 1 Send:    387    604
+[PE 2]
+pe 2 Send:     29    450
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time   210.19
+[PE 1]
+time   208.98
+[PE 2]
+time   207.04
+[PE 0]
+pe 0 receive:    396     29
+[PE 1]
+pe 1 receive:    411    449
+[PE 2]
+pe 2 receive:     22    618
+[PE 0]
+0th queue:
+Queue 0, capacity: 173789142, end=start: 65387362
+[PE 1]
+0th queue:
+Queue 0, capacity: 173788965, end=start: 61883700
+[PE 2]
+0th queue:
+Queue 0, capacity: 173789448, end=start: 61574140
+[PE 0]
+pe 0 Send:    411     22
+[PE 1]
+pe 1 Send:    396    618
+[PE 2]
+pe 2 Send:     29    449
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time   208.18
+[PE 1]
+time   213.62
+[PE 2]
+time   206.50
+[PE 0]
+pe 0 receive:    396     29
+[PE 1]
+pe 1 receive:    418    449
+[PE 2]
+pe 2 receive:     22    598
+[PE 0]
+0th queue:
+Queue 0, capacity: 173789142, end=start: 61753810
+[PE 1]
+0th queue:
+Queue 0, capacity: 173788965, end=start: 69480405
+[PE 2]
+0th queue:
+Queue 0, capacity: 173789448, end=start: 61265310
+[PE 0]
+pe 0 Send:    418     22
+[PE 1]
+pe 1 Send:    396    598
+[PE 2]
+pe 2 Send:     29    449
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time   212.36
+[PE 1]
+time   208.51
+[PE 2]
+time   206.91
+[PE 0]
+pe 0 receive:    384     40
+[PE 1]
+pe 1 receive:    387    443
+[PE 2]
+pe 2 receive:     26    612
+[PE 0]
+0th queue:
+Queue 0, capacity: 173789142, end=start: 69478229
+[PE 1]
+0th queue:
+Queue 0, capacity: 173788965, end=start: 61447946
+[PE 2]
+0th queue:
+Queue 0, capacity: 173789448, end=start: 61716891
+[PE 0]
+pe 0 Send:    387     26
+[PE 1]
+pe 1 Send:    384    612
+[PE 2]
+pe 2 Send:     40    443
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time   213.71
+[PE 1]
+time   211.91
+[PE 2]
+time   209.76
+[PE 0]
+pe 0 receive:    523     32
+[PE 1]
+pe 1 receive:    508    460
+[PE 2]
+pe 2 receive:     25    632
+[PE 0]
+0th queue:
+Queue 0, capacity: 173789142, end=start: 72023702
+[PE 1]
+0th queue:
+Queue 0, capacity: 173788965, end=start: 66319532
+[PE 2]
+0th queue:
+Queue 0, capacity: 173789448, end=start: 67169020
+[PE 0]
+pe 0 Send:    508     25
+[PE 1]
+pe 1 Send:    523    632
+[PE 2]
+pe 2 Send:     32    460
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time   211.80
+[PE 1]
+time   209.07
+[PE 2]
+time   206.54
+[PE 0]
+pe 0 receive:    403     30
+[PE 1]
+pe 1 receive:    399    415
+[PE 2]
+pe 2 receive:     22    563
+[PE 0]
+0th queue:
+Queue 0, capacity: 173789142, end=start: 69002763
+[PE 1]
+0th queue:
+Queue 0, capacity: 173788965, end=start: 61958167
+[PE 2]
+0th queue:
+Queue 0, capacity: 173789448, end=start: 61124109
+[PE 0]
+pe 0 Send:    399     22
+[PE 1]
+pe 1 Send:    403    563
+[PE 2]
+pe 2 Send:     30    415
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time   209.49
+[PE 1]
+time   213.02
+[PE 2]
+time   213.28
+[PE 0]
+pe 0 receive:    405     30
+[PE 1]
+pe 1 receive:    437    488
+[PE 2]
+pe 2 receive:     23    703
+[PE 0]
+0th queue:
+Queue 0, capacity: 173789142, end=start: 64569016
+[PE 1]
+0th queue:
+Queue 0, capacity: 173788965, end=start: 68782202
+[PE 2]
+0th queue:
+Queue 0, capacity: 173789448, end=start: 72925651
+[PE 0]
+pe 0 Send:    437     23
+[PE 1]
+pe 1 Send:    405    703
+[PE 2]
+pe 2 Send:     30    488
+[PE 0]
+ave time:   210.33
+[PE 1]
+ave time:   210.17
+[PE 2]
+ave time:   207.89
+[PE 0]
+ave workload: 65957326
+[PE 1]
+ave workload: 63677151
+[PE 2]
+ave workload: 63451799
+[PE 0]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 173789185
+Print the first 20 depth: 
+host:
+12419 12420 12421 12424 12425 12426 12427 12428 12433 12437 12440 12442 12443 12445 12418 12413 12415 13277 13275 13276 
+device:
+12419 12420 12421 12424 12425 12426 12427 12428 12433 12437 12440 12442 12443 12445 12418 12413 12415 13277 13275 13276 
+[PE 1]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 173789185
+Print the first 20 depth: 
+host:
+0 220 6052 6053 6055 6056 6057 6058 6059 6060 6061 6062 6063 6065 6067 6069 6070 6071 6073 6075 
+device:
+0 220 6052 6053 6055 6056 6057 6058 6059 6060 6061 6062 6063 6065 6067 6069 6070 6071 6073 6075 
+[PE 2]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 173789185
+Print the first 20 depth: 
+host:
+5097 5100 5125 5131 5130 3578 3580 3582 3577 3580 3580 3583 3581 3599 3599 3595 3588 3580 3582 5112 
+device:
+5097 5100 5125 5131 5130 3578 3580 3582 3577 3580 3580 3583 3581 3599 3599 3595 3588 3580 3582 5112 
+[PE 0]
+End program 0
+[PE 1]
+End program 1
+[PE 2]
+End program 2

@@ -1,0 +1,261 @@
+global [0 of 2] group [0 of 1], local[0  of 2]
+[0 of 2] has GPU 4, set on 0, device name Tesla V100-DGXS-32GB, bus id 7, clockrate 1297000
+global [1 of 2] group [0 of 1], local[1  of 2]
+graph /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr partition scheme 3 iteration 100 source 0 num worklist 1 rounds 10 FETCH SIZE 64 iteration ratio 1
+PE: 0 deviceCount 4 set on device 0 device name Tesla V100-DGXS-32GB
+[1 of 2] has GPU 4, set on 1, device name Tesla V100-DGXS-32GB, bus id 8, clockrate 1297000
+PE: 1 deviceCount 4 set on device 1 device name Tesla V100-DGXS-32GB
+Vertices: 4847571 Edges: 68475391
+read metis file: /data/yuxin/3_graph_dataset/soc-LiveJournal1_2_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/soc-LiveJournal1_2_metis_mega.txt
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+[PE 0]
+Vertices: 2353074 Edges: 35111690
+[PE 1]
+Vertices: 2494497 Edges: 33363701
+Partition table:
+0  2353074  4847571  
+alloc recv_qiueues 0x7f189214c400, recv_capacity 4988994, my_pe 1, send_remote_alloc_end 0x7f1ad7201e00, sender_write 0x7f1893454600, recv_read 0x7f1893454600, recv_pop 0x7f1ad7202000
+[PE 1]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 1 	   4847571 	   2353074 	 4847571 	 2494497 	 7483491 	       1 	     100
+PE 1, new_source 2353074
+alloc recv_qiueues 0x7fd01e14c400, recv_capacity 4988994, my_pe 0, send_remote_alloc_end 0x7fd263201e00, sender_write 0x7fd01f454600, recv_read 0x7fd01f454600, recv_pop 0x7fd263202000
+[PE 0]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 0 	   4847571 	         0 	 2353074 	 2353074 	 7059222 	       1 	     100
+PE 0, new_source 2353074
+Yxinxin Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+Yxinxin Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+my_pe 0, n_pes 2, min_iter 100, num_queue 1, q_id 0, recv_queues 0x7fd01e14c400, recv_capacity 4988994, send_remote_alloc_end 0x7fd263201e00, sender_write 0x7fd01f454600, recv_read 0x7fd01f454600, recv_pop 0x7fd263202000
+my_pe 1, n_pes 2, min_iter 100, num_queue 1, q_id 0, recv_queues 0x7f189214c400, recv_capacity 4988994, send_remote_alloc_end 0x7f1ad7201e00, sender_write 0x7f1893454600, recv_read 0x7f1893454600, recv_pop 0x7f1ad7202000
+[PE 1]
+time     8.75
+[PE 1]
+pe 1 receive: 248400
+[PE 1]
+0th queue:
+Queue 0, capacity: 7483491, end=start: 2598298
+[PE 1]
+pe 1 Send: 394288
+[PE 0]
+time     8.52
+[PE 0]
+pe 0 receive: 394288
+[PE 0]
+0th queue:
+Queue 0, capacity: 7059222, end=start: 2339923
+[PE 0]
+pe 0 Send: 248400
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+[PE 1]
+time     8.66
+[PE 1]
+pe 1 receive: 239817
+[PE 1]
+0th queue:
+Queue 0, capacity: 7483491, end=start: 2578967
+[PE 1]
+pe 1 Send: 399489
+[PE 0]
+time     8.49
+[PE 0]
+pe 0 receive: 399489
+[PE 0]
+0th queue:
+Queue 0, capacity: 7059222, end=start: 2337235
+[PE 0]
+pe 0 Send: 239817
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+[PE 1]
+time     8.80
+[PE 1]
+pe 1 receive: 242880
+[PE 1]
+0th queue:
+Queue 0, capacity: 7483491, end=start: 2617409
+[PE 1]
+pe 1 Send: 406710
+[PE 0]
+time     8.58
+[PE 0]
+pe 0 receive: 406710
+[PE 0]
+0th queue:
+Queue 0, capacity: 7059222, end=start: 2362364
+[PE 0]
+pe 0 Send: 242880
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+[PE 0]
+time     8.90
+[PE 0]
+pe 0 receive: 396445
+[PE 0]
+0th queue:
+Queue 0, capacity: 7059222, end=start: 2397630
+[PE 0]
+[PE 1]
+time     8.78
+[PE 1]
+pe 1 receive: 248238
+[PE 1]
+0th queue:
+Queue 0, capacity: 7483491, end=start: 2588776
+pe 0 Send: 248238
+[PE 1]
+pe 1 Send: 396445
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+[PE 1]
+time     8.57
+[PE 1]
+pe 1 receive: 237794
+[PE 1]
+0th queue:
+Queue 0, capacity: 7483491, end=start: 2570360
+[PE 1]
+pe 1 Send: 397810
+[PE 0]
+time     8.53
+[PE 0]
+pe 0 receive: 397810
+[PE 0]
+0th queue:
+Queue 0, capacity: 7059222, end=start: 2353046
+[PE 0]
+pe 0 Send: 237794
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+[PE 1]
+time     8.60
+[PE 1]
+pe 1 receive: 243149
+[PE 1]
+0th queue:
+Queue 0, capacity: 7483491, end=start: 2558807
+[PE 1]
+pe 1 Send: 391916
+[PE 0]
+time     8.36
+[PE 0]
+pe 0 receive: 391916
+[PE 0]
+0th queue:
+Queue 0, capacity: 7059222, end=start: 2299009
+[PE 0]
+pe 0 Send: 243149
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+[PE 1]
+time     8.61
+[PE 1]
+pe 1 receive: 241731
+[PE 1]
+0th queue:
+Queue 0, capacity: 7483491, end=start: 2581641
+[PE 1]
+pe 1 Send: 401395
+[PE 0]
+time     8.53
+[PE 0]
+pe 0 receive: 401395
+[PE 0]
+0th queue:
+Queue 0, capacity: 7059222, end=start: 2352029
+[PE 0]
+pe 0 Send: 241731
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+[PE 0]
+time     8.61
+[PE 0]
+pe 0 receive: 388053
+[PE 0]
+0th queue:
+Queue 0, capacity: 7059222, end=start: 2398942
+[PE 0]
+pe 0 Send: 245421
+[PE 1]
+time     8.48
+[PE 1]
+pe 1 receive: 245421
+[PE 1]
+0th queue:
+Queue 0, capacity: 7483491, end=start: 2532111
+[PE 1]
+pe 1 Send: 388053
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+[PE 1]
+time     8.55
+[PE 1]
+pe 1 receive: 241333
+[PE 1]
+0th queue:
+Queue 0, capacity: 7483491, end=start: 2561453
+[PE 1]
+pe 1 Send: 394386
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+[PE 0]
+time     8.56
+[PE 0]
+pe 0 receive: 394386
+[PE 0]
+0th queue:
+Queue 0, capacity: 7059222, end=start: 2362233
+[PE 0]
+pe 0 Send: 241333
+Launch CTA numBlock 160 numThread 512 fetch size 64 dynamic share memory size(bytes) 24
+[PE 1]
+time     8.61
+[PE 1]
+pe 1 receive: 247391
+[PE 1]
+0th queue:
+Queue 0, capacity: 7483491, end=start: 2563895
+[PE 1]
+pe 1 Send: 389472
+[PE 0]
+time     8.41
+[PE 0]
+pe 0 receive: 389472
+[PE 0]
+0th queue:
+Queue 0, capacity: 7059222, end=start: 2317782
+[PE 0]
+pe 0 Send: 247391
+[PE 0]
+ave time:     8.55
+[PE 1]
+ave time:     8.64
+[PE 1]
+ave workload: 2818787
+[PE 0]
+ave workload: 2748015
+[PE 0]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 4400347
+Print the first 20 depth: 
+host:
+5 4 4 5 4 4 3 3 3 3 3 3 3 4 4 4 4 4 4 4 
+device:
+5 4 4 5 4 4 3 3 3 3 3 3 3 4 4 4 4 4 4 4 
+[PE 1]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 4400347
+Print the first 20 depth: 
+host:
+0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+device:
+0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+[PE 0]
+End program 0
+[PE 1]
+End program 1
+

@@ -1,0 +1,1329 @@
+yuxin420@daisy:~/9-GPU-Runtime/pr$ $MPI_HOME/bin/mpirun -n 2 ./test_pr_queue -file /data/yuxin/3_graph_dataset/road_usa.csr -v 1 -check 1 -iter 40 -rounds 10 -partition 3
+PE: 1 deviceCount 4 set on device 1 device name NVIDIA Tesla V100-DGXS-32GB
+graph /data/yuxin/3_graph_dataset/road_usa.csr partition scheme 3 iteration 40 num worklist 1 rounds 10 FETCH SIZE 512 iteration ratio 0
+PE: 0 deviceCount 4 set on device 0 device name NVIDIA Tesla V100-DGXS-32GB
+Vertices: 23947347 Edges: 57708624
+didn't find file: /data/yuxin/3_graph_dataset/road_usa_2_metis_mega.txt
+didn't find file: /data/yuxin/3_graph_dataset/road_usa_2_metis_mega.txt
+Start Metis partition
+Start Metis partition
+Metis partition done
+Metis use 64bits, export partition data to file /data/yuxin/3_graph_dataset/road_usa_2_metis_mega.txt
+Metis partition done
+[PE 0]
+Vertices: 11973672 Edges: 28743554
+[PE 1]
+Vertices: 11973675 Edges: 28965070
+Partition table:
+0  11973672  23947347  
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     1	             0	         0	           0	                  0	        0
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     1	       0	                         0	        0
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     0	             0	         1	           0	                  0	        0
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     0	       1	                         0	        0
+[PE 0]
+number of PEs in the system: 2
+my PE id in the system: 0
+number of queue pairs per PE : 1
+number of queue paris in total: 1
+capacity of each send/recv queue : 47894700
+[PE 1]
+number of PEs in the system: 2
+my PE id in the system: 1
+number of queue pairs per PE : 1
+number of queue paris in total: 1
+capacity of each send/recv queue : 47894700
+[PE 0]
+PE 0 Clear! send and remote processed: 0
+[PE 1]
+PE 1 Clear! send and remote processed: 0
+pe 1, start 11973672, end 23947347, nodes 11973675, real_size 374178, size_ifact 374208
+pe 0, start 0, end 11973672, nodes 11973672, real_size 374178, size_ifact 374208
+[PE 0]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 0 	  23947347 	         0 	 11973672 	 11973672 	 191578752 	       1 	      40 		 0.8500 	 0.0100
+[PE 1]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 1 	  23947347 	  11973672 	 23947347 	 11973675 	 191578800 	       1 	      40 		 0.8500 	 0.0100
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 11973672	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 11973675	start: 0
+[PE 0]
+time    81.03,       41 kernels
+[PE 1]
+time    82.27,       44 kernels
+[PE 0]
+end:    148790990	start:  148790990	size:         0
+[PE 1]
+end:    149144218	start:  149144218	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 148790990	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 149144218	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 11973672	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 11973675	start: 0
+[PE 0]
+time    81.01,       41 kernels
+[PE 1]
+time    82.26,       44 kernels
+[PE 0]
+end:    148787417	start:  148787417	size:         0
+[PE 1]
+end:    149141191	start:  149141191	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 148787417	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 149141191	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 11973672	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 11973675	start: 0
+[PE 0]
+time    80.78,       40 kernels
+[PE 1]
+time    82.06,       42 kernels
+[PE 0]
+end:    148766804	start:  148766804	size:         0
+[PE 1]
+end:    149148828	start:  149148828	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 148766804	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 149148828	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 11973672	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 11973675	start: 0
+[PE 0]
+time    81.45,       44 kernels
+[PE 1]
+time    82.07,       43 kernels
+[PE 0]
+end:    148781524	start:  148781524	size:         0
+[PE 1]
+end:    149122277	start:  149122277	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 148781524	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 149122277	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 11973672	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 11973675	start: 0
+[PE 0]
+time    81.19,       43 kernels
+[PE 1]
+time    81.84,       41 kernels
+[PE 0]
+end:    148793866	start:  148793866	size:         0
+[PE 1]
+end:    149152053	start:  149152053	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 148793866	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 149152053	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 11973672	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 11973675	start: 0
+[PE 0]
+time    81.08,       42 kernels
+[PE 1]
+time    82.39,       45 kernels
+[PE 0]
+end:    148792175	start:  148792175	size:         0
+[PE 1]
+end:    149145540	start:  149145540	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 148792175	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 149145540	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 11973672	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 11973675	start: 0
+[PE 0]
+time    81.61,       46 kernels
+[PE 1]
+time    82.61,       47 kernels
+[PE 0]
+end:    148784582	start:  148784582	size:         0
+[PE 1]
+end:    149134911	start:  149134911	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 148784582	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 149134911	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 11973672	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 11973675	start: 0
+[PE 0]
+time    81.12,       42 kernels
+[PE 1]
+time    82.22,       44 kernels
+[PE 0]
+end:    148795005	start:  148795005	size:         0
+[PE 1]
+end:    149159716	start:  149159716	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 148795005	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 149159716	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 11973672	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 11973675	start: 0
+[PE 0]
+time    81.30,       44 kernels
+[PE 1]
+time    82.20,       43 kernels
+[PE 0]
+end:    148795204	start:  148795204	size:         0
+[PE 1]
+end:    149147582	start:  149147582	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 148795204	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 149147582	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 11973672	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 11973675	start: 0
+[PE 0]
+time    81.02,       41 kernels
+[PE 1]
+time    82.26,       44 kernels
+[PE 0]
+end:    148805820	start:  148805820	size:         0
+[PE 1]
+end:    149132309	start:  149132309	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 191578752, end: 148805820	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 191578800, end: 149132309	start: 0
+[PE 0]
+ave time:    81.16
+[PE 1]
+ave time:    82.22
+[PE 0]
+ave workload: 148789338
+[PE 1]
+ave workload: 149142862
+[PE 0]
+CPU total processed node 239999466
+CPU total mass: 2.3886e+07 CPU total res: 126915 CPU total rank: 2.30399e+07
+max rank differenc: 0.0601226
+GPU rank: sum of rank 1.1632e+07 error from CPU 59269.6
+GPU res: sum of res 64391.5 error from CPU 36700 0 number of res larger than 0.01
+
+GPU sum_rank: 1.1632e+07 GPU sum_res: 64391.5 GPU total mass: 1.20613e+07
+Print the first 20 rank: 
+host:
+1.10259 0.738649 1.14261 0.853864 0.868729 1.19502 1.23931 0.495846 0.879901 1.09943 1.10562 1.11428 1.00788 1.19062 0.849394 0.927831 1.40198 0.541048 0.527668 1.32971 
+device:
+1.10098 0.743387 1.1332 0.85408 0.868802 1.19796 1.23446 0.494153 0.876787 1.09281 1.09819 1.10726 0.999952 1.19098 0.850603 0.92236 1.38965 0.53908 0.525982 1.34198 
+[PE 1]
+CPU total processed node 239999466
+CPU total mass: 2.3886e+07 CPU total res: 126915 CPU total rank: 2.30399e+07
+max rank differenc: 0.0557189
+GPU rank: sum of rank 1.16348e+07 error from CPU 58978.4
+GPU res: sum of res 64246.7 error from CPU 37183.9 0 number of res larger than 0.01
+
+GPU sum_rank: 1.16348e+07 GPU sum_res: 64246.7 GPU total mass: 1.20632e+07
+Print the first 20 rank: 
+host:
+0.840012 1.2299 1.22774 1.15132 1.07843 0.797316 1.24149 0.495552 1.27008 0.896926 1.05944 1.51062 0.939009 1.19735 1.05925 1.10217 0.518618 1.03917 1.09003 1.04033 
+device:
+0.843294 1.23517 1.22731 1.16232 1.08257 0.806868 1.24968 0.500307 1.27943 0.90046 1.05787 1.49631 0.933937 1.19143 1.06425 1.0996 0.525402 1.04073 1.09893 1.04152 
+[PE 0]
+End program 0
+[PE 1]
+End program 1
+PR destructor is called
+PR destructor is called
+yuxin420@daisy:~/9-GPU-Runtime/pr$ $MPI_HOME/bin/mpirun -n 3 ./test_pr_queue -file /data/yuxin/3_graph_dataset/road_usa.csr -v 1 -check 1 -iter 40 -rounds 10 -partition 3
+graph /data/yuxin/3_graph_dataset/road_usa.csr partition scheme 3 iteration 40 num worklist 1 rounds 10 FETCH SIZE 512 iteration ratio 0
+PE: 0 deviceCount 4 set on device 0 device name NVIDIA Tesla V100-DGXS-32GB
+PE: 1 deviceCount 4 set on device 1 device name NVIDIA Tesla V100-DGXS-32GB
+PE: 2 deviceCount 4 set on device 2 device name NVIDIA Tesla V100-DGXS-32GB
+Vertices: 23947347 Edges: 57708624
+didn't find file: /data/yuxin/3_graph_dataset/road_usa_3_metis_mega.txt
+didn't find file: /data/yuxin/3_graph_dataset/road_usa_3_metis_mega.txt
+didn't find file: /data/yuxin/3_graph_dataset/road_usa_3_metis_mega.txt
+Start Metis partition
+Start Metis partition
+Start Metis partition
+Metis partition done
+Metis partition done
+Metis partition done
+Metis use 64bits, export partition data to file /data/yuxin/3_graph_dataset/road_usa_3_metis_mega.txt
+[PE 0]
+Vertices: 7982463 Edges: 19010173
+[PE 1]
+Vertices: 7982458 Edges: 19404037
+[PE 2]
+Vertices: 7982426 Edges: 19294414
+Partition table:
+0  7982463  15964921  23947347  
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     2	             1	         0	           0	                  1	        0
+            1	     2	             1	         1	           1	                  1	        1
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     2	       0	send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     0	             0	         1	           0	                  0	        0
+            1	     0	             0	         2	           1	                         0	        1
+            1	     2	       1	                         1	        1
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     1	             0	         0	           0	                  0                  0	        1
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     0	       1	                         0	        0
+            1	     0	       2	                         1	        0
+[PE 0]
+number of PEs in the system: 3
+	        0
+            1	     1	             1	         2	           1	                  1	        1
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     1	       0	                         0	        0
+            1	     1	       2	                         1	        1
+my PE id in the system: 0
+number of queue pairs per PE : 1
+number of queue paris in total: 2
+capacity of each send/recv queue : 31929852
+[PE 1]
+number of PEs in the system: 3
+my PE id in the system: 1
+number of queue pairs per PE : 1
+number of queue paris in total: 2
+capacity of each send/recv queue : 31929852
+[PE 2]
+number of PEs in the system: 3
+my PE id in the system: 2
+number of queue pairs per PE : 1
+number of queue paris in total: 2
+capacity of each send/recv queue : 31929852
+[PE 0]
+PE 0 Clear! send and remote processed: 0
+PE 0 Clear! send and remote processed: 0
+[PE 1]
+PE 1 Clear! send and remote processed: 0
+PE 1 Clear! send and remote processed: 0
+[PE 2]
+PE 2 Clear! send and remote processed: 0
+PE 2 Clear! send and remote processed: 0
+pe 0, start 0, end 7982463, nodes 7982463, real_size 249452, size_ifact 249472
+pe 1, start 7982463, end 15964921, nodes 7982458, real_size 249453, size_ifact 249472
+pe 2, start 15964921, end 23947347, nodes 7982426, real_size 249452, size_ifact 249472
+[PE 0]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 0 	  23947347 	         0 	 7982463 	 7982463 	 127719408 	       1 	      40 		 0.8500 	 0.0100
+[PE 1]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 1 	  23947347 	   7982463 	 15964921 	 7982458 	 127719328 	       1 	      40 		 0.8500 	 0.0100
+[PE 2]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 2 	  23947347 	  15964921 	 23947347 	 7982426 	 127718816 	       1 	      40 		 0.8500 	 0.0100
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 7982463	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 7982458	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 7982426	start: 0
+[PE 0]
+time    50.37,       41 kernels
+[PE 1]
+time    51.09,       41 kernels
+[PE 2]
+time    51.04,       39 kernels
+[PE 0]
+end:    98448703	start:  98448703	size:         0
+[PE 1]
+end:    102491346	start:  102491346	size:         0
+[PE 2]
+end:    97475088	start:  97475088	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 98448703	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 102491346	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 97475088	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 7982463	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 7982458	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 7982426	start: 0
+[PE 0]
+time    50.25,       40 kernels
+[PE 1]
+time    51.27,       42 kernels
+[PE 2]
+time    51.52,       44 kernels
+[PE 0]
+end:    98447658	start:  98447658	size:         0
+[PE 1]
+end:    102470261	start:  102470261	size:         0
+[PE 2]
+end:    97463221	start:  97463221	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 98447658	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 102470261	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 97463221	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 7982463	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 7982458	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 7982426	start: 0
+[PE 0]
+time    50.21,       39 kernels
+[PE 1]
+time    51.36,       43 kernels
+[PE 2]
+time    51.34,       43 kernels
+[PE 0]
+end:    98432276	start:  98432276	size:         0
+[PE 1]
+end:    102468871	start:  102468871	size:         0
+[PE 2]
+end:    97465959	start:  97465959	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 98432276	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 102468871	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 97465959	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 7982463	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 7982458	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 7982426	start: 0
+[PE 0]
+time    50.91,       47 kernels
+[PE 1]
+time    51.44,       43 kernels
+[PE 2]
+time    51.37,       43 kernels
+[PE 0]
+end:    98421204	start:  98421204	size:         0
+[PE 1]
+end:    102469979	start:  102469979	size:         0
+[PE 2]
+end:    97464743	start:  97464743	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 98421204	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 102469979	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 97464743	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 7982463	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 7982458	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 7982426	start: 0
+[PE 0]
+time    50.48,       41 kernels
+[PE 1]
+time    51.13,       41 kernels
+[PE 2]
+time    51.13,       40 kernels
+[PE 0]
+end:    98438992	start:  98438992	size:         0
+[PE 1]
+end:    102467987	start:  102467987	size:         0
+[PE 2]
+end:    97473377	start:  97473377	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 98438992	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 102467987	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 97473377	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 7982463	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 7982458	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 7982426	start: 0
+[PE 0]
+time    50.61,       44 kernels
+[PE 1]
+time    51.36,       43 kernels
+[PE 2]
+time    51.17,       41 kernels
+[PE 0]
+end:    98421816	start:  98421816	size:         0
+[PE 1]
+end:    102484686	start:  102484686	size:         0
+[PE 2]
+end:    97458831	start:  97458831	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 98421816	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 102484686	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 97458831	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 7982463	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 7982458	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 7982426	start: 0
+[PE 0]
+time    50.34,       41 kernels
+[PE 1]
+time    51.02,       40 kernels
+[PE 2]
+time    51.63,       45 kernels
+[PE 0]
+end:    98443071	start:  98443071	size:         0
+[PE 1]
+end:    102477137	start:  102477137	size:         0
+[PE 2]
+end:    97459700	start:  97459700	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 98443071	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 102477137	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 97459700	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 7982463	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 7982458	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 7982426	start: 0
+[PE 0]
+time    50.22,       40 kernels
+[PE 1]
+time    51.18,       41 kernels
+[PE 2]
+time    51.29,       42 kernels
+[PE 0]
+end:    98432940	start:  98432940	size:         0
+[PE 1]
+end:    102464487	start:  102464487	size:         0
+[PE 2]
+end:    97455040	start:  97455040	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 98432940	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 102464487	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 97455040	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 7982463	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 7982458	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 7982426	start: 0
+[PE 0]
+time    50.55,       43 kernels
+[PE 1]
+time    51.20,       41 kernels
+[PE 2]
+time    51.07,       39 kernels
+[PE 0]
+end:    98441512	start:  98441512	size:         0
+[PE 1]
+end:    102474500	start:  102474500	size:         0
+[PE 2]
+end:    97461009	start:  97461009	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 98441512	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 102474500	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 97461009	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 7982463	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 7982458	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 7982426	start: 0
+[PE 0]
+time    50.32,       41 kernels
+[PE 1]
+time    51.48,       45 kernels
+[PE 2]
+time    51.25,       42 kernels
+[PE 0]
+end:    98413798	start:  98413798	size:         0
+[PE 1]
+end:    102474624	start:  102474624	size:         0
+[PE 2]
+end:    97474366	start:  97474366	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 127719408, end: 98413798	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 127719328, end: 102474624	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 127718816, end: 97474366	start: 0
+[PE 0]
+ave time:    50.42
+[PE 1]
+ave time:    51.25
+[PE 2]
+ave time:    51.28
+[PE 0]
+ave workload: 98434197
+[PE 1]
+ave workload: 102474387
+[PE 2]
+ave workload: 97465133
+[PE 0]
+CPU total processed node 239999466
+CPU total mass: 2.3886e+07 CPU total res: 126915 CPU total rank: 2.30399e+07
+max rank differenc: 0.0667331
+GPU rank: sum of rank 7.73142e+06 error from CPU 39825.8
+GPU res: sum of res 43159.7 error from CPU 24529.2 0 number of res larger than 0.01
+
+GPU sum_rank: 7.73142e+06 GPU sum_res: 43159.7 GPU total mass: 8.01915e+06
+Print the first 20 rank: 
+host:
+1.10259 0.738649 1.14261 0.853864 0.868729 1.19502 1.23931 0.495846 0.879901 1.09943 1.10562 1.11428 1.00788 1.19062 0.849394 0.927831 1.40198 0.541048 0.527668 1.32971 
+device:
+1.09574 0.742404 1.13322 0.853557 0.867884 1.19749 1.23736 0.496949 0.876925 1.09275 1.0981 1.10715 1.00873 1.19073 0.850597 0.919751 1.39265 0.540532 0.524993 1.33507 
+[PE 1]
+CPU total processed node 239999466
+CPU total mass: 2.3886e+07 CPU total res: 126915 CPU total rank: 2.30399e+07
+max rank differenc: 0.061126
+GPU rank: sum of rank 7.76243e+06 error from CPU 39570.1
+GPU res: sum of res 43082.1 error from CPU 25276.1 0 number of res larger than 0.01
+
+GPU sum_rank: 7.76243e+06 GPU sum_res: 43082.1 GPU total mass: 8.04965e+06
+Print the first 20 rank: 
+host:
+0.840012 1.2299 1.22774 1.15132 1.07843 0.797316 1.24149 0.495552 1.27008 0.896926 1.05944 1.51062 0.939009 1.19735 1.05925 1.10217 0.518618 1.03917 1.09003 1.04033 
+device:
+0.838898 1.2292 1.23816 1.15528 1.08685 0.809348 1.25265 0.501332 1.27504 0.901859 1.07018 1.51844 0.921363 1.20097 1.06226 1.09532 0.52204 1.03877 1.08646 1.04018 
+[PE 2]
+CPU total processed node 239999466
+CPU total mass: 2.3886e+07 CPU total res: 126915 CPU total rank: 2.30399e+07
+max rank differenc: 0.0563956
+GPU rank: sum of rank 7.72386e+06 error from CPU 39379.4
+GPU res: sum of res 42989.7 error from CPU 24768.4 0 number of res larger than 0.01
+
+GPU sum_rank: 7.72386e+06 GPU sum_res: 42989.7 GPU total mass: 8.01045e+06
+Print the first 20 rank: 
+host:
+0.593881 1.06502 1.38037 0.940768 1.29331 1.34244 0.534311 0.940386 0.982547 1.20766 0.53502 0.908001 1.33189 1.1224 1.29304 0.539541 1.39534 0.546598 1.01671 1.21369 
+device:
+0.605528 1.08287 1.38695 0.937248 1.28874 1.35187 0.539184 0.945682 0.997745 1.20806 0.535451 0.910679 1.33083 1.11835 1.29269 0.530494 1.37374 0.554361 1.01926 1.21203 
+[PE 0]
+End program 0
+[PE 1]
+End program 1
+[PE 2]
+End program 2
+PR destructor is called
+PR destructor is called
+PR destructor is called
+yuxin420@daisy:~/9-GPU-Runtime/pr$ $MPI_HOME/bin/mpirun -n 4 ./test_pr_queue -file /data/yuxin/3_graph_dataset/road_usa.csr -v 1 -check 1 -iter 40 -rounds 10 -partition 3
+PE: 2 deviceCount 4 set on device 2 device name NVIDIA Tesla V100-DGXS-32GB
+PE: 1 deviceCount 4 set on device 1 device name NVIDIA Tesla V100-DGXS-32GB
+graph /data/yuxin/3_graph_dataset/road_usa.csr partition scheme 3 iteration 40 num worklist 1 rounds 10 FETCH SIZE 512 iteration ratio 0
+PE: 0 deviceCount 4 set on device 0 device name NVIDIA Tesla V100-DGXS-32GB
+PE: 3 deviceCount 4 set on device 3 device name NVIDIA Tesla V100-DGXS-32GB
+Vertices: 23947347 Edges: 57708624
+didn't find file: /data/yuxin/3_graph_dataset/road_usa_4_metis_mega.txt
+didn't find file: /data/yuxin/3_graph_dataset/road_usa_4_metis_mega.txt
+didn't find file: /data/yuxin/3_graph_dataset/road_usa_4_metis_mega.txt
+didn't find file: /data/yuxin/3_graph_dataset/road_usa_4_metis_mega.txt
+Start Metis partition
+Start Metis partition
+Start Metis partition
+Start Metis partition
+Metis partition done
+Metis partition done
+Metis use 64bits, export partition data to file /data/yuxin/3_graph_dataset/road_usa_4_metis_mega.txt
+Metis partition done
+Metis partition done
+[PE 0]
+Vertices: 5986837 Edges: 14544682
+[PE 1]
+Vertices: 5986836 Edges: 14431859
+[PE 2]
+Vertices: 5986837 Edges: 13967593
+[PE 3]
+Vertices: 5986837 Edges: 14764490
+Partition table:
+0  5986837  11973673  17960510  23947347  
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     3	             2	         0	           0	                  2	        0
+            1	     3	             2	         1	           1	                  2	        1
+            2	     3	             2	         2	           2	                  2	        2
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     2	             1	         0	           0	                  1	        0
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     3	       0	                         0	        2
+            1	     3	       1	                         1	        2
+            2	     3	       2	                         2	        2
+            1	     2	             1	         1	           1	                  1	        1
+            2	     2	             2	         3	           2	                  2	        2
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     2	       0	                         0	        1
+            1	     2	       1	                         1	        1
+            2	     2	       3	                         2	        2
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     1	             0	         0	           0	                  0	        0
+            1	     1	             1	         2	           1	                  1	        1
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     0	             0	         1	           0	                  0	        0
+            1	     0	             0	         2	           1	                  0	        1
+            2	     0	             0	         3	           2	                  0	        2
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     0	       1	                         0	        0
+            1	     0	       2	                         1	        0
+            2	     0	       3	                         2	        0
+            2	     1	             1	         3	           2	                  1	        2
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     1	       0	                         0	        0
+            1	     1	       2	                         1	        1
+            2	     1	       3	                         2	        1
+[PE 0]
+number of PEs in the system: 4
+my PE id in the system: 0
+number of queue pairs per PE : 1
+number of queue paris in total: 3
+capacity of each send/recv queue : 23947348
+[PE 1]
+number of PEs in the system: 4
+my PE id in the system: 1
+number of queue pairs per PE : 1
+number of queue paris in total: 3
+capacity of each send/recv queue : 23947348
+[PE 2]
+number of PEs in the system: 4
+my PE id in the system: 2
+number of queue pairs per PE : 1
+number of queue paris in total: 3
+capacity of each send/recv queue : 23947348
+[PE 3]
+number of PEs in the system: 4
+my PE id in the system: 3
+number of queue pairs per PE : 1
+number of queue paris in total: 3
+capacity of each send/recv queue : 23947348
+[PE 0]
+PE 0 Clear! send and remote processed: 0
+PE 0 Clear! send and remote processed: 0
+PE 0 Clear! send and remote processed: 0
+[PE 1]
+PE 1 Clear! send and remote processed: 0
+PE 1 Clear! send and remote processed: 0
+PE 1 Clear! send and remote processed: 0
+[PE 2]
+PE 2 Clear! send and remote processed: 0
+PE 2 Clear! send and remote processed: 0
+PE 2 Clear! send and remote processed: 0
+[PE 3]
+PE 3 Clear! send and remote processed: 0
+PE 3 Clear! send and remote processed: 0
+PE 3 Clear! send and remote processed: 0
+pe 1, start 5986837, end 11973673, nodes 5986836, real_size 187090, size_ifact 187104
+pe 0, start 0, end 5986837, nodes 5986837, real_size 187089, size_ifact 187104
+pe 2, start 11973673, end 17960510, nodes 5986837, real_size 187089, size_ifact 187104
+pe 3, start 17960510, end 23947347, nodes 5986837, real_size 187090, size_ifact 187104
+[PE 0]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 0 	  23947347 	         0 	 5986837 	 5986837 	 95789392 	       1 	      40 		 0.8500 	 0.0100
+[PE 1]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 1 	  23947347 	   5986837 	 11973673 	 5986836 	 95789376 	       1 	      40 		 0.8500 	 0.0100
+[PE 2]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 2 	  23947347 	  11973673 	 17960510 	 5986837 	 95789392 	       1 	      40 		 0.8500 	 0.0100
+[PE 3]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 3 	  23947347 	  17960510 	 23947347 	 5986837 	 95789392 	       1 	      40 		 0.8500 	 0.0100
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 5986836	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 0]
+time    37.82,       51 kernels
+[PE 1]
+time    38.70,       43 kernels
+[PE 2]
+time    38.82,       41 kernels
+[PE 3]
+time    38.15,       41 kernels
+[PE 0]
+end:    77500738	start:  77500738	size:         0
+[PE 1]
+end:    72440915	start:  72440915	size:         0
+[PE 2]
+end:    74157037	start:  74157037	size:         0
+[PE 3]
+end:    75314528	start:  75314528	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 77500738	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 72440915	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 74157037	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 75314528	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 5986836	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 0]
+time    36.70,       42 kernels
+[PE 1]
+time    38.44,       40 kernels
+[PE 2]
+time    38.75,       40 kernels
+[PE 3]
+time    38.19,       42 kernels
+[PE 0]
+end:    77507843	start:  77507843	size:         0
+[PE 1]
+end:    72436089	start:  72436089	size:         0
+[PE 2]
+end:    74160512	start:  74160512	size:         0
+[PE 3]
+end:    75313099	start:  75313099	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 77507843	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 72436089	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 74160512	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 75313099	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 5986836	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 0]
+time    37.00,       45 kernels
+[PE 1]
+time    38.62,       42 kernels
+[PE 2]
+time    39.05,       44 kernels
+[PE 3]
+time    38.17,       41 kernels
+[PE 0]
+end:    77504763	start:  77504763	size:         0
+[PE 1]
+end:    72440109	start:  72440109	size:         0
+[PE 2]
+end:    74158345	start:  74158345	size:         0
+[PE 3]
+end:    75324066	start:  75324066	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 77504763	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 72440109	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 74158345	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 75324066	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 5986836	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 0]
+time    37.34,       47 kernels
+[PE 1]
+time    38.50,       41 kernels
+[PE 2]
+time    38.76,       40 kernels
+[PE 3]
+time    38.37,       45 kernels
+[PE 0]
+end:    77500735	start:  77500735	size:         0
+[PE 1]
+end:    72433044	start:  72433044	size:         0
+[PE 2]
+end:    74150336	start:  74150336	size:         0
+[PE 3]
+end:    75322557	start:  75322557	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 77500735	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 72433044	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 74150336	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 75322557	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 5986836	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 0]
+time    36.59,       41 kernels
+[PE 1]
+time    38.73,       44 kernels
+[PE 2]
+time    38.80,       41 kernels
+[PE 3]
+time    38.13,       42 kernels
+[PE 0]
+end:    77501185	start:  77501185	size:         0
+[PE 1]
+end:    72440259	start:  72440259	size:         0
+[PE 2]
+end:    74167791	start:  74167791	size:         0
+[PE 3]
+end:    75320573	start:  75320573	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 77501185	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 72440259	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 74167791	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 75320573	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 5986836	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 0]
+time    37.27,       49 kernels
+[PE 1]
+time    38.56,       42 kernels
+[PE 2]
+time    38.87,       42 kernels
+[PE 3]
+time    38.22,       42 kernels
+[PE 0]
+end:    77492980	start:  77492980	size:         0
+[PE 1]
+end:    72436157	start:  72436157	size:         0
+[PE 2]
+end:    74161974	start:  74161974	size:         0
+[PE 3]
+end:    75320507	start:  75320507	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 77492980	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 72436157	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 74161974	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 75320507	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 5986836	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 0]
+time    36.73,       43 kernels
+[PE 1]
+time    38.52,       41 kernels
+[PE 2]
+time    39.11,       43 kernels
+[PE 3]
+time    38.41,       44 kernels
+[PE 0]
+end:    77504688	start:  77504688	size:         0
+[PE 1]
+end:    72438795	start:  72438795	size:         0
+[PE 2]
+end:    74156292	start:  74156292	size:         0
+[PE 3]
+end:    75322042	start:  75322042	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 77504688	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 72438795	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 74156292	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 75322042	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 5986836	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 0]
+time    37.69,       49 kernels
+[PE 1]
+time    38.86,       46 kernels
+[PE 2]
+time    38.71,       40 kernels
+[PE 3]
+time    38.16,       41 kernels
+[PE 0]
+end:    77499388	start:  77499388	size:         0
+[PE 1]
+end:    72429678	start:  72429678	size:         0
+[PE 2]
+end:    74160756	start:  74160756	size:         0
+[PE 3]
+end:    75323805	start:  75323805	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 77499388	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 72429678	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 74160756	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 75323805	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 5986836	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 0]
+time    36.90,       45 kernels
+[PE 1]
+time    38.31,       39 kernels
+[PE 2]
+time    39.09,       43 kernels
+[PE 3]
+time    38.27,       43 kernels
+[PE 0]
+end:    77512424	start:  77512424	size:         0
+[PE 1]
+end:    72440521	start:  72440521	size:         0
+[PE 2]
+end:    74157691	start:  74157691	size:         0
+[PE 3]
+end:    75320067	start:  75320067	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 77512424	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 72440521	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 74157691	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 75320067	start: 0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 5986836	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 5986837	start: 0
+[PE 0]
+time    37.78,       50 kernels
+[PE 1]
+time    38.83,       45 kernels
+[PE 2]
+time    39.02,       43 kernels
+[PE 3]
+time    38.40,       44 kernels
+[PE 0]
+end:    77526749	start:  77526749	size:         0
+[PE 1]
+end:    72437206	start:  72437206	size:         0
+[PE 2]
+end:    74156868	start:  74156868	size:         0
+[PE 3]
+end:    75324678	start:  75324678	size:         0
+[PE 0]
+0th queue:
+Queue 0, capacity: 95789392, end: 77526749	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 95789376, end: 72437206	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 95789392, end: 74156868	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 95789392, end: 75324678	start: 0
+[PE 0]
+ave time:    37.18
+[PE 1]
+ave time:    38.61
+[PE 2]
+ave time:    38.90
+[PE 3]
+ave time:    38.25
+[PE 0]
+ave workload: 77505149
+[PE 1]
+ave workload: 72437277
+[PE 2]
+ave workload: 74158760
+[PE 3]
+ave workload: 75320592
+[PE 0]
+CPU total processed node 239999466
+CPU total mass: 2.3886e+07 CPU total res: 126915 CPU total rank: 2.30399e+07
+max rank differenc: 0.0535744
+GPU rank: sum of rank 5.7954e+06 error from CPU 29751.3
+GPU res: sum of res 32472.5 error from CPU 19113.3 0 number of res larger than 0.01
+
+GPU sum_rank: 5.7954e+06 GPU sum_res: 32472.5 GPU total mass: 6.01189e+06
+Print the first 20 rank: 
+host:
+0.840012 1.2299 1.22774 1.15132 1.07843 0.797316 1.24149 0.495552 1.27008 0.896926 1.05944 1.51062 0.939009 1.19735 1.05925 1.10217 0.518618 1.03917 1.09003 1.04033 
+device:
+0.841514 1.23468 1.23077 1.15024 1.08109 0.806548 1.24921 0.500148 1.2697 0.900086 1.06801 1.50862 0.933989 1.19951 1.05446 1.08706 0.525454 1.04161 1.09946 1.04192 
+[PE 1]
+CPU total processed node 239999466
+CPU total mass: 2.3886e+07 CPU total res: 126915 CPU total rank: 2.30399e+07
+max rank differenc: 0.0616529
+GPU rank: sum of rank 5.77601e+06 error from CPU 29623.6
+GPU res: sum of res 32364.2 error from CPU 18581.4 0 number of res larger than 0.01
+
+GPU sum_rank: 5.77601e+06 GPU sum_res: 32364.2 GPU total mass: 5.99177e+06
+Print the first 20 rank: 
+host:
+0.9141 1.28899 1.14974 1.22187 1.1512 1.12277 0.491566 1.62103 1.35155 0.843551 0.545304 1.47634 0.579864 0.878521 1.35547 0.557994 0.577224 0.558629 1.47686 0.593991 
+device:
+0.914112 1.2859 1.1384 1.22216 1.14996 1.11129 0.492846 1.61212 1.3344 0.842778 0.545895 1.47933 0.568616 0.865028 1.34339 0.560432 0.578726 0.55944 1.47953 0.595167 
+[PE 2]
+CPU total processed node 239999466
+CPU total mass: 2.3886e+07 CPU total res: 126915 CPU total rank: 2.30399e+07
+max rank differenc: 0.0567626
+GPU rank: sum of rank 5.77845e+06 error from CPU 30302.3
+GPU res: sum of res 32669.1 error from CPU 18283.2 0 number of res larger than 0.01
+
+GPU sum_rank: 5.77845e+06 GPU sum_res: 32669.1 GPU total mass: 5.99625e+06
+Print the first 20 rank: 
+host:
+1.10259 0.738649 1.14261 0.853864 0.868729 1.19502 1.23931 0.495846 0.879901 1.09943 1.10562 1.11428 1.00788 1.19062 0.849394 0.927831 1.40198 0.541048 0.527668 1.32971 
+device:
+1.09581 0.741748 1.14745 0.85743 0.86765 1.19734 1.23565 0.494706 0.874268 1.10342 1.10976 1.11756 1.0028 1.19046 0.849871 0.930942 1.3923 0.540297 0.526101 1.34197 
+[PE 3]
+CPU total processed node 239999466
+CPU total mass: 2.3886e+07 CPU total res: 126915 CPU total rank: 2.30399e+07
+max rank differenc: 0.0570643
+GPU rank: sum of rank 5.78798e+06 error from CPU 29500.6
+GPU res: sum of res 32368.4 error from CPU 18805.5 0 number of res larger than 0.01
+
+GPU sum_rank: 5.78798e+06 GPU sum_res: 32368.4 GPU total mass: 6.00377e+06
+Print the first 20 rank: 
+host:
+1.44127 0.882502 0.841649 0.858667 0.893523 1.30181 0.996116 0.564223 0.52672 0.866523 1.01639 0.821613 1.00769 1.22073 0.86243 1.22872 0.490104 1.26512 1.30227 0.498531 
+device:
+1.44076 0.884493 0.842367 0.84931 0.895877 1.30287 0.999188 0.563209 0.526932 0.87809 0.99949 0.826948 0.998779 1.22501 0.857446 1.22345 0.493083 1.27329 1.30682 0.503295 
+[PE 0]
+End program 0
+[PE 1]
+End program 1
+[PE 2]
+End program 2
+[PE 3]
+End program 3
+PR destructor is called
+PR destructor is called
+PR destructor is called
+PR destructor is called

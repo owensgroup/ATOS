@@ -1,0 +1,1383 @@
+yuxin420@daisy:~/9-GPU-Runtime/bfs$ $MPI_HOME/bin/mpirun -n 2 ./test_bfs_queue_persist -file /data/yuxin/3_graph_dataset/road_usa.csr  -v 1 -partition 3 -iter 12000 -ratio 1.1 -rounds 10 -check 1
+graph /data/yuxin/3_graph_dataset/road_usa.csr partition scheme 3 iteration 12000 source 0 num worklist 1 rounds 10 BATCH SIZE (bytes) 8192 FETCH SIZE 128 iteration ratio 1.1
+PE: 0 deviceCount 4 set on device 0 device name NVIDIA Tesla V100-DGXS-32GB
+PE: 1 deviceCount 4 set on device 1 device name NVIDIA Tesla V100-DGXS-32GB
+Vertices: 23947347 Edges: 57708624
+read metis file: /data/yuxin/3_graph_dataset/road_usa_2_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/road_usa_2_metis_mega.txt
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+[PE 0]
+Vertices: 11973672 Edges: 28743554
+[PE 1]
+Vertices: 11973675 Edges: 28965070
+Partition table:
+0  11973672  23947347  
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     0	             0	         1	           0	                  0	        0
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     0	       1	                         0	        0
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     1	             0	         0	           0	                  0	        0
+[PE 0]
+number of PEs in the system: 2
+my PE id in the system: 0
+number of queue pairs per PE : 1
+number of queue paris in total: 1
+capacity of each send/recv queue : 23947350
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     1	       0	                         0	        0
+[PE 1]
+number of PEs in the system: 2
+my PE id in the system: 1
+number of queue pairs per PE : 1
+number of queue paris in total: 1
+capacity of each send/recv queue : 23947350
+[PE 0]
+PE 0 Clear! send and remote processed: 0
+[PE 1]
+PE 1 Clear! send and remote processed: 0
+[PE 0]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 0 	  23947347 	         0 	 11973672 	 11973672 	 35921016 	       1 	   12000
+[PE 1]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 1 	  23947347 	  11973672 	 23947347 	 11973675 	 35921025 	       1 	   13200
+PE 0, new_source 0
+PE 1, new_source 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+[PE 0]
+time    52.93
+[PE 1]
+time    58.23
+[PE 0]
+pe 0 receive:     76
+[PE 1]
+pe 1 receive:    257
+[PE 0]
+0th queue:
+Queue 0, capacity: 35921016, end=start: 13868844
+[PE 1]
+0th queue:
+Queue 0, capacity: 35921025, end=start: 16133424
+[PE 0]
+PE 0 send_alloc_end: 257 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 76 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+[PE 0]
+time    52.46
+[PE 1]
+time    57.25
+[PE 0]
+pe 0 receive:     62
+[PE 1]
+pe 1 receive:    192
+[PE 0]
+0th queue:
+Queue 0, capacity: 35921016, end=start: 13187139
+[PE 1]
+0th queue:
+Queue 0, capacity: 35921025, end=start: 13735205
+[PE 0]
+PE 0 send_alloc_end: 192 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 62 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+[PE 0]
+time    52.42
+[PE 1]
+time    56.94
+[PE 0]
+pe 0 receive:     52
+[PE 1]
+pe 1 receive:    192
+[PE 0]
+0th queue:
+Queue 0, capacity: 35921016, end=start: 12864278
+[PE 1]
+0th queue:
+Queue 0, capacity: 35921025, end: 13202385	start: 13202280
+[PE 0]
+PE 0 send_alloc_end: 192 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 52 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+[PE 0]
+time    52.40
+[PE 1]
+time    57.01
+[PE 0]
+pe 0 receive:     52
+[PE 1]
+pe 1 receive:    172
+[PE 0]
+0th queue:
+Queue 0, capacity: 35921016, end=start: 12828939
+[PE 1]
+0th queue:
+Queue 0, capacity: 35921025, end: 13187363	start: 13187343
+[PE 0]
+PE 0 send_alloc_end: 172 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 52 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+[PE 0]
+time    52.34
+[PE 1]
+time    57.43
+[PE 0]
+pe 0 receive:     50
+[PE 1]
+pe 1 receive:    174
+[PE 0]
+0th queue:
+Queue 0, capacity: 35921016, end=start: 12758247
+[PE 1]
+0th queue:
+Queue 0, capacity: 35921025, end=start: 14007751
+[PE 0]
+PE 0 send_alloc_end: 174 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 50 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+[PE 0]
+time    52.31
+[PE 1]
+time    59.63
+[PE 0]
+pe 0 receive:     53
+[PE 1]
+pe 1 receive:    165
+[PE 0]
+0th queue:
+Queue 0, capacity: 35921016, end=start: 12864499
+[PE 1]
+0th queue:
+Queue 0, capacity: 35921025, end=start: 19172610
+[PE 0]
+PE 0 send_alloc_end: 165 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 53 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+[PE 0]
+time    52.84
+[PE 1]
+time    57.32
+[PE 0]
+pe 0 receive:     47
+[PE 1]
+pe 1 receive:    177
+[PE 0]
+0th queue:
+Queue 0, capacity: 35921016, end=start: 13968311
+[PE 1]
+0th queue:
+Queue 0, capacity: 35921025, end=start: 13877729
+[PE 0]
+PE 0 send_alloc_end: 177 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 47 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+[PE 0]
+time    52.18
+[PE 1]
+time    57.07
+[PE 0]
+pe 0 receive:     51
+[PE 1]
+pe 1 receive:    167
+[PE 0]
+0th queue:
+Queue 0, capacity: 35921016, end=start: 12579333
+[PE 1]
+0th queue:
+Queue 0, capacity: 35921025, end=start: 13165072
+[PE 0]
+PE 0 send_alloc_end: 167 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 51 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+[PE 0]
+time    52.46
+[PE 1]
+time    57.11
+[PE 0]
+pe 0 receive:     57
+[PE 1]
+pe 1 receive:    201
+[PE 0]
+0th queue:
+Queue 0, capacity: 35921016, end=start: 12853522
+[PE 1]
+0th queue:
+Queue 0, capacity: 35921025, end=start: 13496609
+[PE 0]
+PE 0 send_alloc_end: 201 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 57 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 24
+[PE 0]
+time    52.84
+[PE 1]
+time    57.30
+[PE 0]
+pe 0 receive:     59
+[PE 1]
+pe 1 receive:    200
+[PE 0]
+0th queue:
+Queue 0, capacity: 35921016, end=start: 14054956
+[PE 1]
+0th queue:
+Queue 0, capacity: 35921025, end=start: 13925206
+[PE 0]
+PE 0 send_alloc_end: 200 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 59 end: 0 remote processed: 0
+[PE 0]
+ave time:    52.52
+[PE 1]
+ave time:    57.53
+[PE 0]
+ave workload: 13182862
+[PE 1]
+ave workload: 14390525
+[PE 0]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 23947347
+Print the first 20 depth: 
+host:
+0 1 123 41 124 123 128 129 123 122 123 122 3 120 121 126 127 128 123 120 
+device:
+0 1 123 41 124 123 128 129 123 122 123 122 3 120 121 126 127 128 123 120 
+[PE 1]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 23947347
+Print the first 20 depth: 
+host:
+1228 1226 1148 1225 1226 1227 1227 1228 1227 1227 1223 1222 1223 1221 1220 1219 1222 1217 1221 1217 
+device:
+1228 1226 1148 1225 1226 1227 1227 1228 1227 1227 1223 1222 1223 1221 1220 1219 1222 1217 1221 1217 
+[PE 0]
+End program 0
+[PE 1]
+End program 1
+yuxin420@daisy:~/9-GPU-Runtime/bfs$ $MPI_HOME/bin/mpirun -n 3 ./test_bfs_queue_persist -file /data/yuxin/3_graph_dataset/road_usa.csr  -v 1 -partition 3 -iter 13000 -ratio 1.2 -rounds 10 -check 1
+PE: 2 deviceCount 4 set on device 2 device name NVIDIA Tesla V100-DGXS-32GB
+PE: 1 deviceCount 4 set on device 1 device name NVIDIA Tesla V100-DGXS-32GB
+graph /data/yuxin/3_graph_dataset/road_usa.csr partition scheme 3 iteration 13000 source 0 num worklist 1 rounds 10 BATCH SIZE (bytes) 8192 FETCH SIZE 128 iteration ratio 1.2
+PE: 0 deviceCount 4 set on device 0 device name NVIDIA Tesla V100-DGXS-32GB
+Vertices: 23947347 Edges: 57708624
+read metis file: /data/yuxin/3_graph_dataset/road_usa_3_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/road_usa_3_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/road_usa_3_metis_mega.txt
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+[PE 0]
+Vertices: 7982463 Edges: 19010173
+[PE 1]
+Vertices: 7982458 Edges: 19404037
+[PE 2]
+Vertices: 7982426 Edges: 19294414
+Partition table:
+0  7982463  15964921  23947347  
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     1	             0	         0	           0	                  0	        0
+            1	     1	             1	         2	           1	                  1	        1
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     1	       0	                         0	        0
+            1	     1	       2	                         1	        1
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     2	             1	         0	           0	                  1	        0
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     0	             0	         1	           0	                  0	        0
+            1	     2	             1	         1	           1	                  1	        1
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     2	       0	                         0	        1
+            1	     2	       1	                         1	        1
+            1	     0	             0	         2	           1	                  0	        1
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     0	       1	                         0	        0
+            1	     0	       2	                         1	        0
+[PE 0]
+number of PEs in the system: 3
+my PE id in the system: 0
+number of queue pairs per PE : 1
+number of queue paris in total: 2
+capacity of each send/recv queue : 15964926
+[PE 1]
+number of PEs in the system: 3
+my PE id in the system: 1
+number of queue pairs per PE : 1
+number of queue paris in total: 2
+capacity of each send/recv queue : 15964926
+[PE 2]
+number of PEs in the system: 3
+my PE id in the system: 2
+number of queue pairs per PE : 1
+number of queue paris in total: 2
+capacity of each send/recv queue : 15964926
+[PE 0]
+PE 0 Clear! send and remote processed: 0
+PE 0 Clear! send and remote processed: 0
+[PE 1]
+PE 1 Clear! send and remote processed: 0
+PE 1 Clear! send and remote processed: 0
+[PE 2]
+PE 2 Clear! send and remote processed: 0
+PE 2 Clear! send and remote processed: 0
+[PE 0]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 0 	  23947347 	         0 	 7982463 	 7982463 	 23947389 	       1 	   13000
+[PE 1]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 1 	  23947347 	   7982463 	 15964921 	 7982458 	 23947374 	       1 	   15600
+[PE 2]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 2 	  23947347 	  15964921 	 23947347 	 7982426 	 23947278 	       1 	   15600
+PE 0, new_source 0
+PE 1, new_source 0
+PE 2, new_source 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time    53.93
+[PE 1]
+time    62.26
+[PE 2]
+time    63.19
+[PE 0]
+pe 0 receive:    132      2
+[PE 1]
+pe 1 receive:    185     93
+[PE 2]
+pe 2 receive:     10    177
+[PE 0]
+0th queue:
+Queue 0, capacity: 23947389, end=start: 9111205
+[PE 1]
+0th queue:
+Queue 0, capacity: 23947374, end=start: 8528794
+[PE 2]
+0th queue:
+Queue 0, capacity: 23947278, end=start: 9049254
+[PE 0]
+PE 0 send_alloc_end: 185 end: 0 remote processed: 0
+PE 0 send_alloc_end: 10 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 132 end: 0 remote processed: 0
+PE 1 send_alloc_end: 177 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 2 end: 0 remote processed: 0
+PE 2 send_alloc_end: 93 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time    53.65
+[PE 1]
+time    63.41
+[PE 2]
+time    63.68
+[PE 0]
+pe 0 receive:    122      2
+[PE 1]
+pe 1 receive:    184    111
+[PE 2]
+pe 2 receive:     10    196
+[PE 0]
+0th queue:
+Queue 0, capacity: 23947389, end=start: 8605086
+[PE 1]
+0th queue:
+Queue 0, capacity: 23947374, end=start: 9971456
+[PE 2]
+0th queue:
+Queue 0, capacity: 23947278, end=start: 9834828
+[PE 0]
+PE 0 send_alloc_end: 184 end: 0 remote processed: 0
+PE 0 send_alloc_end: 10 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 122 end: 0 remote processed: 0
+PE 1 send_alloc_end: 196 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 2 end: 0 remote processed: 0
+PE 2 send_alloc_end: 111 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time    53.67
+[PE 1]
+time    63.06
+[PE 2]
+time    63.38
+[PE 0]
+pe 0 receive:    141      2
+[PE 1]
+pe 1 receive:    200    109
+[PE 2]
+pe 2 receive:     10    186
+[PE 0]
+0th queue:
+Queue 0, capacity: 23947389, end=start: 8589811
+[PE 1]
+0th queue:
+Queue 0, capacity: 23947374, end=start: 8959326
+[PE 2]
+0th queue:
+Queue 0, capacity: 23947278, end=start: 9225621
+[PE 0]
+PE 0 send_alloc_end: 200 end: 0 remote processed: 0
+PE 0 send_alloc_end: 10 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 141 end: 0 remote processed: 0
+PE 1 send_alloc_end: 186 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 2 end: 0 remote processed: 0
+PE 2 send_alloc_end: 109 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time    53.61
+[PE 1]
+time    62.78
+[PE 2]
+time    63.70
+[PE 0]
+pe 0 receive:    141      2
+[PE 1]
+pe 1 receive:    205    105
+[PE 2]
+pe 2 receive:      9    182
+[PE 0]
+0th queue:
+Queue 0, capacity: 23947389, end=start: 8569789
+[PE 1]
+0th queue:
+Queue 0, capacity: 23947374, end=start: 9126115
+[PE 2]
+0th queue:
+Queue 0, capacity: 23947278, end=start: 10089985
+[PE 0]
+PE 0 send_alloc_end: 205 end: 0 remote processed: 0
+PE 0 send_alloc_end: 9 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 141 end: 0 remote processed: 0
+PE 1 send_alloc_end: 182 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 2 end: 0 remote processed: 0
+PE 2 send_alloc_end: 105 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time    53.81
+[PE 1]
+time    62.65
+[PE 2]
+time    63.19
+[PE 0]
+pe 0 receive:    132      3
+[PE 1]
+pe 1 receive:    196    100
+[PE 2]
+pe 2 receive:     15    186
+[PE 0]
+0th queue:
+Queue 0, capacity: 23947389, end=start: 9072403
+[PE 1]
+0th queue:
+Queue 0, capacity: 23947374, end=start: 8613433
+[PE 2]
+0th queue:
+Queue 0, capacity: 23947278, end=start: 9067219
+[PE 0]
+PE 0 send_alloc_end: 196 end: 0 remote processed: 0
+PE 0 send_alloc_end: 15 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 132 end: 0 remote processed: 0
+PE 1 send_alloc_end: 186 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 3 end: 0 remote processed: 0
+PE 2 send_alloc_end: 100 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time    54.07
+[PE 1]
+time    63.67
+[PE 2]
+time    63.08
+[PE 0]
+pe 0 receive:    203      2
+[PE 1]
+pe 1 receive:    285     96
+[PE 2]
+pe 2 receive:     10    185
+[PE 0]
+0th queue:
+Queue 0, capacity: 23947389, end=start: 9619346
+[PE 1]
+0th queue:
+Queue 0, capacity: 23947374, end=start: 10804569
+[PE 2]
+0th queue:
+Queue 0, capacity: 23947278, end=start: 8821721
+[PE 0]
+PE 0 send_alloc_end: 285 end: 0 remote processed: 0
+PE 0 send_alloc_end: 10 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 203 end: 0 remote processed: 0
+PE 1 send_alloc_end: 185 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 2 end: 0 remote processed: 0
+PE 2 send_alloc_end: 96 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time    53.94
+[PE 1]
+time    63.47
+[PE 2]
+time    63.04
+[PE 0]
+pe 0 receive:    143      2
+[PE 1]
+pe 1 receive:    202     98
+[PE 2]
+pe 2 receive:     11    219
+[PE 0]
+0th queue:
+Queue 0, capacity: 23947389, end=start: 9242348
+[PE 1]
+0th queue:
+Queue 0, capacity: 23947374, end=start: 9825716
+[PE 2]
+0th queue:
+Queue 0, capacity: 23947278, end=start: 8661831
+[PE 0]
+PE 0 send_alloc_end: 202 end: 0 remote processed: 0
+PE 0 send_alloc_end: 11 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 143 end: 0 remote processed: 0
+PE 1 send_alloc_end: 219 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 2 end: 0 remote processed: 0
+PE 2 send_alloc_end: 98 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time    54.05
+[PE 1]
+time    63.21
+[PE 2]
+time    63.52
+[PE 0]
+pe 0 receive:    165      2
+[PE 1]
+pe 1 receive:    198    100
+[PE 2]
+pe 2 receive:      9    208
+[PE 0]
+0th queue:
+Queue 0, capacity: 23947389, end=start: 9380176
+[PE 1]
+0th queue:
+Queue 0, capacity: 23947374, end=start: 10021523
+[PE 2]
+0th queue:
+Queue 0, capacity: 23947278, end=start: 9642628
+[PE 0]
+PE 0 send_alloc_end: 198 end: 0 remote processed: 0
+PE 0 send_alloc_end: 9 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 165 end: 0 remote processed: 0
+PE 1 send_alloc_end: 208 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 2 end: 0 remote processed: 0
+PE 2 send_alloc_end: 100 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time    53.91
+[PE 1]
+time    63.21
+[PE 2]
+time    63.33
+[PE 0]
+pe 0 receive:    168      3
+[PE 1]
+pe 1 receive:    267    100
+[PE 2]
+pe 2 receive:     14    173
+[PE 0]
+0th queue:
+Queue 0, capacity: 23947389, end=start: 9237159
+[PE 1]
+0th queue:
+Queue 0, capacity: 23947374, end=start: 9125019
+[PE 2]
+0th queue:
+Queue 0, capacity: 23947278, end=start: 9269436
+[PE 0]
+PE 0 send_alloc_end: 267 end: 0 remote processed: 0
+PE 0 send_alloc_end: 14 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 168 end: 0 remote processed: 0
+PE 1 send_alloc_end: 173 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 3 end: 0 remote processed: 0
+PE 2 send_alloc_end: 100 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 36
+[PE 0]
+time    53.67
+[PE 1]
+time    62.99
+[PE 2]
+time    63.97
+[PE 0]
+pe 0 receive:    150      2
+[PE 1]
+pe 1 receive:    211    101
+[PE 2]
+pe 2 receive:      9    199
+[PE 0]
+0th queue:
+Queue 0, capacity: 23947389, end=start: 8603425
+[PE 1]
+0th queue:
+Queue 0, capacity: 23947374, end=start: 9107140
+[PE 2]
+0th queue:
+Queue 0, capacity: 23947278, end=start: 10564672
+[PE 0]
+PE 0 send_alloc_end: 211 end: 0 remote processed: 0
+PE 0 send_alloc_end: 9 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 150 end: 0 remote processed: 0
+PE 1 send_alloc_end: 199 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 2 end: 0 remote processed: 0
+PE 2 send_alloc_end: 101 end: 0 remote processed: 0
+[PE 0]
+ave time:    53.83
+[PE 1]
+ave time:    63.07
+[PE 2]
+ave time:    63.41
+[PE 0]
+ave workload: 9003226
+[PE 1]
+ave workload: 9408623
+[PE 2]
+ave workload: 9422921
+[PE 0]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 23947347
+Print the first 20 depth: 
+host:
+0 1 123 41 124 123 128 129 123 122 123 122 3 120 121 126 127 128 123 120 
+device:
+0 1 123 41 124 123 128 129 123 122 123 122 3 120 121 126 127 128 123 120 
+[PE 1]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 23947347
+Print the first 20 depth: 
+host:
+1228 1226 1148 1225 1226 1227 1227 1228 1227 1227 1223 1222 1223 1221 1220 1219 1222 1217 1221 1217 
+device:
+1228 1226 1148 1225 1226 1227 1227 1228 1227 1227 1223 1222 1223 1221 1220 1219 1222 1217 1221 1217 
+[PE 2]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 23947347
+Print the first 20 depth: 
+host:
+1122 1121 1113 1112 1107 1123 1109 1111 1120 1117 1114 1185 1185 1141 1175 1161 1160 1166 1200 1200 
+device:
+1122 1121 1113 1112 1107 1123 1109 1111 1120 1117 1114 1185 1185 1141 1175 1161 1160 1166 1200 1200 
+[PE 0]
+End program 0
+[PE 1]
+End program 1
+[PE 2]
+End program 2
+yuxin420@daisy:~/9-GPU-Runtime/bfs$ $MPI_HOME/bin/mpirun -n 4 ./test_bfs_queue_persist -file /data/yuxin/3_graph_dataset/road_usa.csr  -v 1 -partition 3 -iter 12000 -ratio 1.3 -rounds 10 -check 1
+PE: 1 deviceCount 4 set on device 1 device name NVIDIA Tesla V100-DGXS-32GB
+PE: 3 deviceCount 4 set on device 3 device name NVIDIA Tesla V100-DGXS-32GB
+graph /data/yuxin/3_graph_dataset/road_usa.csr partition scheme 3 iteration 12000 source 0 num worklist 1 rounds 10 BATCH SIZE (bytes) 8192 FETCH SIZE 128 iteration ratio 1.3
+PE: 0 deviceCount 4 set on device 0 device name NVIDIA Tesla V100-DGXS-32GB
+PE: 2 deviceCount 4 set on device 2 device name NVIDIA Tesla V100-DGXS-32GB
+Vertices: 23947347 Edges: 57708624
+read metis file: /data/yuxin/3_graph_dataset/road_usa_4_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/road_usa_4_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/road_usa_4_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/road_usa_4_metis_mega.txt
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+[PE 0]
+Vertices: 5986837 Edges: 14544682
+[PE 1]
+Vertices: 5986836 Edges: 14431859
+[PE 2]
+Vertices: 5986837 Edges: 13967593
+[PE 3]
+Vertices: 5986837 Edges: 14764490
+Partition table:
+0  5986837  11973673  17960510  23947347  
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     1	             0	         0	           0	                  0	        0
+            1	     1	             1	         2	           1	                  1	        1
+            2	     1	             1	         3	           2	                  1	        2
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     1	       0	                         0	        0
+            1	     1	       2	                         1	        1
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     3	             2	         0	           0	                  2	        0
+            2	     1	       3	                         2	        1
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     0	             0	         1	           0	                  0	        0
+            1	     0	             0	         2	           1	                  0	        1
+            2	     0	             0	         3	           2	                  0	        2
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            1	     3	             2	         1	           1	                  2	        1
+            2	     3	             2	         2	           2	                  2	        2
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     3	       0	                         0	        2
+            1	     3	       1	                         1	        2
+            2	     3	       2	                         2	        2
+            0	     0	       1	                         0	        0
+            1	     0	       2	                         1	        0
+            2	     0	       3	                         2	        0
+[PE 0]
+number of PEs in the system: 4
+my PE id in the system: 0
+number of queue pairs per PE : 1
+number of queue paris in total: 3
+capacity of each send/recv queue : 11973674
+send_queue_id	 my_pe	 recv_queue_id	 target_pe	 counters_id	 recv_remote_end_id	 send_read_remote_processed_id
+            0	     2	             1	         0	           0	                  1	        0
+            1	     2	             1	         1	           1	                  1	        1
+            2	     2	             2	         3	           2	                  2	        2
+recv_queue_id	 my_pe	 from_pe	 recv_read_local_rq_end_id	 recv_write_remote_myprocessed_id
+            0	     2	       0	                         0	        1
+            1	     2	       1	                         1	        1
+            2	     2	       3	                         2	        2
+[PE 1]
+number of PEs in the system: 4
+my PE id in the system: 1
+number of queue pairs per PE : 1
+number of queue paris in total: 3
+capacity of each send/recv queue : 11973674
+[PE 2]
+number of PEs in the system: 4
+my PE id in the system: 2
+number of queue pairs per PE : 1
+number of queue paris in total: 3
+capacity of each send/recv queue : 11973674
+[PE 3]
+number of PEs in the system: 4
+my PE id in the system: 3
+number of queue pairs per PE : 1
+number of queue paris in total: 3
+capacity of each send/recv queue : 11973674
+[PE 0]
+PE 0 Clear! send and remote processed: 0
+PE 0 Clear! send and remote processed: 0
+PE 0 Clear! send and remote processed: 0
+[PE 1]
+PE 1 Clear! send and remote processed: 0
+PE 1 Clear! send and remote processed: 0
+PE 1 Clear! send and remote processed: 0
+[PE 2]
+PE 2 Clear! send and remote processed: 0
+PE 2 Clear! send and remote processed: 0
+PE 2 Clear! send and remote processed: 0
+[PE 3]
+PE 3 Clear! send and remote processed: 0
+PE 3 Clear! send and remote processed: 0
+PE 3 Clear! send and remote processed: 0
+[PE 0]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 0 	  23947347 	         0 	 5986837 	 5986837 	 17960511 	       1 	   15599
+[PE 1]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 1 	  23947347 	   5986837 	 11973673 	 5986836 	 17960508 	       1 	   15599
+[PE 2]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 2 	  23947347 	  11973673 	 17960510 	 5986837 	 17960511 	       1 	   12000
+[PE 3]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl
+ 3 	  23947347 	  17960510 	 23947347 	 5986837 	 17960511 	       1 	   15599
+PE 0, new_source 11973673
+PE 1, new_source 11973673
+PE 3, new_source 11973673
+PE 2, new_source 11973673
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+[PE 0]
+time    61.97
+[PE 1]
+time    61.94
+[PE 2]
+time    47.94
+[PE 3]
+time    61.40
+[PE 0]
+pe 0 receive:     91     28     57
+[PE 1]
+pe 1 receive:    125      0     53
+[PE 2]
+pe 2 receive:      6      0     38
+[PE 3]
+pe 3 receive:     63     43    101
+[PE 0]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6728505
+[PE 1]
+0th queue:
+Queue 0, capacity: 17960508, end=start: 7146813
+[PE 2]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6365854
+[PE 3]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6402125
+[PE 0]
+PE 0 send_alloc_end: 125 end: 0 remote processed: 0
+PE 0 send_alloc_end: 6 end: 0 remote processed: 0
+PE 0 send_alloc_end: 63 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 91 end: 0 remote processed: 0
+PE 1 Clear! send and remote processed: 0
+PE 1 send_alloc_end: 43 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 28 end: 0 remote processed: 0
+PE 2 Clear! send and remote processed: 0
+PE 2 send_alloc_end: 101 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 57 end: 0 remote processed: 0
+PE 3 send_alloc_end: 53 end: 0 remote processed: 0
+PE 3 send_alloc_end: 38 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+[PE 0]
+time    61.68
+[PE 1]
+time    61.78
+[PE 2]
+time    48.20
+[PE 3]
+time    61.31
+[PE 0]
+pe 0 receive:     88     32     67
+[PE 1]
+pe 1 receive:    126      0     40
+[PE 2]
+pe 2 receive:      6      0     38
+[PE 3]
+pe 3 receive:     64     36    101
+[PE 0]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6561419
+[PE 1]
+0th queue:
+Queue 0, capacity: 17960508, end=start: 6675578
+[PE 2]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6779654
+[PE 3]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6389588
+[PE 0]
+PE 0 send_alloc_end: 126 end: 0 remote processed: 0
+PE 0 send_alloc_end: 6 end: 0 remote processed: 0
+PE 0 send_alloc_end: 64 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 88 end: 0 remote processed: 0
+PE 1 Clear! send and remote processed: 0
+PE 1 send_alloc_end: 36 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 32 end: 0 remote processed: 0
+PE 2 Clear! send and remote processed: 0
+PE 2 send_alloc_end: 101 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 67 end: 0 remote processed: 0
+PE 3 send_alloc_end: 40 end: 0 remote processed: 0
+PE 3 send_alloc_end: 38 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+[PE 0]
+time    63.41
+[PE 1]
+time    63.12
+[PE 2]
+time    48.66
+[PE 3]
+time    62.68
+[PE 0]
+pe 0 receive:    160     41     62
+[PE 1]
+pe 1 receive:    209      0     68
+[PE 2]
+pe 2 receive:      9      0     40
+[PE 3]
+pe 3 receive:     64     53    100
+[PE 0]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 9519520
+[PE 1]
+0th queue:
+Queue 0, capacity: 17960508, end=start: 8992282
+[PE 2]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 7483442
+[PE 3]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 8939893
+[PE 0]
+PE 0 send_alloc_end: 209 end: 0 remote processed: 0
+PE 0 send_alloc_end: 9 end: 0 remote processed: 0
+PE 0 send_alloc_end: 64 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 160 end: 0 remote processed: 0
+PE 1 Clear! send and remote processed: 0
+PE 1 send_alloc_end: 53 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 41 end: 0 remote processed: 0
+PE 2 Clear! send and remote processed: 0
+PE 2 send_alloc_end: 100 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 62 end: 0 remote processed: 0
+PE 3 send_alloc_end: 68 end: 0 remote processed: 0
+PE 3 send_alloc_end: 40 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+[PE 0]
+time    61.42
+[PE 1]
+time    61.80
+[PE 2]
+time    47.95
+[PE 3]
+time    61.74
+[PE 0]
+pe 0 receive:     81     28     58
+[PE 1]
+pe 1 receive:    113      0     41
+[PE 2]
+pe 2 receive:      7      0     40
+[PE 3]
+pe 3 receive:     62     37     93
+[PE 0]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6491226
+[PE 1]
+0th queue:
+Queue 0, capacity: 17960508, end=start: 6677400
+[PE 2]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6310123
+[PE 3]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 7272230
+[PE 0]
+PE 0 send_alloc_end: 113 end: 0 remote processed: 0
+PE 0 send_alloc_end: 7 end: 0 remote processed: 0
+PE 0 send_alloc_end: 62 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 81 end: 0 remote processed: 0
+PE 1 Clear! send and remote processed: 0
+PE 1 send_alloc_end: 37 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 28 end: 0 remote processed: 0
+PE 2 Clear! send and remote processed: 0
+PE 2 send_alloc_end: 93 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 58 end: 0 remote processed: 0
+PE 3 send_alloc_end: 41 end: 0 remote processed: 0
+PE 3 send_alloc_end: 40 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+[PE 0]
+time    62.22
+[PE 1]
+time    62.01
+[PE 2]
+time    48.03
+[PE 3]
+time    61.35
+[PE 0]
+pe 0 receive:     91     34     70
+[PE 1]
+pe 1 receive:    124      0     45
+[PE 2]
+pe 2 receive:     11      0     41
+[PE 3]
+pe 3 receive:     71     38     93
+[PE 0]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 8137608
+[PE 1]
+0th queue:
+Queue 0, capacity: 17960508, end=start: 6940670
+[PE 2]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6521834
+[PE 3]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6364236
+[PE 0]
+PE 0 send_alloc_end: 124 end: 0 remote processed: 0
+PE 0 send_alloc_end: 11 end: 0 remote processed: 0
+PE 0 send_alloc_end: 71 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 91 end: 0 remote processed: 0
+PE 1 Clear! send and remote processed: 0
+PE 1 send_alloc_end: 38 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 34 end: 0 remote processed: 0
+PE 2 Clear! send and remote processed: 0
+PE 2 send_alloc_end: 93 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 70 end: 0 remote processed: 0
+PE 3 send_alloc_end: 45 end: 0 remote processed: 0
+PE 3 send_alloc_end: 41 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+[PE 0]
+time    62.43
+[PE 1]
+time    61.85
+[PE 2]
+time    48.02
+[PE 3]
+time    61.77
+[PE 0]
+pe 0 receive:     84     29     65
+[PE 1]
+pe 1 receive:    123      0     43
+[PE 2]
+pe 2 receive:      7      0     39
+[PE 3]
+pe 3 receive:     60     41    101
+[PE 0]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 8206138
+[PE 1]
+0th queue:
+Queue 0, capacity: 17960508, end=start: 6722744
+[PE 2]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6342935
+[PE 3]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 7183582
+[PE 0]
+PE 0 send_alloc_end: 123 end: 0 remote processed: 0
+PE 0 send_alloc_end: 7 end: 0 remote processed: 0
+PE 0 send_alloc_end: 60 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 84 end: 0 remote processed: 0
+PE 1 Clear! send and remote processed: 0
+PE 1 send_alloc_end: 41 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 29 end: 0 remote processed: 0
+PE 2 Clear! send and remote processed: 0
+PE 2 send_alloc_end: 101 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 65 end: 0 remote processed: 0
+PE 3 send_alloc_end: 43 end: 0 remote processed: 0
+PE 3 send_alloc_end: 39 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+[PE 0]
+time    61.42
+[PE 1]
+time    61.97
+[PE 2]
+time    48.29
+[PE 3]
+time    61.41
+[PE 0]
+pe 0 receive:     87     27     58
+[PE 1]
+pe 1 receive:    135      0     39
+[PE 2]
+pe 2 receive:      8      0     40
+[PE 3]
+pe 3 receive:     63     39     95
+[PE 0]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6492167
+[PE 1]
+0th queue:
+Queue 0, capacity: 17960508, end=start: 6952926
+[PE 2]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6846738
+[PE 3]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6471802
+[PE 0]
+PE 0 send_alloc_end: 135 end: 0 remote processed: 0
+PE 0 send_alloc_end: 8 end: 0 remote processed: 0
+PE 0 send_alloc_end: 63 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 87 end: 0 remote processed: 0
+PE 1 Clear! send and remote processed: 0
+PE 1 send_alloc_end: 39 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 27 end: 0 remote processed: 0
+PE 2 Clear! send and remote processed: 0
+PE 2 send_alloc_end: 95 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 58 end: 0 remote processed: 0
+PE 3 send_alloc_end: 39 end: 0 remote processed: 0
+PE 3 send_alloc_end: 40 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+[PE 0]
+time    61.78
+[PE 1]
+time    61.72
+[PE 2]
+time    48.23
+[PE 3]
+time    61.80
+[PE 0]
+pe 0 receive:     81     42     66
+[PE 1]
+pe 1 receive:    127      0     58
+[PE 2]
+pe 2 receive:     10      0     42
+[PE 3]
+pe 3 receive:     71     41     98
+[PE 0]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 7038466
+[PE 1]
+0th queue:
+Queue 0, capacity: 17960508, end=start: 6561952
+[PE 2]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6668499
+[PE 3]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 7062119
+[PE 0]
+PE 0 send_alloc_end: 127 end: 0 remote processed: 0
+PE 0 send_alloc_end: 10 end: 0 remote processed: 0
+PE 0 send_alloc_end: 71 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 81 end: 0 remote processed: 0
+PE 1 Clear! send and remote processed: 0
+PE 1 send_alloc_end: 41 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 42 end: 0 remote processed: 0
+PE 2 Clear! send and remote processed: 0
+PE 2 send_alloc_end: 98 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 66 end: 0 remote processed: 0
+PE 3 send_alloc_end: 58 end: 0 remote processed: 0
+PE 3 send_alloc_end: 42 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+[PE 0]
+time    61.79
+[PE 1]
+time    62.48
+[PE 2]
+time    48.44
+[PE 3]
+time    61.62
+[PE 0]
+pe 0 receive:     87     28     64
+[PE 1]
+pe 1 receive:    122      0     41
+[PE 2]
+pe 2 receive:      9      0     40
+[PE 3]
+pe 3 receive:     68     40     97
+[PE 0]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6634316
+[PE 1]
+0th queue:
+Queue 0, capacity: 17960508, end=start: 7763177
+[PE 2]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 7110767
+[PE 3]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6849674
+[PE 0]
+PE 0 send_alloc_end: 122 end: 0 remote processed: 0
+PE 0 send_alloc_end: 9 end: 0 remote processed: 0
+PE 0 send_alloc_end: 68 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 87 end: 0 remote processed: 0
+PE 1 Clear! send and remote processed: 0
+PE 1 send_alloc_end: 40 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 28 end: 0 remote processed: 0
+PE 2 Clear! send and remote processed: 0
+PE 2 send_alloc_end: 97 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 64 end: 0 remote processed: 0
+PE 3 send_alloc_end: 41 end: 0 remote processed: 0
+PE 3 send_alloc_end: 40 end: 0 remote processed: 0
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+Launch CTA numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 48
+[PE 0]
+time    61.36
+[PE 1]
+time    61.81
+[PE 2]
+time    48.37
+[PE 3]
+time    61.42
+[PE 0]
+pe 0 receive:     83     27     58
+[PE 1]
+pe 1 receive:    115      0     40
+[PE 2]
+pe 2 receive:      6      0     41
+[PE 3]
+pe 3 receive:     65     37    100
+[PE 0]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6611971
+[PE 1]
+0th queue:
+Queue 0, capacity: 17960508, end=start: 6685554
+[PE 2]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6956738
+[PE 3]
+0th queue:
+Queue 0, capacity: 17960511, end=start: 6412768
+[PE 0]
+PE 0 send_alloc_end: 115 end: 0 remote processed: 0
+PE 0 send_alloc_end: 6 end: 0 remote processed: 0
+PE 0 send_alloc_end: 65 end: 0 remote processed: 0
+[PE 1]
+PE 1 send_alloc_end: 83 end: 0 remote processed: 0
+PE 1 Clear! send and remote processed: 0
+PE 1 send_alloc_end: 37 end: 0 remote processed: 0
+[PE 2]
+PE 2 send_alloc_end: 27 end: 0 remote processed: 0
+PE 2 Clear! send and remote processed: 0
+PE 2 send_alloc_end: 100 end: 0 remote processed: 0
+[PE 3]
+PE 3 send_alloc_end: 58 end: 0 remote processed: 0
+PE 3 send_alloc_end: 40 end: 0 remote processed: 0
+PE 3 send_alloc_end: 41 end: 0 remote processed: 0
+[PE 0]
+ave time:    61.95
+[PE 1]
+ave time:    62.05
+[PE 2]
+ave time:    48.21
+[PE 3]
+ave time:    61.65
+[PE 0]
+ave workload: 7242321
+[PE 1]
+ave workload: 7112088
+[PE 2]
+ave workload: 6738706
+[PE 3]
+ave workload: 6935005
+[PE 0]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 23947347
+Print the first 20 depth: 
+host:
+1228 1226 1148 1225 1226 1227 1227 1228 1227 1227 1223 1222 1223 1221 1220 1219 1222 1217 1221 1217 
+device:
+1228 1226 1148 1225 1226 1227 1227 1228 1227 1227 1223 1222 1223 1221 1220 1219 1222 1217 1221 1217 
+[PE 1]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 23947347
+Print the first 20 depth: 
+host:
+1540 1548 1546 1547 1544 1545 1548 1492 1497 1493 1497 1497 1499 1493 1494 1498 1498 1498 1497 1499 
+device:
+1540 1548 1546 1547 1544 1545 1548 1492 1497 1493 1497 1497 1499 1493 1494 1498 1498 1498 1497 1499 
+[PE 2]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 23947347
+Print the first 20 depth: 
+host:
+0 1 123 41 124 123 128 129 123 122 123 122 3 120 121 126 127 128 123 120 
+device:
+0 1 123 41 124 123 128 129 123 122 123 122 3 120 121 126 127 128 123 120 
+[PE 3]
+enqueued nodes: 0
+ERROR between CPU and GPU implimentation: 0
+CPU total workload 23947347
+Print the first 20 depth: 
+host:
+4871 4870 4882 4881 4939 4940 4941 4947 4939 4942 4944 4942 4947 4945 4947 4947 4946 4945 4925 4931 
+device:
+4871 4870 4882 4881 4939 4940 4941 4947 4939 4942 4944 4942 4947 4945 4947 4947 4946 4945 4925 4931 
+[PE 0]
+End program 0
+[PE 1]
+End program 1
+[PE 2]
+End program 2
+[PE 3]
+End program 3
+

@@ -1,0 +1,1083 @@
+PE: 1 deviceCount 4 set on device 1 device name Tesla V100-DGXS-32GB
+graph /data/yuxin/3_graph_dataset/osm-eur.csr partition scheme 3 iteration 3000 num worklist 1 rounds 10 FETCH SIZE 128 ROUND 2 iteration ratio 1
+PE: 0 deviceCount 4 set on device 0 device name Tesla V100-DGXS-32GB
+Vertices: 173789185 Edges: 347997111
+read metis file: /data/yuxin/3_graph_dataset/osm-eur_2_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/osm-eur_2_metis_mega.txt
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+[PE 0]
+Vertices: 86894568 Edges: 176690776
+[PE 1]
+Vertices: 86894617 Edges: 171306335
+Partition table:
+0  86894568  173789185  
+pe 1, start 86894568, end 173789185, nodes 86894617, real_size 2715458, size_ifact 2715488
+pe 0, start 0, end 86894568, nodes 86894568, real_size 2715456, size_ifact 2715456
+[PE 0]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 0 	 173789185 	         0 	 86894568 	 86894568 	 1266285056 	       1 	    3000 		 0.8500 	 0.0100
+[PE 1]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 1 	 173789185 	  86894568 	 173789185 	 86894617 	 1266288192 	       1 	    3000 		 0.8500 	 0.0100
+[PE 0]
+0th queue:
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end: 86894617	start: 0
+Queue 0, capacity: 1266285056, end: 86894568	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   724.40
+[PE 1]
+time   730.49
+[PE 0]
+0th queue:
+Queue 0, capacity: 1266285056, end=start: 1221692415
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end=start: 1200510035
+[PE 0]
+0th queue:
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end: 86894617	start: 0
+Queue 0, capacity: 1266285056, end: 86894568	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   724.00
+[PE 1]
+time   729.66
+[PE 0]
+0th queue:
+Queue 0, capacity: 1266285056, end=start: 1221409790
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end=start: 1199411946
+[PE 0]
+0th queue:
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end: 86894617	start: 0
+Queue 0, capacity: 1266285056, end: 86894568	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   724.02
+[PE 1]
+time   729.75
+[PE 0]
+0th queue:
+Queue 0, capacity: 1266285056, end=start: 1221146143
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end: 1198998418	start: 1198998417
+[PE 0]
+0th queue:
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end: 86894617	start: 0
+Queue 0, capacity: 1266285056, end: 86894568	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   723.44
+[PE 1]
+time   730.07
+[PE 0]
+0th queue:
+Queue 0, capacity: 1266285056, end=start: 1221405169
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end=start: 1199894413
+[PE 0]
+0th queue:
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end: 86894617	start: 0
+Queue 0, capacity: 1266285056, end: 86894568	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   723.46
+[PE 1]
+time   730.22
+[PE 0]
+0th queue:
+Queue 0, capacity: 1266285056, end=start: 1221177859
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end=start: 1199003283
+[PE 0]
+0th queue:
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end: 86894617	start: 0
+Queue 0, capacity: 1266285056, end: 86894568	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   724.05
+[PE 1]
+time   729.72
+[PE 0]
+0th queue:
+Queue 0, capacity: 1266285056, end=start: 1221369445
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end=start: 1198946830
+[PE 0]
+0th queue:
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end: 86894617	start: 0
+Queue 0, capacity: 1266285056, end: 86894568	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   723.46
+[PE 1]
+time   729.34
+[PE 0]
+0th queue:
+Queue 0, capacity: 1266285056, end=start: 1221333294
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end=start: 1199333941
+[PE 0]
+0th queue:
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end: 86894617	start: 0
+Queue 0, capacity: 1266285056, end: 86894568	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   723.01
+[PE 1]
+time   730.21
+[PE 0]
+0th queue:
+Queue 0, capacity: 1266285056, end=start: 1221034014
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end: 1199011202	start: 1199011201
+[PE 0]
+0th queue:
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end: 86894617	start: 0
+Queue 0, capacity: 1266285056, end: 86894568	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   723.52
+[PE 1]
+time   729.22
+[PE 0]
+0th queue:
+Queue 0, capacity: 1266285056, end=start: 1221288772
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end=start: 1199897487
+[PE 0]
+0th queue:
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end: 86894617	start: 0
+Queue 0, capacity: 1266285056, end: 86894568	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   723.66
+[PE 1]
+time   729.55
+[PE 0]
+0th queue:
+Queue 0, capacity: 1266285056, end=start: 1221430016
+[PE 0]
+ave time:   723.70
+[PE 0]
+ave workload: -1785148416
+[PE 0]
+[PE 1]
+0th queue:
+Queue 0, capacity: 1266288192, end=start: 1198956590
+[PE 1]
+ave time:   729.82
+[PE 1]
+ave workload: -1807080693
+CPU total processed node 1808903440
+CPU total mass: 3.58288e+07 CPU total res: 262145 CPU total rank: 3.40812e+07
+max rank differenc: 0.0971162
+GPU rank: sum of rank 3.36199e+07 error from CPU 281167
+GPU res: sum of res 262144 error from CPU 227922 0 number of res larger than 0.01
+
+GPU sum_rank: 3.36199e+07 GPU sum_res: 262144 GPU total mass: 3.53676e+07
+Print the first 20 rank: 
+host:
+1.46589 1.15964 0.57218 1.94754 1.29517 1.53771 1.26901 0.892181 1.25074 0.958813 0.966975 1.6479 1.56677 0.904287 0.876776 0.999488 1.69934 1.43127 0.87624 1.23137 
+device:
+[PE 1]
+1.45146 1.16831 0.565073 1.93813 1.2971 1.54484 1.25602 0.898713 1.2451 0.951655 0.968717 1.6406 1.55729 0.889404 0.874198 1.00055 1.69002 1.43191 0.872977 1.23337 
+CPU total processed node 1808903440
+CPU total mass: 3.58288e+07 CPU total res: 262145 CPU total rank: 3.40812e+07
+max rank differenc: 0.101767
+GPU rank: sum of rank 3.37012e+07 error from CPU 287964
+GPU res: sum of res 262144 error from CPU 238151 0 number of res larger than 0.01
+
+GPU sum_rank: 3.37012e+07 GPU sum_res: 262144 GPU total mass: 3.54488e+07
+Print the first 20 rank: 
+host:
+0.91158 1.21106 1.35449 0.909513 0.96153 0.938269 0.515531 1.9794 0.953854 1.51119 0.977356 0.970518 0.965643 0.970066 0.947932 0.920918 0.920314 1.14001 0.982717 0.987547 
+device:
+0.902659 1.2094 1.35366 0.89542 0.963733 0.932222 0.516076 1.97945 0.950334 1.51042 0.966753 0.962812 0.963409 0.965762 0.952029 0.916334 0.910803 1.13749 0.982201 0.980923 
+[PE 0]
+End program 0
+[PE 1]
+End program 1
+PR destructor is called
+PR destructor is called
+PE: 2 deviceCount 4 set on device 2 device name Tesla V100-DGXS-32GB
+PE: 1 deviceCount 4 set on device 1 device name Tesla V100-DGXS-32GB
+graph /data/yuxin/3_graph_dataset/osm-eur.csr partition scheme 3 iteration 3000 num worklist 1 rounds 10 FETCH SIZE 128 ROUND 2 iteration ratio 1
+PE: 0 deviceCount 4 set on device 0 device name Tesla V100-DGXS-32GB
+Vertices: 173789185 Edges: 347997111
+read metis file: /data/yuxin/3_graph_dataset/osm-eur_3_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/osm-eur_3_metis_mega.txt
+reading METIS parititon data in 64 bits
+read metis file: /data/yuxin/3_graph_dataset/osm-eur_3_metis_mega.txt
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+[PE 0]
+Vertices: 57929714 Edges: 118611943
+[PE 1]
+Vertices: 57929655 Edges: 114929942
+[PE 2]
+Vertices: 57929816 Edges: 114455226
+Partition table:
+0  57929714  115859369  173789185  
+pe 2, start 115859369, end 173789185, nodes 57929816, real_size 1810308, size_ifact 1810336
+pe 1, start 57929714, end 115859369, nodes 57929655, real_size 1810303, size_ifact 1810304
+pe 0, start 0, end 57929714, nodes 57929714, real_size 1810304, size_ifact 1810304
+[PE 2]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 2 	 173789185 	 115859369 	 173789185 	 57929816 	 -587459072 	       1 	    3000 		 0.8500 	 0.0100
+[PE 1]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 1 	 173789185 	  57929714 	 115859369 	 57929655 	 -587469376 	       1 	    3000 		 0.8500 	 0.0100
+[PE 0]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 0 	 173789185 	         0 	 57929714 	 57929714 	 -587465600 	       1 	    3000 		 0.8500 	 0.0100
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end: 57929714	start: 0
+[PE 1]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end: 57929816	start: 0
+Queue 0, capacity: 3707497920, end: 57929655	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   558.84
+[PE 1]
+time   590.48
+[PE 2]
+time   553.74
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end=start: 815962764
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end=start: 818233921
+[PE 1]
+0th queue:
+Queue 0, capacity: 3707497920, end=start: 789336511
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end: 57929714	start: 0
+[PE 1]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end: 57929816	start: 0
+Queue 0, capacity: 3707497920, end: 57929655	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   558.52
+[PE 1]
+time   590.04
+[PE 2]
+time   554.06
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end=start: 815920575
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end=start: 817988592
+[PE 1]
+0th queue:
+Queue 0, capacity: 3707497920, end=start: 789148931
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end: 57929714	start: 0
+[PE 1]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end: 57929816	start: 0
+Queue 0, capacity: 3707497920, end: 57929655	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   559.08
+[PE 1]
+time   589.99
+[PE 2]
+time   553.38
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end=start: 818010693
+[PE 1]
+0th queue:
+Queue 0, capacity: 3707497920, end=start: 788662315
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end=start: 815117576
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end: 57929714	start: 0
+[PE 1]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end: 57929816	start: 0
+Queue 0, capacity: 3707497920, end: 57929655	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   558.82
+[PE 1]
+time   590.46
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end: 817983805	start: 817983803
+[PE 2]
+time   553.52
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end=start: 815170866
+[PE 1]
+0th queue:
+Queue 0, capacity: 3707497920, end=start: 788551604
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end: 57929714	start: 0
+[PE 1]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end: 57929816	start: 0
+Queue 0, capacity: 3707497920, end: 57929655	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   558.22
+[PE 1]
+time   590.09
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end=start: 818034158
+[PE 2]
+time   553.95
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end=start: 815790074
+[PE 1]
+0th queue:
+Queue 0, capacity: 3707497920, end=start: 788572964
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end: 57929714	start: 0
+[PE 1]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end: 57929816	start: 0
+Queue 0, capacity: 3707497920, end: 57929655	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   558.45
+[PE 1]
+time   589.73
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end: 818009823	start: 818009821
+[PE 2]
+time   553.30
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end=start: 815112392
+[PE 1]
+0th queue:
+Queue 0, capacity: 3707497920, end=start: 789184461
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end: 57929714	start: 0
+[PE 1]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end: 57929816	start: 0
+Queue 0, capacity: 3707497920, end: 57929655	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   558.97
+[PE 1]
+time   590.41
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end=start: 818020393
+[PE 2]
+time   552.97
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end=start: 815120411
+[PE 1]
+0th queue:
+Queue 0, capacity: 3707497920, end=start: 788444691
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end: 57929714	start: 0
+[PE 1]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end: 57929816	start: 0
+Queue 0, capacity: 3707497920, end: 57929655	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   559.09
+[PE 1]
+time   590.56
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end: 817998346	start: 817998344
+[PE 2]
+time   553.57
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end=start: 814959939
+[PE 1]
+0th queue:
+Queue 0, capacity: 3707497920, end=start: 788371669
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end: 57929714	start: 0
+[PE 1]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end: 57929816	start: 0
+Queue 0, capacity: 3707497920, end: 57929655	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   558.47
+[PE 1]
+time   589.88
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end=start: 818043181
+[PE 2]
+time   553.90
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end=start: 815040513
+[PE 1]
+0th queue:
+Queue 0, capacity: 3707497920, end=start: 788493141
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end: 57929714	start: 0
+[PE 1]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end: 57929816	start: 0
+Queue 0, capacity: 3707497920, end: 57929655	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   558.72
+[PE 1]
+time   590.57
+[PE 0]
+0th queue:
+Queue 0, capacity: 3707501696, end=start: 818057941
+[PE 0]
+ave time:   558.72
+[PE 0]
+ave workload: -1758942293
+[PE 0]
+[PE 2]
+time   553.98
+[PE 2]
+0th queue:
+Queue 0, capacity: 3707508224, end=start: 815023297
+[PE 2]
+ave time:   553.64
+[PE 2]
+ave workload: -1761658537
+[PE 1]
+0th queue:
+Queue 0, capacity: 3707497920, end=start: 788755554
+[PE 1]
+ave time:   590.22
+[PE 1]
+ave workload: -1788228194
+CPU total processed node 1808903440
+CPU total mass: 3.58288e+07 CPU total res: 262145 CPU total rank: 3.40812e+07
+max rank differenc: 0.0963809
+GPU rank: sum of rank 3.21256e+07 error from CPU 240044
+GPU res: sum of res 262144 error from CPU 170625 0 number of res larger than 0.01
+
+GPU sum_rank: 3.21256e+07 GPU sum_res: 262144 GPU total mass: 3.38732e+07
+Print the first 20 rank: 
+host:
+0.888069 0.904858 0.919129 0.950335 0.957785 0.964117 0.9695 0.974075 0.873789 0.928668 1.69012 0.883931 0.891632 0.913876 0.868316 1.26637 0.785574 1.12861 1.21468 0.827042 
+device:
+0.887004 0.903953 0.91836 0.949863 0.957384 0.963776 0.96921 0.973828 0.858464 0.920456 1.68086 0.879712 0.897755 0.917629 0.867063 1.2733 0.793708 1.12063 1.2059 0.815486 
+[PE 1]
+CPU total processed node 1808903440
+CPU total mass: 3.58288e+07 CPU total res: 262145 CPU total rank: 3.40812e+07
+max rank differenc: 0.0993004
+GPU rank: sum of rank 3.32425e+07 error from CPU 258446
+GPU res: sum of res 262144 error from CPU 173486 0 number of res larger than 0.01
+
+GPU sum_rank: 3.32425e+07 GPU sum_res: 262144 GPU total mass: 3.49901e+07
+Print the first 20 rank: 
+host:
+0.91158 1.21106 0.93128 0.949456 0.954572 0.95478 0.949995 0.939756 0.908255 1.29725 0.902341 0.90538 0.885651 0.85111 0.845904 0.860369 0.882837 0.877252 0.848771 0.853853 
+device:
+0.901685 1.21703 0.922041 0.938357 0.949994 0.950934 0.946667 0.934325 0.90945 1.29505 0.892655 0.906412 0.887138 0.858605 0.84098 0.87104 0.883643 0.87799 0.848532 0.860026 
+[PE 2]
+CPU total processed node 1808903440
+CPU total mass: 3.58288e+07 CPU total res: 262145 CPU total rank: 3.40812e+07
+max rank differenc: 0.103893
+GPU rank: sum of rank 3.15713e+07 error from CPU 245763
+GPU res: sum of res 262144 error from CPU 171508 0 number of res larger than 0.01
+
+GPU sum_rank: 3.15713e+07 GPU sum_res: 262144 GPU total mass: 3.33189e+07
+Print the first 20 rank: 
+host:
+1.35449 0.909513 0.96153 0.938269 0.515531 1.46589 1.15964 0.57218 1.94754 1.29517 1.53771 1.26901 0.892181 1.25074 0.958813 0.966975 1.6479 1.56677 0.904287 1.9794 
+device:
+[PE 1]
+End program 1
+[PE 0]
+End program 0
+1.35961 0.906138 0.954948 0.936368 0.5145 1.45277 1.16459 0.56604 1.93332 1.29064 1.52931 1.25615 0.888871 1.23864 0.949006 0.95903 1.63391 1.5673 0.893936 1.96964 
+[PE 2]
+End program 2
+PR destructor is called
+PR destructor is called
+PR destructor is called
+PE: 3 deviceCount 4 set on device 3 device name Tesla V100-DGXS-32GB
+graph /data/yuxin/3_graph_dataset/osm-eur.csr partition scheme 3 iteration 3000 num worklist 1 rounds 10 FETCH SIZE 128 ROUND 2 iteration ratio 1
+PE: 0 deviceCount 4 set on device 0 device name Tesla V100-DGXS-32GB
+PE: 1 deviceCount 4 set on device 1 device name Tesla V100-DGXS-32GB
+PE: 2 deviceCount 4 set on device 2 device name Tesla V100-DGXS-32GB
+Vertices: 173789185 Edges: 347997111
+read metis file: /data/yuxin/3_graph_dataset/osm-eur_4_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/osm-eur_4_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/osm-eur_4_metis_mega.txt
+read metis file: /data/yuxin/3_graph_dataset/osm-eur_4_metis_mega.txt
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+reading METIS parititon data in 64 bits
+[PE 0]
+Vertices: 43447324 Edges: 86440874
+[PE 1]
+Vertices: 43447355 Edges: 85238980
+[PE 2]
+Vertices: 43447268 Edges: 87896902
+[PE 3]
+Vertices: 43447238 Edges: 88420355
+Partition table:
+0  43447324  86894679  130341947  173789185  
+pe 2, start 86894679, end 130341947, nodes 43447268, real_size 1357728, size_ifact 1357728
+pe 3, start 130341947, end 173789185, nodes 43447238, real_size 1357728, size_ifact 1357728
+pe 0, start 0, end 43447324, nodes 43447324, real_size 1357729, size_ifact 1357760
+[PE 0]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 0 	 173789185 	         0 	 43447324 	 43447324 	 -1514338560 	       1 	    3000 		 0.8500 	 0.0100
+[PE 2]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 2 	 173789185 	  86894679 	 130341947 	 43447268 	 -1514342144 	       1 	    3000 		 0.8500 	 0.0100
+pe 1, start 43447324, end 86894679, nodes 43447355, real_size 1357731, size_ifact 1357760
+[PE 1]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 1 	 173789185 	  43447324 	 86894679 	 43447355 	 -1514336576 	       1 	    3000 		 0.8500 	 0.0100
+[PE 3]
+PE 	 totalNode 	 startNode 	 endNode 	 nodes 	      wl capacity 	 num wl 	 min iter of wl 	 lambda 	 epsilon
+ 3 	 173789185 	 130341947 	 173789185 	 43447238 	 -1514344064 	       1 	    3000 		 0.8500 	 0.0100
+[PE 0]
+0th queue:
+Queue 0, capacity: 2780628736, end: 43447324	start: 0
+[PE 1]
+0th queue:
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end: 43447238	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end: 43447268	start: 0
+Queue 0, capacity: 2780630720, end: 43447355	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   508.94
+[PE 1]
+time   475.80
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end=start: 610078793
+[PE 2]
+time   500.21
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end=start: 609833489
+[PE 3]
+time   476.37
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end=start: 614949541
+[PE 0]
+0th queue:
+Queue 0, capacity: 2780628736, end=start: 588110226
+[PE 0]
+0th queue:
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end: 43447238	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end: 43447355	start: 0
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end: 43447268	start: 0
+Queue 0, capacity: 2780628736, end: 43447324	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   508.91
+[PE 1]
+time   475.33
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end=start: 609323899
+[PE 2]
+time   500.23
+[PE 2]
+0th queue:
+[PE 3]
+time   477.51
+[PE 0]
+0th queue:
+Queue 0, capacity: 2780628736, end=start: 587682230
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end=start: 614876878
+Queue 0, capacity: 2780625152, end=start: 609537769
+[PE 0]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end: 43447268	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end: 43447355	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end: 43447238	start: 0
+Queue 0, capacity: 2780628736, end: 43447324	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   508.93
+[PE 1]
+[PE 0]
+0th queue:
+Queue 0, capacity: 2780628736, end=start: 587439764
+[PE 3]
+time   476.90
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end=start: 614842321
+[PE 2]
+time   500.73
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end=start: 609620515
+time   475.93
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end=start: 609664708
+[PE 0]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end: 43447268	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end: 43447355	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end: 43447238	start: 0
+Queue 0, capacity: 2780628736, end: 43447324	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   508.25
+[PE 1]
+time   475.68
+[PE 0]
+0th queue:
+Queue 0, capacity: 2780628736, end=start: 587781865
+[PE 3]
+time   476.63
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end=start: 614702491
+[PE 2]
+time   500.40
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end=start: 609670390
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end=start: 609806187
+[PE 0]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end: 43447268	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end: 43447355	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end: 43447238	start: 0
+Queue 0, capacity: 2780628736, end: 43447324	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   508.50
+[PE 1]
+time   474.95
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end=start: 609316990
+[PE 3]
+time   477.15
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end=start: 614916673
+[PE 2]
+time   500.83
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end=start: 609629283
+[PE 0]
+0th queue:
+Queue 0, capacity: 2780628736, end=start: 587549020
+[PE 0]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end: 43447268	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end: 43447355	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end: 43447238	start: 0
+Queue 0, capacity: 2780628736, end: 43447324	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   509.05
+[PE 1]
+time   475.99
+[PE 0]
+0th queue:
+Queue 0, capacity: 2780628736, end=start: 587698424
+[PE 3]
+time   476.10
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end=start: 614797494
+[PE 2]
+time   500.03
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end: 609614736	start: 609614735
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end=start: 610066599
+[PE 0]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end: 43447268	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end: 43447355	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end: 43447238	start: 0
+Queue 0, capacity: 2780628736, end: 43447324	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   509.00
+[PE 1]
+time   475.70
+[PE 0]
+0th queue:
+Queue 0, capacity: 2780628736, end=start: 587495195
+[PE 3]
+time   476.39
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end=start: 614745680
+[PE 2]
+time   500.13
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end=start: 609621105
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end=start: 609723955
+[PE 0]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end: 43447268	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end: 43447355	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end: 43447238	start: 0
+Queue 0, capacity: 2780628736, end: 43447324	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   508.76
+[PE 1]
+time   476.82
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end=start: 609302229
+[PE 3]
+time   476.50
+[PE 2]
+time   500.27
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end=start: 609776030
+[PE 0]
+0th queue:
+Queue 0, capacity: 2780628736, end=start: 587487453
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end=start: 614850842
+[PE 0]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end: 43447268	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end: 43447355	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end: 43447238	start: 0
+Queue 0, capacity: 2780628736, end: 43447324	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   508.57
+[PE 1]
+time   475.35
+[PE 0]
+0th queue:
+Queue 0, capacity: 2780628736, end=start: 587529157
+[PE 3]
+time   477.16
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end=start: 614751561
+[PE 2]
+time   500.24
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end=start: 609597736
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end=start: 609901474
+[PE 0]
+0th queue:
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end: 43447268	start: 0
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end: 43447355	start: 0
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end: 43447238	start: 0
+Queue 0, capacity: 2780628736, end: 43447324	start: 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 dynamic share memory size(bytes) 0
+[PE 0]
+time   508.77
+[PE 1]
+time   475.22
+[PE 0]
+0th queue:
+Queue 0, capacity: 2780628736, end=start: 587467481
+[PE 0]
+ave time:   508.77
+[PE 0]
+ave workload: 158127351
+[PE 0]
+[PE 3]
+time   475.94
+[PE 3]
+0th queue:
+Queue 0, capacity: 2780623232, end=start: 614702108
+[PE 3]
+ave time:   476.66
+[PE 3]
+ave workload: 185316829
+[PE 2]
+time   499.99
+[PE 2]
+0th queue:
+Queue 0, capacity: 2780625152, end=start: 609551369
+[PE 2]
+ave time:   500.30
+[PE 2]
+ave workload: 180148512
+[PE 1]
+0th queue:
+Queue 0, capacity: 2780630720, end=start: 609514693
+[PE 1]
+ave time:   475.68
+[PE 1]
+ave workload: 180173223
+CPU total processed node 1808903440
+CPU total mass: 3.58288e+07 CPU total res: 262145 CPU total rank: 3.40812e+07
+max rank differenc: 0.0907843
+GPU rank: sum of rank 2.81978e+07 error from CPU 208068
+GPU res: sum of res 213819 error from CPU 141132 0 number of res larger than 0.01
+
+GPU sum_rank: 2.81978e+07 GPU sum_res: 213819 GPU total mass: 2.96232e+07
+Print the first 20 rank: 
+host:
+0.91158 1.21106 1.35449 0.909513 0.96153 0.938269 0.515531 1.9794 0.953854 1.51119 0.977356 0.970518 0.965643 0.970066 0.947932 0.920918 0.920314 1.14001 0.982717 0.987547 
+device:
+0.906753 1.21837 1.36251 0.90703 0.9635 0.933142 0.515621 1.97666 0.942705 1.4999 0.970821 0.963039 0.965627 0.971695 0.950435 0.915806 0.916332 1.13989 0.982818 0.980573 
+[PE 1]
+CPU total processed node 1808903440
+CPU total mass: 3.58288e+07 CPU total res: 262145 CPU total rank: 3.40812e+07
+max rank differenc: 0.143265
+GPU rank: sum of rank 2.59405e+07 error from CPU 190050
+GPU res: sum of res 209656 error from CPU 143217 0 number of res larger than 0.01
+
+GPU sum_rank: 2.59405e+07 GPU sum_res: 209656 GPU total mass: 2.73382e+07
+Print the first 20 rank: 
+host:
+1.27369 1.19774 1.18425 1.56575 1.34744 1.24313 1.14215 1.05361 0.583226 1.56726 0.723057 1.47386 1.03159 1.04423 0.615331 0.971325 0.997717 1.01026 1.2808 1.0381 
+device:
+1.27638 1.19968 1.18394 1.56419 1.34648 1.25033 1.15374 1.05798 0.590133 1.58462 0.724809 1.48119 1.01856 1.04095 0.605534 0.968371 0.991233 1.01588 1.27865 1.04331 
+[PE 2]
+CPU total processed node 1808903440
+CPU total mass: 3.58288e+07 CPU total res: 262145 CPU total rank: 3.40812e+07
+max rank differenc: 0.0993369
+GPU rank: sum of rank 2.76281e+07 error from CPU 201144
+GPU res: sum of res 216755 error from CPU 139871 0 number of res larger than 0.01
+
+GPU sum_rank: 2.76281e+07 GPU sum_res: 216755 GPU total mass: 2.90731e+07
+Print the first 20 rank: 
+host:
+1.46589 1.15964 0.57218 1.94754 1.29517 1.53771 1.26901 0.892181 1.25074 0.958813 0.966975 1.6479 1.56677 0.904287 0.876776 0.999488 1.69934 1.43127 0.87624 1.23137 
+device:
+1.46039 1.1699 0.565979 1.93841 1.29848 1.53765 1.24552 0.901147 1.23972 0.953757 0.965179 1.6305 1.56823 0.901618 0.878232 1.00022 1.68127 1.43658 0.865951 1.23127 
+[PE 3]
+CPU total processed node 1808903440
+CPU total mass: 3.58288e+07 CPU total res: 262145 CPU total rank: 3.40812e+07
+max rank differenc: 0.0894556
+GPU rank: sum of rank 2.63103e+07 error from CPU 181411
+GPU res: sum of res 216910 error from CPU 143409 0 number of res larger than 0.01
+
+GPU sum_rank: 2.63103e+07 GPU sum_res: 216910 GPU total mass: 2.77564e+07
+Print the first 20 rank: 
+host:
+0.888069 0.904858 0.919129 0.950335 0.957785 0.964117 0.9695 0.974075 0.873789 0.928668 1.69012 0.883931 0.891632 0.913876 0.868316 1.26637 0.785574 1.12861 1.21468 0.827042 
+device:
+0.870157 0.889634 0.906188 0.927853 0.938675 0.947874 0.955693 0.962339 0.859279 0.926543 1.68735 0.882462 0.900092 0.927817 0.858061 1.27293 0.782534 1.13595 1.2114 0.822684 
+[PE 1]
+End program 1
+[PE 0]
+End program 0
+[PE 2]
+End program 2
+[PE 3]
+End program 3
+PR destructor is called
+PR destructor is called
+PR destructor is called
+PR destructor is called
