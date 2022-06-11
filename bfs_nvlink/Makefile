@@ -77,5 +77,39 @@ examples : $(TESTBIN)
 	mkdir -p `dirname $@`
 	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -rdc=true $< -o $@ $(TESTLDFLAGS) 
 
+FETCHSIZE := 64
+TESTBIN   := $(patsubst %.cu, %_${FETCHSIZE}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
+$(info $(TESTBIN))
+
+examples : $(TESTBIN) 
+
+%_${FETCHSIZE} : %.cu
+	@printf "Compiling %-25s > %-25s\n" $< $@
+	mkdir -p `dirname $@`
+	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -rdc=true $< -o $@ $(TESTLDFLAGS) 
+
+FETCHSIZE := 128
+TESTBIN   := $(patsubst %.cu, %_${FETCHSIZE}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
+$(info $(TESTBIN))
+
+examples : $(TESTBIN) 
+
+%_${FETCHSIZE} : %.cu
+	@printf "Compiling %-25s > %-25s\n" $< $@
+	mkdir -p `dirname $@`
+	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -rdc=true $< -o $@ $(TESTLDFLAGS) 
+
+FETCHSIZE := 256
+TESTBIN   := $(patsubst %.cu, %_${FETCHSIZE}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
+$(info $(TESTBIN))
+
+examples : $(TESTBIN) 
+
+%_${FETCHSIZE} : %.cu
+	@printf "Compiling %-25s > %-25s\n" $< $@
+	mkdir -p `dirname $@`
+	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -rdc=true $< -o $@ $(TESTLDFLAGS) 
+
+
 clean : 
 	rm -rf $(CUPERFBIN)
