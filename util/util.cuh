@@ -97,6 +97,12 @@ __device__ __host__ Size rounddown_power2(Size num)
 #define align_up_yc(num, align) \
         (((num) + ((align) - 1)) & ~((align) - 1))
 
+#endif
+
+#ifndef align_up_yx
+#define align_up_yx(num, align) \
+	(((num) + ((align) - 1)) & ~((align) - 1))
+
 template<typename T, typename Y>
 __device__ __host__ T Align_up(T num, Y align)
 {
