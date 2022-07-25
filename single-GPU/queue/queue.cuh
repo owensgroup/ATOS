@@ -129,6 +129,9 @@ struct Queue
     template<typename Functor, typename... Args>
     __host__ void launchWarpPer32Items_minIter(int numBlock, int numThread, cudaStream_t stream, Functor f, Args... arg);
 
+    template<typename Functor1, typename Functor2, typename... Args>
+    __host__ void launchWarpPer32Items_minIter_2func(int numBlock, int numThread, cudaStream_t stream, Functor1 f1, Functor2 f2, Args... arg);
+
     template<int FETCH_SIZE, typename Functor, typename... Args>
     __host__ void launchCTA_minIter(int numBlock, int numThread, cudaStream_t stream, int shareMem_size, Functor f, Args... arg);
 
@@ -569,6 +572,76 @@ __global__ void _launchWarpPer32Items_minIter(Queue<T, COUNTER_T> q, Functor F, 
     }
 }
 
+template<typename T, typename COUNTER_T, typename Functor1, typename Functor2, typename... Args>
+//__launch_bounds__(512,2)
+__global__ void _launchWarpPer32Items_minIter_2func(Queue<T, COUNTER_T> q, Functor1 F1, Functor2 F2, Args... args)
+{
+
+    COUNTER_T index = q.grab_warp(32);
+    __syncwarp(0xffffffff);
+    COUNTER_T e = *(q.end);
+    uint32_t iter = 0;
+    do {
+        while(index < e)
+        {
+            unsigned activeMask = __ballot_sync(0xffffffff, (index+LANE_)<min(e, align_up_yx(index+1, 32)) );
+	        activeMask = __popc(activeMask);
+            T task;
+            if(index+LANE_ < min(e,align_up_yx(index+1, 32)))
+	        {
+                task = q.get_item(index+LANE_);
+	        }
+
+            __syncwarp(0xffffffff);
+
+            for(int i=0; i<activeMask; i++)
+            {
+                T cur_task = __shfl_sync(0xffffffff, task, i);
+                __syncwarp(0xffffffff);
+                func(F1, cur_task, args...);
+                __syncwarp(0xffffffff);
+            }
+
+            if(activeMask+ index == align_up_yx(index+1, 32))
+            {
+                index = q.grab_warp(32);
+            }
+            else
+            {
+                e = *(q.end);
+                index = index+activeMask;
+            }
+            __syncwarp(0xffffffff);
+        } //while
+        __syncwarp(0xffffffff);
+
+        e = *(q.end);
+        __syncwarp(0xffffffff);
+        if(index >= e)
+        {
+            func(F2, args...);
+            if(*(q.stop) == blockDim.x*gridDim.x/32*q.num_queues)
+                break;
+            __syncwarp(0xffffffff);
+            iter++;
+            if(iter == q.min_iter) // if just lane0 increment stop, get lower performance on road_ca, road_usa
+		        if(LANE_ == 0)
+                    atomicAdd((COUNTER_T *)(q.stop), 1);
+            q.update_end();
+            __syncwarp(0xffffffff);
+	        //__nanosleep(600);
+        }
+//        __syncwarp(0xffffffff);
+    }
+    while(true);
+
+    if(LANE_ == 0)
+    {
+        q.execute[WARPID] = index;
+//    printf("warp %d, index %d\n", WARPID, index);
+    }
+}
+
 template<typename T, typename COUNTER_T, int FETCH_SIZE, typename Functor, typename... Args >
 __launch_bounds__(1024,1)
 __global__ void _launchCTA_minIter(Queue<T, COUNTER_T> q, Functor F, Args... args)
@@ -781,6 +854,14 @@ void Queue<T, COUNTER_T>::launchWarpPer32Items_minIter(int numBlock, int numThre
 }
 
 template<typename T, typename COUNTER_T>
+template<typename Functor1, typename Functor2, typename... Args>
+void Queue<T, COUNTER_T>::launchWarpPer32Items_minIter_2func(int numBlock, int numThread, cudaStream_t stream, Functor1 f1, Functor2 f2, Args... arg)
+{
+    std::cout << "numBlock "<< numBlock << " numThread "<< numThread<<std::endl;
+    _launchWarpPer32Items_minIter_2func<<<numBlock, numThread, 0, stream>>>(*this, f1, f2, arg...);
+}
+
+template<typename T, typename COUNTER_T>
 template<int FETCH_SIZE, typename Functor, typename... Args>
 void Queue<T, COUNTER_T>::launchCTA_minIter(int numBlock, int numThread, cudaStream_t stream, int shareMem_size, Functor f, Args... arg)
 {
@@ -957,6 +1038,15 @@ struct Queues
         for(int i=0; i<num_queues; i++)
         {
             worklist[i].launchWarpPer32Items_minIter(numBlock/num_queues, numThread, streams[i], f, arg...);
+        }
+    }
+
+    template<typename Functor1, typename Functor2, typename... Args>
+    __host__ void launchWarpPer32Items_minIter_2func(int numBlock, int numThread, Functor1 f1, Functor2 f2, Args... arg)
+    {
+        for(int i=0; i<num_queues; i++)
+        {
+            worklist[i].launchWarpPer32Items_minIter_2func(numBlock/num_queues, numThread, streams[i], f1, f2, arg...);
         }
     }
 

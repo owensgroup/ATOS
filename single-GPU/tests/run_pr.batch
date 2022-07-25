@@ -1,0 +1,77 @@
+#!/bin/sh
+#SBATCH -p daisy 
+#SBATCH -n 1 
+#SBATCH -N 1 
+#SBATCH --cpus-per-task=1
+#SBATCH --mem-per-cpu=1g
+#SBATCH -o run_pr.o%j
+#SBATCH -e run_pr.o%j
+#SBATCH --gres=gpu:1
+#SBATCH --time 01:30:00
+
+#round 1
+#fetch size 256
+echo "./pr -f /data/yuxin/3_graph_dataset/road_usa.csr -rounds 10 -i 400 -o 2"
+./pr -f /data/yuxin/3_graph_dataset/road_usa.csr -rounds 10 -i 400
+
+echo "./pr_cta_256 -f /data/yuxin/3_graph_dataset/road_usa.csr -i 400 -rounds 20"
+./pr_cta_256 -f /data/yuxin/3_graph_dataset/road_usa.csr -i 400 -rounds 20
+
+echo "./pr_cta_discrete_128 -f /data/yuxin/3_graph_dataset/road_usa.csr -i 10 -rounds 20"
+./pr_cta_discrete_128 -f /data/yuxin/3_graph_dataset/road_usa.csr -i 10 -rounds 20
+
+echo "./pr -f /data/yuxin/3_graph_dataset/roadNet-CA.csr -rounds 10 -i 100 -o 2"
+./pr -f /data/yuxin/3_graph_dataset/roadNet-CA.csr -rounds 10 -i 100
+
+echo "./pr_cta_256 -f /data/yuxin/3_graph_dataset/roadNet-CA.csr -i 60 -rounds 20"
+./pr_cta_256 -f /data/yuxin/3_graph_dataset/roadNet-CA.csr -i 60 -rounds 20
+
+echo "./pr_cta_discrete_256 -f /data/yuxin/3_graph_dataset/roadNet-CA.csr -i 10 -rounds 20"
+./pr_cta_discrete_256 -f /data/yuxin/3_graph_dataset/roadNet-CA.csr -i 10 -rounds 20
+
+
+#fetch size 128
+echo "./pr -f /data/yuxin/3_graph_dataset/indochina-2004.csr -rounds 10 -i 1600 -o 2"
+./pr -f /data/yuxin/3_graph_dataset/indochina-2004.csr -rounds 10 -i 1600
+
+echo "./pr_cta_128 -f /data/yuxin/3_graph_dataset/indochina-2004.csr -i 750 -rounds 20"
+./pr_cta_128 -f /data/yuxin/3_graph_dataset/indochina-2004.csr -i 750 -rounds 20
+
+echo "/pr_cta_discrete_128 -f /data/yuxin/3_graph_dataset/indochina-2004.csr -i 10 -rounds 20"
+./pr_cta_discrete_128 -f /data/yuxin/3_graph_dataset/indochina-2004.csr -i 10 -rounds 20
+
+echo "./pr -f /data/yuxin/3_graph_dataset/hollywood-2009.csr -rounds 10 -i 500 -o 2"
+./pr -f /data/yuxin/3_graph_dataset/hollywood-2009.csr -rounds 10 -i 500
+
+echo "./pr_cta_128 -f /data/yuxin/3_graph_dataset/hollywood-2009.csr -i 200 -rounds 20"
+./pr_cta_128 -f /data/yuxin/3_graph_dataset/hollywood-2009.csr -i 200 -rounds 20
+
+echo "./pr_cta_discrete_32 -f /data/yuxin/3_graph_dataset/hollywood-2009.csr -i 10 -rounds 20"
+./pr_cta_discrete_32 -f /data/yuxin/3_graph_dataset/hollywood-2009.csr -i 10 -rounds 20
+
+#fetch size 32
+
+echo "./pr -f /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr -rounds 10 -i 200 -o 2"
+./pr -f /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr -rounds 10 -i 200
+
+echo "./pr_cta_32 -f /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr -i 150 -rounds 20"
+./pr_cta_32 -f /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr -i 150 -rounds 20
+
+echo "./pr_cta_discrete_32 -f /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr -i 10 -rounds 20"
+./pr_cta_discrete_32 -f /data/yuxin/3_graph_dataset/soc-LiveJournal1.csr -i 10 -rounds 20
+
+#fetch size 256 round 20
+
+echo "./pr_cta_256_20 -f /data/yuxin/3_graph_dataset/osm-eur.csr -i 1400 -rounds 20 -check 1"
+./pr_cta_256_20 -f /data/yuxin/3_graph_dataset/osm-eur.csr -i 1400 -rounds 20 -check 1 -o 2
+
+echo "./pr_cta_discrete_128 -f /data/yuxin/3_graph_dataset/osm-eur.csr -i 10 -rounds 20"
+./pr_cta_discrete_128 -f /data/yuxin/3_graph_dataset/osm-eur.csr -i 10 -rounds 20
+
+##fetch size 256 round 10
+echo "./pr_cta_256_10 -f /data/yuxin/3_graph_dataset/twitter.csr -i 200 -rounds 20 -check 1"
+./pr_cta_256_10 -f /data/yuxin/3_graph_dataset/twitter.csr -i 200 -rounds 20 -check 1
+
+echo "./pr_cta_discrete_32 -f /data/yuxin/3_graph_dataset/twitter.csr -i 200 -rounds 20"
+./pr_cta_discrete_32 -f /data/yuxin/3_graph_dataset/twitter.csr -i 200 -rounds 20
+
