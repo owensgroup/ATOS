@@ -9,6 +9,6 @@ Set the followling environment variables accordingly based on your depedency pat
 
 Then `make` to compile the code
 
-To generate performance results for BFS on InfiniBand, run run\_bfs.batch first and extract the results with script figure10\_bfs.sh
+To generate performance results for BFS on InfiniBand, run `run\_bfs.batch` first and extract the results with script `figure10\_bfs.sh`
 
 
