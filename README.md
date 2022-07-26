@@ -1,23 +1,48 @@
 # ATOS
+## Content
+* `dataset`: Folder containing graph dataset downloader and metadata for each graph.
+* `single-GPU`: Folder containing single-GPU Atos asynchronous graph analytics implementation.
+* `bfs\_nvlink`: Folder containing multi-GPU Atos asynchronous BFS implementation on NVLink connected multi-GPU system.
+* `pr\_nvlink`: Folder containing multi-GPU Atos asynchronous PageRank implementation on NVLink connected multi-GPU system.
+* `bfs\_ib`: Folder containing multi-GPU Atos asynchronous BFS implementation on InfiniBand(IB) connected multi-GPU system.
+* `pr\_ib`: Folder containing multi-GPU Atos asynchronous PageRank implementation on InfiniBand(IB) connected multi-GPU system.
+* `comm`: Folder containing implementation of distributed standard/priority queues and communciation aggregator.
+* `perf\_data`: Folder containing the performance results of BFS and PageRank on NVLink and IB systems.
+
+
 ## Prerequisite
+### Single-GPU Atos Graph Analytices
 - CUDA (>10.0)
-- NVSHMEM (can be download from https://developer.nvidia.com/nvshmem by joinning NVIDIA developer)
 - GCC
+#### Required Environment Variables
+Set the followling environment variables accordingly based on your depedency path
+- CUDA\_HOME
+### Multi-GPU Atos BFS and PageRank
+- CUDA (>10.0)
+- GCC
+- NVSHMEM (can be download from https://developer.nvidia.com/nvshmem by joinning NVIDIA developer)
 - METIS
 - OpenMPI (>4.0)
+#### Required Environment Variables
+Set the followling environment variables accordingly based on your depedency path
+- CUDA\_HOME
+- METIS64\_HOME
+- NVSHMEM\_HOME
+- MPI\_HOME
 
-
-## Compile BFS
+## Compile BFS 
 Under bfs\_nvlink and bfs\_ib directory, compile the code with make
 
-To test the given datasets, run the figure5\_persist.sh and figure5\_prio.sh to generate performance data for BFS on NVLinks.
-To generate performance results for BFS on InfiniBand, run run\_bfs.batch first and extract the results with script figure10\_bfs.sh
+To test the given datasets, run the figure5\_persist.sh and figure5\_discrete.sh to generate performance data for BFS on NVLinks.
+To generate performance results for BFS on InfiniBand, run run\_pr.batch first and extract the results with script figure10\_pr.sh
+
+
 
 ## Compile PageRank
 Under pr\_nvlink and pr\_ib directory, compile the code with make
 
 To test the given datasets, run the figure7\_persist.sh and figure7\_discrete.sh to generate performance data for PageRank on NVLinks.
-To generate performance results for BFS on InfiniBand, run run\_pr.batch first and extract the results with script figure11\_pr.sh
+To generate performance results for PageRank on InfiniBand, run run\_pr.batch first and extract the results with script figure11\_pr.sh
 
 
 ## Pre-generated Performance Data
