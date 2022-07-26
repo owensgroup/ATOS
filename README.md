@@ -1,13 +1,13 @@
 # ATOS
 ## Content
 * `dataset`: Folder containing graph dataset downloader and metadata for each graph.
-* `single-GPU`: Folder containing single-GPU Atos asynchronous graph analytics implementation.
-* `bfs\_nvlink`: Folder containing multi-GPU Atos asynchronous BFS implementation on NVLink connected multi-GPU system.
-* `pr\_nvlink`: Folder containing multi-GPU Atos asynchronous PageRank implementation on NVLink connected multi-GPU system.
-* `bfs\_ib`: Folder containing multi-GPU Atos asynchronous BFS implementation on InfiniBand(IB) connected multi-GPU system.
-* `pr\_ib`: Folder containing multi-GPU Atos asynchronous PageRank implementation on InfiniBand(IB) connected multi-GPU system.
-* `comm`: Folder containing implementation of distributed standard/priority queues and communciation aggregator.
-* `perf\_data`: Folder containing the performance results of BFS and PageRank on NVLink and IB systems.
+* `single-GPU`: Folder containing single-GPU Atos asynchronous graph analytics implementations.
+* `bfs_nvlink`: Folder containing multi-GPU Atos asynchronous BFS implementations on NVLink connected multi-GPU system.
+* `pr_nvlink`: Folder containing multi-GPU Atos asynchronous PageRank implementations on NVLink connected multi-GPU system.
+* `bfs_ib`: Folder containing multi-GPU Atos asynchronous BFS implementations on InfiniBand(IB) connected multi-GPU system.
+* `pr_ib`: Folder containing multi-GPU Atos asynchronous PageRank implementations on InfiniBand(IB) connected multi-GPU system.
+* `comm`: Folder containing implementations of distributed standard/priority queues and communciation aggregator.
+* `perf_data`: Folder containing the performance results of BFS and PageRank on NVLink and IB systems.
 
 
 ## Prerequisite
@@ -21,7 +21,8 @@ Set the followling environment variables accordingly based on your depedency pat
 - CUDA (>10.0)
 - GCC
 - NVSHMEM (can be download from https://developer.nvidia.com/nvshmem by joinning NVIDIA developer)
-- METIS
+- METIS (https://github.com/KarypisLab/METIS) 
+   Compile METIS with 64 bites option
 - OpenMPI (>4.0)
 #### Required Environment Variables
 Set the followling environment variables accordingly based on your depedency path
