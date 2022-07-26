@@ -1,16 +1,3 @@
-#!/bin/bash
-#!/bin/sh
-#SBATCH -p daisy
-#SBATCH -n 1
-#SBATCH -N 1
-#SBATCH --cpus-per-task=1
-#SBATCH --mem-per-cpu=1g
-#SBATCH -o run_gc.o%j
-#SBATCH -e run_gc.o%j
-#SBATCH --gres=gpu:1
-#SBATCH --time 01:30:00
-
-
 echo "./gc_32 -f ../../datasets/soc-LiveJournal1/soc-LiveJournal1_ud.csr -rounds 10 -i 1500 -run_bsp_async 1"
 ./gc_32 -f ../../datasets/soc-LiveJournal1/soc-LiveJournal1_ud.csr -rounds 10 -i 1500 -run_bsp_async 1
 #echo "./gc_32 -f soc-LiveJournal1_ud.csr -rounds 10 -i 1500 -run_bsp_async 1 -permute 1"
@@ -45,10 +32,10 @@ echo "./gc_128 -run_bsp_async 3 -f ../../datasets/hollywood-2009/hollywood-2009_
 
 echo "./gc_32 -f ../../datasets/indochina-2004/indochina-2004_ud.csr -rounds 10 -i 155000 -run_bsp_async 1"
 ./gc_32 -f ../../datasets/indochina-2004/indochina-2004_ud.csr -rounds 10 -i 155000 -run_bsp_async 1
-#echo "./gc_32 -f indochina-2004-ud.csr -rounds 10 -i 155000 -run_bsp_async 1 -permute 1"
-#./gc_32 -f indochina-2004-ud.csr -rounds 10 -i 155000 -run_bsp_async 1 -permute 1
+#echo "./gc_32 -f indochina-2004_ud.csr -rounds 10 -i 155000 -run_bsp_async 1 -permute 1"
+#./gc_32 -f indochina-2004_ud.csr -rounds 10 -i 155000 -run_bsp_async 1 -permute 1
 echo "./gc_32 -run_bsp_async 2 -o 2 -f ../../datasets/indochina-2004/indochina-2004_ud.csr -rounds 10 -i 1600"
-./gc_32 -run_bsp_async 2 -o 2 -f ../../datasets/indochina-2004/indochina-2004-ud.csr -rounds 10 -i 1600
+./gc_32 -run_bsp_async 2 -o 2 -f ../../datasets/indochina-2004/indochina-2004_ud.csr -rounds 10 -i 1600
 echo "./gc_32 -run_bsp_async 2 -o 3 -f ../../datasets/indochina-2004/indochina-2004_ud.csr -mesh 0 -rounds 10 -i 400"
 ./gc_32 -run_bsp_async 2 -o 3 -f ../../datasets/indochina-2004/indochina-2004_ud.csr -mesh 0 -rounds 10 -i 400
 echo "./gc_32 -run_bsp_async 2 -o 3 -f ../../datasets/indochina-2004/indochina-2004_ud.csr -mesh 0 -rounds 10 -i 200 -permute 1"

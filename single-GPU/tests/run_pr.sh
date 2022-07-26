@@ -1,14 +1,3 @@
-#!/bin/sh
-#SBATCH -p daisy 
-#SBATCH -n 1 
-#SBATCH -N 1 
-#SBATCH --cpus-per-task=1
-#SBATCH --mem-per-cpu=1g
-#SBATCH -o run_pr.o%j
-#SBATCH -e run_pr.o%j
-#SBATCH --gres=gpu:1
-#SBATCH --time 01:30:00
-
 #round 1
 #fetch size 256
 echo "./pr -f ../../datasets/road_usa/road_usa_ud.csr -rounds 10 -i 400 -o 2"
@@ -69,9 +58,8 @@ echo "./pr_cta_discrete_128 -f ../../datasets/osm-eur/osm-eur.csr -i 10 -rounds 
 ./pr_cta_discrete_128 -f ../../datasets/osm-eur/osm-eur.csr -i 10 -rounds 20
 
 ##fetch size 256 round 10
-echo "./pr_cta_256_10 -f ../../datasets/twitter/twitter.csr -i 200 -rounds 20 -check 1"
-./pr_cta_256_10 -f ../../datasets/twitter/twitter.csr -i 200 -rounds 20 -check 1
+echo "./pr_cta_256_10 -f ../../datasets/twitter/twitter.csr -i 200 -rounds 20"
+./pr_cta_256_10 -f ../../datasets/twitter/twitter.csr -i 200 -rounds 20
 
 echo "./pr_cta_discrete_32 -f ../../datasets/twitter/twitter.csr -i 200 -rounds 20"
 ./pr_cta_discrete_32 -f ../../datasets/twitter/twitter.csr -i 200 -rounds 20
-

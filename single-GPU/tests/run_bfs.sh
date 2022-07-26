@@ -1,15 +1,3 @@
-#!/bin/bash
-#!/bin/sh
-#SBATCH -p daisy
-#SBATCH -n 1
-#SBATCH -N 1
-#SBATCH --cpus-per-task=1
-#SBATCH --mem-per-cpu=1g
-#SBATCH -o run_bfs.o%j
-#SBATCH -e run_bfs.o%j
-#SBATCH --gres=gpu:1
-#SBATCH --time 01:30:00
-
 echo "./bfs_32 -f ../../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -o 2 -i 100 -rounds 20 -q 8"
 ./bfs_32 -f ../../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -o 2 -i 100 -rounds 20 -q 8
 echo "./bfs_32 -f ../../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -o 3 -q 1 -i 50 -rounds 20"
@@ -34,10 +22,6 @@ echo "./bfs_cta_discrete_32 -f ../../datasets/hollywood-2009/hollywood-2009_ud.c
 ./bfs_cta_discrete_32 -f ../../datasets/hollywood-2009/hollywood-2009_ud.csr -i 10 -rounds 20
 
 
-# could run to finish if not output to file
-#echo "./bfs_128 -f ../../datasets/indochina-2004/indochina-2004_di.csr -r 40 -i 200 -o 2 -rounds 20 -q 4"
-#./bfs_128 -f ../../datasets/indochina-2004/indochina-2004_di.csr -r 40 -i 200 -o 2 -rounds 20 -q 4
-# could run to finish if output to file
 echo "./bfs_128 -f ../../datasets/indochina-2004/indochina-2004_di.csr -r 40 -i 1000 -o 2 -rounds 20 -q 4"
 ./bfs_128 -f ../../datasets/indochina-2004/indochina-2004_di.csr -r 40 -i 1000 -o 2 -rounds 20 -q 4
 echo "./bfs_128 -f ../../datasets/indochina-2004/indochina-2004_di.csr -o 3 -q 1 -i 70 -r 40 -rounds 20"
@@ -95,5 +79,3 @@ echo "./bfs_128 -f ../../datasets/osm-eur/osm-eur.csr -o 4 -q 1 -i 100 -rounds 2
 ./bfs_128 -f ../../datasets/osm-eur/osm-eur.csr -o 4 -q 1 -i 100 -rounds 20
 echo "./bfs_cta_discrete_128 -f ../../datasets/osm-eur/osm-eur.csr -i 100 -rounds 20"
 ./bfs_cta_discrete_128 -f ../../datasets/osm-eur/osm-eur.csr -i 100 -rounds 20
-#fetch size 256  osm-eur is faster (222 ms) on 256 fetch size but there is bug node!=-1, likely to fail running, use 128 before find the bug
-#./bfs_256 -f ../../datasets/osm-eurosm-eur.csr -o 3 -q 1 -i 55000 -rounds 20
