@@ -1,26 +1,34 @@
+make all -C ../single-GPU/tests/
 echo "Do you want to run this script with quick mode?"
 read -r ifquick
 
 modequick=0
-outfile="temp_pr_quick_out.txt"
+outfile="temp_pr_persist_quick_out.txt"
 if [ $ifquick == "yes" ] || [ $ifquick == "Yes" ] || [ $ifquick == "YES" ] || [ $ifquick == "1" ]; then
         echo "run with quick mode"
 	modequick=0
 else
         echo "run with check mode"
 	modequick=1
-	outfile="temp_pr_check_out.txt"
+	outfile="temp_pr_persist_check_out.txt"
 fi
 
 if test -f "$outfile"; then
-    echo "Remove $outfile"
-    rm $outfile
+	echo "Do you want to regenerate performance data?"
+	read -r ifgenerate
+	if [ $ifgenerate == "yes" ] || [ $ifgenerate == "Yes" ] || [ $ifgenerate == "YES" ] || [ $ifgenerate == "1" ]; then
+    	echo "Remove $outfile"
+    	rm $outfile
+	fi
 fi
-echo "Generating performance data"
-./run_pr.sh $modequick >> $outfile
+
+if ! test -f "$outfile"; then 
+	echo "Generating performance data"
+	./run_pr_persist.sh $modequick >> $outfile
+fi
 
 datasets=("soc-LiveJournal1" "hollywood_2009" "indochina_2004" "twitter" "road_usa" "osm-eur")
-output=`awk '{if($1 == "ave" && $2 == "time:") print $3","}' $outfile`
+output=`awk '{if($1 == "ave" && $2 == "time:") print $3","; if($1 == "Ave." && $2 == "Time:") print $3","}' $outfile`
 #echo ${output}
 outputtime=()
 IFS=,
