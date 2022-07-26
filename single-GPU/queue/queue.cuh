@@ -520,7 +520,7 @@ __global__ void _launchWarpPer32Items_minIter(Queue<T, COUNTER_T> q, Functor F, 
             if(index+LANE_ < min(e,align_up_yx(index+1, 32)))
 	    {
                 task = q.get_item(index+LANE_);
-		assert(task!= -1);
+		//assert(task!= -1);
 	    }
             
             __syncwarp(0xffffffff);
@@ -667,7 +667,7 @@ __global__ void _launchCTA_minIter(Queue<T, COUNTER_T> q, Functor F, Args... arg
      	    {
             //    printf("thread %d, block %d, end %d, index %d, fs %d\n", threadIdx.x, blockIdx.x, end, index, fs);
      		    nodes[threadIdx.x]= q.get_item(index+threadIdx.x);
-     		    assert(nodes[threadIdx.x]!= -1);
+     		    //assert(nodes[threadIdx.x]!= -1);
      	    }
      	    __syncthreads();
 

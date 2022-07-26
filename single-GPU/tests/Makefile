@@ -6,6 +6,7 @@ LDFLAGS =-lcuda -lgomp
 
 BFS_DIR = ../bfs
 PR_DIR = ../pr
+GC_DIR = ../gc
 
 #all: bfs bfs_cta bfs_cta_discrete pr pr_cta pr_cta_discrete
 #pr_all: pr pr_cta pr_cta_discrete
@@ -18,12 +19,13 @@ FETCHSIZE4 = 256
 NROUNDS_twitter = 10
 NROUNDS_osm = 20
 
-all: bfs_${FETCHSIZE1} bfs_cta_${FETCHSIZE1} bfs_cta_discrete_${FETCHSIZE1} bfs_${FETCHSIZE2} bfs_cta_${FETCHSIZE2} bfs_cta_discrete_${FETCHSIZE2} bfs_${FETCHSIZE3} bfs_cta_${FETCHSIZE3} bfs_cta_discrete_${FETCHSIZE3} pr pr_cta_${FETCHSIZE1} pr_cta_${FETCHSIZE2} pr_cta_${FETCHSIZE3} pr_cta_${FETCHSIZE4} pr_cta_${FETCHSIZE4}_${NROUNDS_twitter} pr_cta_${FETCHSIZE4}_${NROUNDS_osm}
+all: bfs_${FETCHSIZE1} bfs_cta_${FETCHSIZE1} bfs_cta_discrete_${FETCHSIZE1} bfs_${FETCHSIZE2} bfs_cta_${FETCHSIZE2} bfs_cta_discrete_${FETCHSIZE2} bfs_${FETCHSIZE3} bfs_cta_${FETCHSIZE3} bfs_cta_discrete_${FETCHSIZE3} pr pr_cta_${FETCHSIZE1} pr_cta_${FETCHSIZE2} pr_cta_${FETCHSIZE3} pr_cta_${FETCHSIZE4} pr_cta_${FETCHSIZE4}_${NROUNDS_twitter} pr_cta_${FETCHSIZE4}_${NROUNDS_osm} pr_cta_discrete_${FETCHSIZE1} pr_cta_discrete_${FETCHSIZE2} pr_cta_discrete_${FETCHSIZE3} pr_cta_discrete_${FETCHSIZE4} gc_${FETCHSIZE1} gc_${FETCHSIZE3} gc_${FETCHSIZE4}
 
 bfs_all: bfs_${FETCHSIZE1} bfs_cta_${FETCHSIZE1} bfs_cta_discrete_${FETCHSIZE1} bfs_${FETCHSIZE2} bfs_cta_${FETCHSIZE2} bfs_cta_discrete_${FETCHSIZE2} bfs_${FETCHSIZE3} bfs_cta_${FETCHSIZE3} bfs_cta_discrete_${FETCHSIZE3} 
 
 pr_all: pr pr_cta_${FETCHSIZE1} pr_cta_${FETCHSIZE2} pr_cta_${FETCHSIZE3} pr_cta_${FETCHSIZE4} pr_cta_${FETCHSIZE4}_${NROUNDS_twitter} pr_cta_${FETCHSIZE4}_${NROUNDS_osm} pr_cta_discrete_${FETCHSIZE1} pr_cta_discrete_${FETCHSIZE2} pr_cta_discrete_${FETCHSIZE3} pr_cta_discrete_${FETCHSIZE4}
 
+gc_all: gc_${FETCHSIZE1} gc_${FETCHSIZE3} gc_${FETCHSIZE4}
 	
 bfs_fs_32: bfs_${FETCHSIZE1} bfs_cta_${FETCHSIZE1} bfs_cta_discrete_${FETCHSIZE1} 
 
@@ -102,6 +104,16 @@ pr_cta_discrete_${FETCHSIZE3}: $(PR_DIR)/test_pr_discrete.cu
 pr_cta_discrete_${FETCHSIZE4}: $(PR_DIR)/test_pr_discrete.cu
 	$(CUDACC) -o $@ $^ $(CUDACFLAGS) -DFETCHSIZE=${FETCHSIZE4}
 
+gc_${FETCHSIZE1}: $(GC_DIR)/test_gc.cu
+	$(CUDACC) -o $@ $^ $(CUDACFLAGS) -DFETCHSIZE=${FETCHSIZE1}
+
+gc_${FETCHSIZE4}: $(GC_DIR)/test_gc.cu
+	$(CUDACC) -o $@ $^ $(CUDACFLAGS) -DFETCHSIZE=${FETCHSIZE4}
+
+gc_${FETCHSIZE3}: $(GC_DIR)/test_gc.cu
+	$(CUDACC) -o $@ $^ $(CUDACFLAGS) -DFETCHSIZE=${FETCHSIZE3}
+
+
 
 clean:
-	rm -fv bfs_${FETCHSIZE1} bfs_cta_${FETCHSIZE1} bfs_cta_discrete_${FETCHSIZE1} pr pr_cta_${FETCHSIZE1} bfs_${FETCHSIZE2} bfs_cta_${FETCHSIZE2} bfs_cta_discrete_${FETCHSIZE2} pr_cta_${FETCHSIZE2} bfs_${FETCHSIZE3} bfs_cta_${FETCHSIZE3} bfs_cta_discrete_${FETCHSIZE3} pr_cta_${FETCHSIZE3} pr_cta_${FETCHSIZE4} pr_cta_${FETCHSIZE4}_${NROUNDS_twitter} pr_cta_${FETCHSIZE4}_${NROUNDS_osm} pr_cta_discrete_${FETCHSIZE1} pr_cta_discrete_${FETCHSIZE2} pr_cta_discrete_${FETCHSIZE3} pr_cta_discrete_${FETCHSIZE4}
+	rm -fv bfs_${FETCHSIZE1} bfs_cta_${FETCHSIZE1} bfs_cta_discrete_${FETCHSIZE1} pr pr_cta_${FETCHSIZE1} bfs_${FETCHSIZE2} bfs_cta_${FETCHSIZE2} bfs_cta_discrete_${FETCHSIZE2} pr_cta_${FETCHSIZE2} bfs_${FETCHSIZE3} bfs_cta_${FETCHSIZE3} bfs_cta_discrete_${FETCHSIZE3} pr_cta_${FETCHSIZE3} pr_cta_${FETCHSIZE4} pr_cta_${FETCHSIZE4}_${NROUNDS_twitter} pr_cta_${FETCHSIZE4}_${NROUNDS_osm} pr_cta_discrete_${FETCHSIZE1} pr_cta_discrete_${FETCHSIZE2} pr_cta_discrete_${FETCHSIZE3} pr_cta_discrete_${FETCHSIZE4} gc_${FETCHSIZE1} gc_${FETCHSIZE3} gc_${FETCHSIZE4}

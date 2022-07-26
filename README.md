@@ -1,10 +1,10 @@
 # ATOS
 ## Prerequisite
-- CUDA
-- NVSHMEM
+- CUDA (>10.0)
+- NVSHMEM (can be download from https://developer.nvidia.com/nvshmem by joinning NVIDIA developer)
 - GCC
 - METIS
-- OpenMPI
+- OpenMPI (>4.0)
 
 
 ## Compile BFS
