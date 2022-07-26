@@ -5,9 +5,15 @@ GRAPH_TAR  = $(GRAPH_NAME).tar.gz
 
 setup: $(GRAPH_NAME).mtx
 
+mtxfile = 0
+csrfile = 0
+ifeq ($(shell test -e $(GRAPH_NAME).mtx && echo -n yes),yes)
+	mtxfile=1
+endif
+
 $(GRAPH_NAME).mtx: $(GRAPH_TAR)
 	tar xvfz $(GRAPH_TAR)
-	cp $(GRAPH_NAME)/$(GRAPH_NAME).mtx $(GRAPH_NAME).mtx
+	bash ../check.sh "$(GRAPH_NAME)"
 	rm -rf $(GRAPH_NAME)
 
 clean:
