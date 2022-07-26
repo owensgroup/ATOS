@@ -61,55 +61,55 @@ default : examples
 
 EXAMPLECUSRCFILES := test_bfs_queue_persist.cu test_bfs_priority_queue.cu
 
-FETCHSIZE := 32
+FETCHSIZE1 := 32
 CUPERFBIN   := $(patsubst %.cu, %, $(filter %.cu, $(EXAMPLECUSRCFILES)))
 CXXPERFBIN  := $(patsubst %.cpp, %, $(filter %.cpp, $(PERFCXXSRCFILES)))
-TESTBIN   := $(patsubst %.cu, %_${FETCHSIZE}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
+TESTBIN1   := $(patsubst %.cu, %_${FETCHSIZE1}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
 
 $(info $(CUPERFBIN))
 $(info $(CXXPERFBIN))
-$(info $(TESTBIN))
+$(info $(TESTBIN1))
 
-examples : $(TESTBIN) 
+examples : $(TESTBIN1) 
 
-%_${FETCHSIZE} : %.cu
+%_${FETCHSIZE1} : %.cu
 	@printf "Compiling %-25s > %-25s\n" $< $@
 	mkdir -p `dirname $@`
-	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -rdc=true $< -o $@ $(TESTLDFLAGS) 
+	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE1} -rdc=true $< -o $@ $(TESTLDFLAGS) 
 
-FETCHSIZE := 64
-TESTBIN   := $(patsubst %.cu, %_${FETCHSIZE}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
-$(info $(TESTBIN))
+FETCHSIZE2 := 64
+TESTBIN2   := $(patsubst %.cu, %_${FETCHSIZE2}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
+$(info $(TESTBIN2))
 
-examples : $(TESTBIN) 
+examples : $(TESTBIN2) 
 
-%_${FETCHSIZE} : %.cu
+%_${FETCHSIZE2} : %.cu
 	@printf "Compiling %-25s > %-25s\n" $< $@
 	mkdir -p `dirname $@`
-	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -rdc=true $< -o $@ $(TESTLDFLAGS) 
+	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE2} -rdc=true $< -o $@ $(TESTLDFLAGS) 
 
-FETCHSIZE := 128
-TESTBIN   := $(patsubst %.cu, %_${FETCHSIZE}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
-$(info $(TESTBIN))
+FETCHSIZE3 := 128
+TESTBIN3   := $(patsubst %.cu, %_${FETCHSIZE3}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
+$(info $(TESTBIN3))
 
-examples : $(TESTBIN) 
+examples : $(TESTBIN3) 
 
-%_${FETCHSIZE} : %.cu
+%_${FETCHSIZE3} : %.cu
 	@printf "Compiling %-25s > %-25s\n" $< $@
 	mkdir -p `dirname $@`
-	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -rdc=true $< -o $@ $(TESTLDFLAGS) 
+	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE3} -rdc=true $< -o $@ $(TESTLDFLAGS) 
 
-FETCHSIZE := 256
-TESTBIN   := $(patsubst %.cu, %_${FETCHSIZE}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
-$(info $(TESTBIN))
+FETCHSIZE4 := 256
+TESTBIN4   := $(patsubst %.cu, %_${FETCHSIZE4}, $(filter %.cu, $(EXAMPLECUSRCFILES)))
+$(info $(TESTBIN4))
 
-examples : $(TESTBIN) 
+examples : $(TESTBIN4) 
 
-%_${FETCHSIZE} : %.cu
+%_${FETCHSIZE4} : %.cu
 	@printf "Compiling %-25s > %-25s\n" $< $@
 	mkdir -p `dirname $@`
-	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE} -rdc=true $< -o $@ $(TESTLDFLAGS) 
+	$(NVCC) $(NVCC_GENCODE) $(TESTCUFLAGS) $(TESTINC) -DFETCHSIZE=${FETCHSIZE4} -rdc=true $< -o $@ $(TESTLDFLAGS) 
 
 
 clean : 
-	rm -rf $(CUPERFBIN)
+	rm -rf $(TESTBIN1) $(TESTBIN2) $(TESTBIN3) $(TESTBIN4)

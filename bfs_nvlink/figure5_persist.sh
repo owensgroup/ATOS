@@ -1,3 +1,4 @@
+make all -C ../single-GPU/tests/
 echo "Do you want to run this script with quick mode?"
 read -r ifquick
 
@@ -13,14 +14,21 @@ else
 fi
 
 if test -f "$outfile"; then
-    echo "Remove $outfile"
-    rm $outfile
+ 	echo "Do you want to regenerate performance data?"
+	read -r ifgenerate
+	if [ $ifgenerate == "yes" ] || [ $ifgenerate == "Yes" ] || [ $ifgenerate == "YES" ] || [ $ifgenerate == "1" ]; then
+    	echo "Remove $outfile"
+    	rm $outfile
+	fi
 fi
-echo "Generating performance data"
-./run_bfs_persist.sh $modequick >> $outfile
+
+if ! test -f "$outfile"; then 
+	echo "Generating performance data"
+	./run_bfs_persist.sh $modequick >> $outfile
+fi
 
 datasets=("soc-LiveJournal1" "hollywood_2009" "indochina_2004" "twitter" "road_usa" "osm-eur")
-output=`awk '{if($1 == "ave" && $2 == "time:") print $3","}' $outfile`
+output=`awk '{if($1 == "ave" && $2 == "time:") print $3","; if($1 == "Ave." && $2 == "Time:") print $3"," }' $outfile`
 #echo ${output}
 outputtime=()
 IFS=,
