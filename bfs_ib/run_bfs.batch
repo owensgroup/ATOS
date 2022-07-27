@@ -10,251 +10,251 @@
 # End LSF directives and begin shell commands
 cd $LS_SUBCWD
 
-echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -check 1 -partition 3 -rounds 10"
-jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -check 1 -partition 3 -rounds 10
+echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -check 1 -partition 3 -rounds 10"
+jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -check 1 -partition 3 -rounds 10
 
-echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -check 1 -partition 3 -rounds 10"
-jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -check 1 -partition 3 -rounds 10
+echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -check 1 -partition 3 -rounds 10"
+jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -check 1 -partition 3 -rounds 10
 
-echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -check 1 -partition 3 -rounds 10"
-jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -check 1 -partition 3 -rounds 10
+echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -check 1 -partition 3 -rounds 10"
+jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -check 1 -partition 3 -rounds 10
 
-echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -check 1 -partition 3 -rounds 10"
-jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -check 1 -partition 3 -rounds 10
+echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -check 1 -partition 3 -rounds 10"
+jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -check 1 -partition 3 -rounds 10
 
-echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -check 1 -partition 3 -rounds 10"
-jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -check 1 -partition 3 -rounds 10
+echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -check 1 -partition 3 -rounds 10"
+jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -check 1 -partition 3 -rounds 10
 
-echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -check 1 -partition 3 -rounds 10"
-jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -check 1 -partition 3 -rounds 10
+echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -check 1 -partition 3 -rounds 10"
+jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -check 1 -partition 3 -rounds 10
 
-echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -check 1 -partition 3 -rounds 10"
-jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -check 1 -partition 3 -rounds 10
+echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -check 1 -partition 3 -rounds 10"
+jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -check 1 -partition 3 -rounds 10
 
 
-#echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
-#jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
+#echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
+#jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
 #
-#echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
-#jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
+#echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
+#jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
 #
-#echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
-#jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
+#echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
+#jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
 #
-#echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
-#jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
+#echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
+#jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
 #
-#echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
-#jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
+#echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
+#jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
 #
-#echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
-#jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
+#echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
+#jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
 #
-#echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
-#jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/soc-LiveJournal1.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
+#echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
+#jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/soc-LiveJournal1/soc-LiveJournal1_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
 
 
-#echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
-#jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
+#echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
+#jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
 #
-#echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
-#jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
+#echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
+#jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
 #
-#echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
-#jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
+#echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
+#jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
 #
-#echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
-#jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
+#echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
+#jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
 #
-#echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
-#jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
+#echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
+#jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
 #
-#echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
-#jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
+#echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
+#jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
 #
-#echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
-#jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
+#echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20"
+#jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20
 
-echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -check 1 -partition 3 -rounds 20"
-jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -check 1 -partition 3 -rounds 20
+echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -check 1 -partition 3 -rounds 20"
+jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -check 1 -partition 3 -rounds 20
 
-echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -check 1 -partition 3 -rounds 20"
-jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -check 1 -partition 3 -rounds 20
+echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -check 1 -partition 3 -rounds 20"
+jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -check 1 -partition 3 -rounds 20
 
-echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -check 1 -partition 3 -rounds 20"
-jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -check 1 -partition 3 -rounds 20
+echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -check 1 -partition 3 -rounds 20"
+jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -check 1 -partition 3 -rounds 20
 
-echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -check 1 -partition 3 -rounds 20"
-jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -check 1 -partition 3 -rounds 20
+echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -check 1 -partition 3 -rounds 20"
+jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -check 1 -partition 3 -rounds 20
 
-echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -check 1 -partition 3 -rounds 20"
-jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -check 1 -partition 3 -rounds 20
+echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -check 1 -partition 3 -rounds 20"
+jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -check 1 -partition 3 -rounds 20
 
-echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -check 1 -partition 3 -rounds 20"
-jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -check 1 -partition 3 -rounds 20
+echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -check 1 -partition 3 -rounds 20"
+jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -check 1 -partition 3 -rounds 20
 
-echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -check 1 -partition 3 -rounds 20"
-jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/hollywood-2009.csr -v 1 -check 1 -partition 3 -rounds 20
+echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -check 1 -partition 3 -rounds 20"
+jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/hollywood-2009/hollywood-2009_ud.csr -v 1 -check 1 -partition 3 -rounds 20
 
-#echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40"
-#jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40
+#echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40"
+#jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40
 #
-#echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40"
-#jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40
+#echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40"
+#jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40
 #
-#echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40"
-#jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40
+#echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40"
+#jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40
 #
-#echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40"
-#jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40
+#echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40"
+#jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40
 #
-#echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40"
-#jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40
+#echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40"
+#jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40
 #
-#echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40"
-#jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40
+#echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40"
+#jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40
 #
-#echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40"
-#jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40
+#echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40"
+#jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -iter 10 -check 1 -partition 3 -rounds 20 -source 40
 
-echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40"
-jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40
+echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40"
+jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40
 
-echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40"
-jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40
+echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40"
+jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40
 
-echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40"
-jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40
+echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40"
+jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40
 
-echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40"
-jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40
+echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40"
+jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40
 
-echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40"
-jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40
+echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -check 1 -partition 0 -rounds 20 -source 40"
+jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -check 1 -partition 0 -rounds 20 -source 40
 
-echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40"
-jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40
+echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40"
+jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -check 1 -partition 3 -rounds 20 -source 40
 
-echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -check 1 -partition 0 -rounds 20 -source 40"
-jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/indochina-2004.csr -v 1 -check 1 -partition 0 -rounds 20 -source 40
+echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -check 1 -partition 0 -rounds 20 -source 40"
+jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/indochina-2004/indochina-2004_di.csr -v 1 -check 1 -partition 0 -rounds 20 -source 40
 
 
 
-echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1"
-jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1
+echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1"
+jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1
 
-echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1"
-jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1
+echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1"
+jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1
 
-echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1"
-jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1
+echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1"
+jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1
 
-echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1"
-jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1
+echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1"
+jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1
 
-echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1"
-jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1
+echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1"
+jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1
 
-echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1"
-jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1
+echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1"
+jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1
 
-echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1"
-jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1
+echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1"
+jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -check 1 -partition 2 -rounds 10 -delta 1
 
-#echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1"
-#jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1
+#echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1"
+#jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1
 #
-#echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1"
-#jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1
+#echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1"
+#jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1
 #
-#echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1"
-#jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1
+#echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1"
+#jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1
 #
-#echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1"
-#jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1
+#echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1"
+#jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1
 
-#echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1"
-#jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1
+#echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1"
+#jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1
 
-#echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1"
-#jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1
+#echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1"
+#jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1
 
-#echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1"
-#jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1
+#echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1"
+#jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_prio_32_4_16 -file ../datasets/twitter/twitter.csr -v 1 -iter 50 -check 1 -partition 2 -rounds 10 -delta 1
 
 
-echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20"
-jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20
+echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20"
+jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20
 
-echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -iter 15000 -check 1 -partition 3 -rounds 20"
-jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20
+echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -iter 15000 -check 1 -partition 3 -rounds 20"
+jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20
 
-echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -iter 11000 -check 1 -partition 3 -rounds 20"
-jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20
+echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -iter 11000 -check 1 -partition 3 -rounds 20"
+jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20
 
-echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20"
-jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20
+echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20"
+jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20
 
-echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20"
-jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20
+echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20"
+jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20
 
-echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20"
-jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20
+echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20"
+jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20
 
-echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20"
-jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20
+echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20"
+jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -iter 12000 -check 1 -partition 3 -rounds 20
 
-#echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -check 1 -partition 3 -rounds 10"
-#jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -check 1 -partition 3 -rounds 10
+#echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -check 1 -partition 3 -rounds 10"
+#jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -check 1 -partition 3 -rounds 10
 #
-#echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -check 1 -partition 3 -rounds 10"
-#jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -check 1 -partition 3 -rounds 10
+#echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -check 1 -partition 3 -rounds 10"
+#jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -check 1 -partition 3 -rounds 10
 #
 #
-#echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -check 1 -partition 3 -rounds 10"
-#jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -check 1 -partition 3 -rounds 10
+#echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -check 1 -partition 3 -rounds 10"
+#jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -check 1 -partition 3 -rounds 10
 
-#echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -check 1 -partition 3 -rounds 10"
-#jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -check 1 -partition 3 -rounds 10
+#echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -check 1 -partition 3 -rounds 10"
+#jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -check 1 -partition 3 -rounds 10
 #
-#echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -check 1 -partition 3 -rounds 10"
-#jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -check 1 -partition 3 -rounds 10
+#echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -check 1 -partition 3 -rounds 10"
+#jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -check 1 -partition 3 -rounds 10
 #
-#echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -check 1 -partition 3 -rounds 10"
-#jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -check 1 -partition 3 -rounds 10
+#echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -check 1 -partition 3 -rounds 10"
+#jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -check 1 -partition 3 -rounds 10
 #
-#echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -check 1 -partition 3 -rounds 10"
-#jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/road_usa.csr -v 1 -check 1 -partition 3 -rounds 10
+#echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -check 1 -partition 3 -rounds 10"
+#jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/road_usa/road_usa_ud.csr -v 1 -check 1 -partition 3 -rounds 10
 
 
-echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10 -iter 20000 -ratio 1.5"
-jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10 -iter 20000 -ratio 1.5
+echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10 -iter 20000 -ratio 1.5"
+jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10 -iter 20000 -ratio 1.5
 
-echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10 -ratio 1"
-jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10
+echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10 -ratio 1"
+jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10
 
-echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10 -ratio 1"
-jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10
+echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10 -ratio 1"
+jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10
 
-echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10"
-jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10
+echo "jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10"
+jsrun -n 5 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10
 
-echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10"
-jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10
+echo "jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10"
+jsrun -n 6 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10
 
-echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10"
-jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10
+echo "jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10"
+jsrun -n 7 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10
 
-echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10"
-jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10
+echo "jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10"
+jsrun -n 8 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -iter 40000 -check 1 -partition 3 -rounds 10
 
-#echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10"
-#jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10 
+#echo "jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10"
+#jsrun -n 2 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10 
 #
-#echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10"
-#jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10 
+#echo "jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10"
+#jsrun -n 3 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10 
 #
-#echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10"
-#jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file /gpfs/alpine/bif115/scratch/yuxinc/graph_datasets/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10 
+#echo "jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10"
+#jsrun -n 4 -r 1 -a 1 -c 1 -g 1 ./bfs_32_4_8 -file ../datasets/osm-eur/osm-eur.csr -v 1 -check 1 -partition 3 -rounds 10 
 
 
