@@ -13,13 +13,13 @@
 ## Prerequisite
 ### Single-GPU Atos Graph Analytices
 - CUDA (V11.4.120 or newer)
-- GCC
+- GCC (9.4.0 or newer)
 #### Required Environment Variables
 Set the followling environment variables accordingly based on your depedency path
 - CUDA\_HOME
 ### Multi-GPU Atos BFS and PageRank
 - CUDA (V11.4.120 or newer)
-- GCC
+- GCC (9.4.0 or newer)
 - NVSHMEM (can be download from https://developer.nvidia.com/nvshmem by joinning NVIDIA developer)
 - METIS (https://github.com/KarypisLab/METIS) 
    Compile METIS with 64 bites option
@@ -30,6 +30,9 @@ Set the followling environment variables accordingly based on your depedency pat
 - METIS64\_HOME
 - NVSHMEM\_HOME
 - MPI\_HOME
+
+## Download Datasets
+Several tested graph datasets are included under `datasets` directory. Under each graph dataset folder, one needs to run `make` to download the dataset.  
 
 ## Compile BFS 
 Under bfs\_nvlink and bfs\_ib directory, compile the code with make
