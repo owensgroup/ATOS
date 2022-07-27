@@ -12,18 +12,18 @@
 
 ## Prerequisite
 ### Single-GPU Atos Graph Analytices
-- CUDA (>10.0)
+- CUDA (V11.4.120 or newer)
 - GCC
 #### Required Environment Variables
 Set the followling environment variables accordingly based on your depedency path
 - CUDA\_HOME
 ### Multi-GPU Atos BFS and PageRank
-- CUDA (>10.0)
+- CUDA (V11.4.120 or newer)
 - GCC
 - NVSHMEM (can be download from https://developer.nvidia.com/nvshmem by joinning NVIDIA developer)
 - METIS (https://github.com/KarypisLab/METIS) 
    Compile METIS with 64 bites option
-- OpenMPI (>4.0)
+- OpenMPI (4.0.5 or newer) or IBM Spectrum MPI on Summit
 #### Required Environment Variables
 Set the followling environment variables accordingly based on your depedency path
 - CUDA\_HOME
