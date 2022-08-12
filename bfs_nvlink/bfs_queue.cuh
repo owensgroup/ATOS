@@ -108,7 +108,7 @@ public:
 
         rt_capacity = rt_capacity*2;
         if(cap == 0)
-            worklists.init(QueueT(nodes*3), rt_capacity, my_pe, n_pes, num_q, min_iter);
+            worklists.init(QueueT(nodes*4), rt_capacity, my_pe, n_pes, num_q, min_iter);
         else worklists.init(cap, rt_capacity, my_pe, n_pes, num_q, min_iter);
 
         //CUDA_CHECK(cudaMallocManaged(&depth, sizeof(VertexId)*totalNodes));
