@@ -83,3 +83,7 @@ Set the following environment variables accordingly based on your dependency pat
 
 ## Pre-generated Performance Data
 Pre-generated performance data are under `perf_data` directory. To extract the performance results, run `figure5_persist.sh`, `figure5_prio.sh` and `figure10_bfs.sh` under `bfs_nvlink` and `bfs_ib` directory and run `figure7_discrete.sh`, `figure7_persist.sh` and `figure11_pr.sh` under `pr_nvlink` and `pr_ib` directory.
+
+## Related Publications:
+- [Atos: A Task-Parallel GPU Scheduler for Graph Analytics](https://dl.acm.org/doi/abs/10.1145/3545008.3545056)
+- [Scalable irregular parallelism with GPUs: getting CPUs out of the way](https://dl.acm.org/doi/abs/10.5555/3571885.3571951)
