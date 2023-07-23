@@ -1,0 +1,1841 @@
+set on device 0
+num of block: 160  num of threads per block: 512
+file: /home/yuxin420/temp/large_twitch_ud.csr start from 0: 0 write profile file: 0 160x512 min iter 300
+permute 0
+Vertices: 168114 Edges: 16980679
+max degree 46596
+wl_size: 21518592
+min_iter: 300
+warpSize_wl_pop 160
+Queue 0, capacity: 21518592, end: 168114	start: 0
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 389942
+Time: 3.87277
+workload 389942
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 389790
+Time: 3.78675
+workload 389790
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 387932
+Time: 3.80621
+workload 387932
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 393410
+Time: 3.62496
+workload 393410
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 393406
+Time: 3.87482
+workload 393406
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 393462
+Time: 3.76115
+workload 393462
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 392586
+Time: 3.84512
+workload 392586
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 393716
+Time: 3.88608
+workload 393716
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 385788
+Time: 3.4304
+workload 385788
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 391904
+Time: 3.78573
+workload 391904
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 391174
+Time: 3.59526
+workload 391174
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 393108
+Time: 3.89222
+workload 393108
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 392482
+Time: 3.81338
+workload 392482
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 393680
+Time: 3.67616
+workload 393680
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 390906
+Time: 4.10317
+workload 390906
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 393932
+Time: 3.68128
+workload 393932
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 391836
+Time: 3.83386
+workload 391836
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 394744
+Time: 3.8697
+workload 394744
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 393746
+Time: 3.64544
+workload 393746
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 21518592, end=start: 392354
+Time: 3.7929
+workload 392354
+Ave. Time: 3.77887
+Ave. Workload(vertices): 195997
+use color 144
+Pass Validation
+set on device 0
+num of block: 160  num of threads per block: 512
+file: /home/yuxin420/temp/large_twitch_ud.csr start from 0: 0 write profile file: 0 160x512 min iter 50
+permute 0
+Vertices: 168114 Edges: 16980679
+max degree 46596
+wl_size: 21518592
+min_iter: 50
+Queue 0, capacity: 21518592, end: 168114	start: 0
+Queue 0, capacity: 21518592, end=start: 416422
+Time: 4.36531
+workload 416422
+Queue 0, capacity: 21518592, end=start: 406538
+Time: 3.87789
+workload 406538
+Queue 0, capacity: 21518592, end=start: 408036
+Time: 3.94445
+workload 408036
+Queue 0, capacity: 21518592, end=start: 396744
+Time: 4.2793
+workload 396744
+Queue 0, capacity: 21518592, end=start: 405240
+Time: 4.09805
+workload 405240
+Queue 0, capacity: 21518592, end=start: 409576
+Time: 4.28237
+workload 409576
+Queue 0, capacity: 21518592, end=start: 409068
+Time: 4.08883
+workload 409068
+Queue 0, capacity: 21518592, end=start: 409428
+Time: 4.00896
+workload 409428
+Queue 0, capacity: 21518592, end=start: 411776
+Time: 4.28544
+workload 411776
+Queue 0, capacity: 21518592, end=start: 410122
+Time: 4.20045
+workload 410122
+Queue 0, capacity: 21518592, end=start: 411662
+Time: 4.03661
+workload 411662
+Queue 0, capacity: 21518592, end=start: 410298
+Time: 4.11648
+workload 410298
+Queue 0, capacity: 21518592, end=start: 408746
+Time: 4.16461
+workload 408746
+Queue 0, capacity: 21518592, end=start: 413406
+Time: 4.08269
+workload 413406
+Queue 0, capacity: 21518592, end=start: 415910
+Time: 4.06733
+workload 415910
+Queue 0, capacity: 21518592, end=start: 409894
+Time: 4.17178
+workload 409894
+Queue 0, capacity: 21518592, end=start: 410876
+Time: 3.95059
+workload 410876
+Queue 0, capacity: 21518592, end: 410986	start: 410985
+Time: 4.05197
+workload 410985
+Queue 0, capacity: 21518592, end=start: 412022
+Time: 4.1769
+workload 412022
+Queue 0, capacity: 21518592, end=start: 414358
+Time: 4.12467
+workload 414358
+Ave. Time: 4.11873
+Ave. Workload(vertices): 205027
+use color 143
+Pass Validation
+set on device 0
+num of block: 80  num of threads per block: 768
+file: /home/yuxin420/temp/large_twitch_ud.csr start from 0: 0 write profile file: 0 80x768 min iter 1500
+permute 0
+Vertices: 168114 Edges: 16980679
+max degree 46596
+wl_size: 21518592
+min_iter: 1500
+warpSize_wl_pop 1920
+Queue 0, capacity: 21518592, end: 168114	start: 0
+numBlock 80 numThread 768
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end=start: 362284
+Time: 17.5647
+workload 362284
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end: 362218	start: 362217
+Time: 16.6308
+workload 362217
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end=start: 361874
+Time: 19.0597
+workload 361874
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end=start: 362378
+Time: 15.0067
+workload 362378
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end: 361846	start: 361845
+Time: 16.6779
+workload 361845
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end: 362018	start: 362016
+Time: 17.3783
+workload 362016
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end=start: 361856
+Time: 19.0874
+workload 361856
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end=start: 361854
+Time: 18.816
+workload 361854
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end: 362562	start: 362561
+Time: 17.0629
+workload 362561
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end=start: 361956
+Time: 17.8278
+workload 361956
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end=start: 358626
+Time: 16.1362
+workload 358626
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end=start: 361944
+Time: 16.3123
+workload 361944
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end=start: 361696
+Time: 20.606
+workload 361696
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end=start: 362722
+Time: 17.794
+workload 362722
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end=start: 362172
+Time: 16.983
+workload 362172
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end=start: 362346
+Time: 18.6952
+workload 362346
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end=start: 362390
+Time: 17.6435
+workload 362390
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end: 362150	start: 362149
+Time: 19.0689
+workload 362149
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end=start: 357556
+Time: 16.4219
+workload 357556
+numBlock 80 numThread 768
+Queue 0, capacity: 21518592, end: 362314	start: 362313
+Time: 21.4333
+workload 362313
+Ave. Time: 17.8103
+Ave. Workload(vertices): 180869
+use color 149
+Pass Validation
+set on device 0
+num of block: 80  num of threads per block: 768
+file: /home/yuxin420/temp/cage13_ud.csr start from 0: 0 write profile file: 0 80x768 min iter 20
+permute 0
+Vertices: 445315 Edges: 8777552
+max degree 57
+wl_size: 57000320
+min_iter: 20
+warpSize_wl_pop 1920
+Queue 0, capacity: 57000320, end: 445315	start: 0
+numBlock 80 numThread 768
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 934026
+Time: 2.18522
+workload 934026
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 929734
+Time: 1.79098
+workload 929734
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 934234
+Time: 2.15859
+workload 934234
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 933844
+Time: 2.07974
+workload 933844
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 934706
+Time: 1.83091
+workload 934706
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 931616
+Time: 2.02752
+workload 931616
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end: 935620	start: 935618
+Time: 1.83296
+workload 935618
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 929304
+Time: 2.13197
+workload 929304
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end: 937217	start: 937216
+Time: 2.048
+workload 937216
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 933568
+Time: 1.79917
+workload 933568
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 932964
+Time: 2.13914
+workload 932964
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 932732
+Time: 1.81453
+workload 932732
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 931062
+Time: 2.048
+workload 931062
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 934590
+Time: 2.06029
+workload 934590
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 936438
+Time: 1.84422
+workload 936438
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end: 931818	start: 931817
+Time: 1.9968
+workload 931817
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 932750
+Time: 1.88826
+workload 932750
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end: 931970	start: 931969
+Time: 2.07155
+workload 931969
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 935038
+Time: 2.34803
+workload 935038
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 932884
+Time: 1.8647
+workload 932884
+Ave. Time: 1.99803
+Ave. Workload(vertices): 466652
+use color 17
+Pass Validation
+set on device 0
+num of block: 160  num of threads per block: 512
+file: /home/yuxin420/temp/cage13_ud.csr start from 0: 0 write profile file: 0 160x512 min iter 10
+permute 0
+Vertices: 445315 Edges: 8777552
+max degree 57
+wl_size: 57000320
+min_iter: 10
+warpSize_wl_pop 160
+Queue 0, capacity: 57000320, end: 445315	start: 0
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2081904
+Time: 4.37965
+workload 2081904
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2065974
+Time: 3.86458
+workload 2065974
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2077714
+Time: 4.18509
+workload 2077714
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2072476
+Time: 4.2199
+workload 2072476
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2089592
+Time: 3.99155
+workload 2089592
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2039638
+Time: 4.11034
+workload 2039638
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2077004
+Time: 3.96186
+workload 2077004
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2074510
+Time: 4.29158
+workload 2074510
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2078008
+Time: 4.37555
+workload 2078008
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2063364
+Time: 4.37146
+workload 2063364
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2074666
+Time: 4.00589
+workload 2074666
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2059122
+Time: 4.35405
+workload 2059122
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2077258
+Time: 4.00794
+workload 2077258
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2099324
+Time: 4.40013
+workload 2099324
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2087748
+Time: 4.23322
+workload 2087748
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2078162
+Time: 4.02637
+workload 2078162
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2083872
+Time: 4.22605
+workload 2083872
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2083818
+Time: 4.08986
+workload 2083818
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2081804
+Time: 4.22605
+workload 2081804
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2078260
+Time: 4.2199
+workload 2078260
+Ave. Time: 4.17705
+Ave. Workload(vertices): 1038105
+use color 18
+Pass Validation
+set on device 0
+num of block: 160  num of threads per block: 512
+file: /home/yuxin420/temp/cage13_ud.csr start from 0: 0 write profile file: 0 160x512 min iter 10
+permute 0
+Vertices: 445315 Edges: 8777552
+max degree 57
+wl_size: 57000320
+min_iter: 10
+Queue 0, capacity: 57000320, end: 445315	start: 0
+Queue 0, capacity: 57000320, end=start: 2034558
+Time: 2.86515
+workload 2034558
+Queue 0, capacity: 57000320, end=start: 2056464
+Time: 2.91942
+workload 2056464
+Queue 0, capacity: 57000320, end=start: 2035932
+Time: 2.8887
+workload 2035932
+Queue 0, capacity: 57000320, end=start: 2036430
+Time: 2.88973
+workload 2036430
+Queue 0, capacity: 57000320, end=start: 2033146
+Time: 2.8713
+workload 2033146
+Queue 0, capacity: 57000320, end=start: 2054504
+Time: 2.90611
+workload 2054504
+Queue 0, capacity: 57000320, end=start: 2046262
+Time: 2.9143
+workload 2046262
+Queue 0, capacity: 57000320, end=start: 2048534
+Time: 2.90611
+workload 2048534
+Queue 0, capacity: 57000320, end=start: 2040136
+Time: 2.89178
+workload 2040136
+Queue 0, capacity: 57000320, end=start: 2027556
+Time: 2.88666
+workload 2027556
+Queue 0, capacity: 57000320, end=start: 2044232
+Time: 2.89178
+workload 2044232
+Queue 0, capacity: 57000320, end=start: 2039192
+Time: 2.87642
+workload 2039192
+Queue 0, capacity: 57000320, end=start: 2043948
+Time: 2.8887
+workload 2043948
+Queue 0, capacity: 57000320, end=start: 2065174
+Time: 2.92864
+workload 2065174
+Queue 0, capacity: 57000320, end=start: 2026082
+Time: 2.87846
+workload 2026082
+Queue 0, capacity: 57000320, end=start: 2041386
+Time: 2.88768
+workload 2041386
+Queue 0, capacity: 57000320, end=start: 2045676
+Time: 2.88154
+workload 2045676
+Queue 0, capacity: 57000320, end=start: 2036524
+Time: 2.87232
+workload 2036524
+Queue 0, capacity: 57000320, end=start: 2034620
+Time: 2.8201
+workload 2034620
+Queue 0, capacity: 57000320, end=start: 2024446
+Time: 2.83648
+workload 2024446
+Ave. Time: 2.88507
+Ave. Workload(vertices): 1020370
+use color 18
+Pass Validation
+set on device 0
+num of block: 160  num of threads per block: 512
+file: /home/yuxin420/temp/cage13_ud.csr start from 0: 0 write profile file: 0 160x512 min iter 10
+permute 0
+Vertices: 445315 Edges: 8777552
+max degree 57
+wl_size: 57000320
+min_iter: 10
+Queue 0, capacity: 57000320, end: 445315	start: 0
+Queue 0, capacity: 57000320, end=start: 2054938
+Time: 2.90611
+workload 2054938
+Queue 0, capacity: 57000320, end=start: 2017476
+Time: 2.88051
+workload 2017476
+Queue 0, capacity: 57000320, end=start: 2025794
+Time: 2.84877
+workload 2025794
+Queue 0, capacity: 57000320, end=start: 2028898
+Time: 2.87846
+workload 2028898
+Queue 0, capacity: 57000320, end=start: 2030214
+Time: 2.86822
+workload 2030214
+Queue 0, capacity: 57000320, end=start: 2026720
+Time: 2.83238
+workload 2026720
+Queue 0, capacity: 57000320, end=start: 2036970
+Time: 2.86106
+workload 2036970
+Queue 0, capacity: 57000320, end=start: 2039990
+Time: 2.86925
+workload 2039990
+Queue 0, capacity: 57000320, end=start: 2012594
+Time: 2.82419
+workload 2012594
+Queue 0, capacity: 57000320, end=start: 2033804
+Time: 2.89485
+workload 2033804
+Queue 0, capacity: 57000320, end=start: 2046502
+Time: 2.94298
+workload 2046502
+Queue 0, capacity: 57000320, end=start: 2045960
+Time: 2.87539
+workload 2045960
+Queue 0, capacity: 57000320, end=start: 2007084
+Time: 2.81088
+workload 2007084
+Queue 0, capacity: 57000320, end=start: 2060272
+Time: 2.90816
+workload 2060272
+Queue 0, capacity: 57000320, end=start: 2022720
+Time: 2.87642
+workload 2022720
+Queue 0, capacity: 57000320, end=start: 2034288
+Time: 2.84774
+workload 2034288
+Queue 0, capacity: 57000320, end=start: 2048422
+Time: 2.87642
+workload 2048422
+Queue 0, capacity: 57000320, end=start: 2026638
+Time: 2.86925
+workload 2026638
+Queue 0, capacity: 57000320, end=start: 2032614
+Time: 2.8631
+workload 2032614
+Queue 0, capacity: 57000320, end=start: 2049302
+Time: 2.90304
+workload 2049302
+Ave. Time: 2.87186
+Ave. Workload(vertices): 1017030
+use color 17
+Pass Validation
+set on device 0
+num of block: 80  num of threads per block: 768
+file: /home/yuxin420/temp/cage13_ud.csr start from 0: 0 write profile file: 0 80x768 min iter 10
+permute 0
+Vertices: 445315 Edges: 8777552
+max degree 57
+wl_size: 57000320
+min_iter: 10
+warpSize_wl_pop 1920
+Queue 0, capacity: 57000320, end: 445315	start: 0
+numBlock 80 numThread 768
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 929950
+Time: 2.11456
+workload 929950
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end: 933566	start: 933536
+Time: 2.19034
+workload 933536
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end: 932976	start: 932974
+Time: 2.0009
+workload 932974
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end: 932664	start: 932663
+Time: 2.29478
+workload 932663
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end: 935480	start: 935479
+Time: 2.37978
+workload 935479
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 934608
+Time: 1.97734
+workload 934608
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end: 935394	start: 935360
+Time: 2.20774
+workload 935360
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 928206
+Time: 2.00192
+workload 928206
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end: 930840	start: 930816
+Time: 2.31325
+workload 930816
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 932660
+Time: 2.31834
+workload 932660
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end: 934161	start: 934144
+Time: 1.8985
+workload 934144
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 932468
+Time: 2.18829
+workload 932468
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 931688
+Time: 1.82784
+workload 931688
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 933632
+Time: 2.32243
+workload 933632
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 928854
+Time: 2.29683
+workload 928854
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end: 933134	start: 933133
+Time: 1.92512
+workload 933133
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end: 930954	start: 930950
+Time: 2.24461
+workload 930950
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end: 931276	start: 931272
+Time: 1.8176
+workload 931272
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 933966
+Time: 2.18624
+workload 933966
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 934824
+Time: 2.24461
+workload 934824
+Ave. Time: 2.13755
+Ave. Workload(vertices): 466282
+use color 16
+Pass Validation
+set on device 0
+num of block: 160  num of threads per block: 512
+file: /home/yuxin420/temp/cage13_ud.csr start from 0: 0 write profile file: 0 160x512 min iter 10
+permute 0
+Vertices: 445315 Edges: 8777552
+max degree 57
+wl_size: 57000320
+min_iter: 10
+warpSize_wl_pop 160
+Queue 0, capacity: 57000320, end: 445315	start: 0
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2329390
+Time: 3.19181
+workload 2329390
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2313468
+Time: 2.73101
+workload 2313468
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end: 2311688	start: 2311680
+Time: 2.90099
+workload 2311680
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2304386
+Time: 2.83238
+workload 2304386
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2315160
+Time: 3.16211
+workload 2315160
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end: 2330406	start: 2330404
+Time: 3.1529
+workload 2330404
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2328172
+Time: 2.85184
+workload 2328172
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2298734
+Time: 3.21946
+workload 2298734
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2319660
+Time: 2.71872
+workload 2319660
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2343824
+Time: 3.15597
+workload 2343824
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2333660
+Time: 3.41094
+workload 2333660
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2289276
+Time: 2.92557
+workload 2289276
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2274206
+Time: 3.20512
+workload 2274206
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2298944
+Time: 2.95731
+workload 2298944
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2312980
+Time: 3.33005
+workload 2312980
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2273378
+Time: 3.32902
+workload 2273378
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2321704
+Time: 3.0464
+workload 2321704
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2334214
+Time: 3.19488
+workload 2334214
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2317494
+Time: 3.04845
+workload 2317494
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2333516
+Time: 3.0976
+workload 2333516
+Ave. Time: 3.07313
+Ave. Workload(vertices): 1157106
+use color 19
+Pass Validation
+set on device 0
+num of block: 80  num of threads per block: 768
+file: /home/yuxin420/temp/cage13_ud.csr start from 0: 0 write profile file: 0 80x768 min iter 30
+permute 0
+Vertices: 445315 Edges: 8777552
+max degree 57
+wl_size: 57000320
+min_iter: 30
+warpSize_wl_pop 1920
+Queue 0, capacity: 57000320, end: 445315	start: 0
+numBlock 80 numThread 768
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 929984
+Time: 2.51699
+workload 929984
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 935294
+Time: 2.05414
+workload 935294
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 931792
+Time: 1.87802
+workload 931792
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 934436
+Time: 2.27533
+workload 934436
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 934812
+Time: 1.9159
+workload 934812
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 934824
+Time: 2.10534
+workload 934824
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 935038
+Time: 2.19443
+workload 935038
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 932514
+Time: 1.92205
+workload 932514
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 932152
+Time: 2.42176
+workload 932152
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 933176
+Time: 2.02342
+workload 933176
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 931408
+Time: 2.2569
+workload 931408
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 930696
+Time: 2.51904
+workload 930696
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 929784
+Time: 1.89747
+workload 929784
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 929504
+Time: 2.35213
+workload 929504
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 932246
+Time: 2.01114
+workload 932246
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 932546
+Time: 2.38182
+workload 932546
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 933858
+Time: 2.29478
+workload 933858
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 927812
+Time: 1.88006
+workload 927812
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 934032
+Time: 2.34394
+workload 934032
+numBlock 80 numThread 768
+Queue 0, capacity: 57000320, end=start: 938016
+Time: 2.03059
+workload 938016
+Ave. Time: 2.16376
+Ave. Workload(vertices): 466348
+use color 16
+Pass Validation
+set on device 0
+num of block: 160  num of threads per block: 512
+file: /home/yuxin420/temp/cage13_ud.csr start from 0: 0 write profile file: 0 160x512 min iter 30
+permute 0
+Vertices: 445315 Edges: 8777552
+max degree 57
+wl_size: 57000320
+min_iter: 30
+warpSize_wl_pop 160
+Queue 0, capacity: 57000320, end: 445315	start: 0
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2803652
+Time: 3.6608
+workload 2803652
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2830752
+Time: 3.55533
+workload 2830752
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2846420
+Time: 3.27373
+workload 2846420
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2823954
+Time: 3.48058
+workload 2823954
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2836840
+Time: 3.29728
+workload 2836840
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2841568
+Time: 3.48365
+workload 2841568
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2836232
+Time: 3.65363
+workload 2836232
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2812880
+Time: 3.2809
+workload 2812880
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2825822
+Time: 3.47034
+workload 2825822
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2808934
+Time: 3.25222
+workload 2808934
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2842358
+Time: 3.50822
+workload 2842358
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2822602
+Time: 3.65875
+workload 2822602
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2819012
+Time: 3.67104
+workload 2819012
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2837624
+Time: 3.31162
+workload 2837624
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2814042
+Time: 3.57786
+workload 2814042
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2854694
+Time: 3.31674
+workload 2854694
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2821000
+Time: 3.56762
+workload 2821000
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2810246
+Time: 3.71712
+workload 2810246
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2838570
+Time: 3.40787
+workload 2838570
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 57000320, end=start: 2833676
+Time: 3.68333
+workload 2833676
+Ave. Time: 3.49143
+Ave. Workload(vertices): 1414021
+use color 19
+Pass Validation
+set on device 0
+num of block: 160  num of threads per block: 512
+file: /home/yuxin420/temp/cage13_ud.csr start from 0: 0 write profile file: 0 160x512 min iter 10
+permute 0
+Vertices: 445315 Edges: 8777552
+max degree 57
+wl_size: 57000320
+min_iter: 10
+Queue 0, capacity: 57000320, end: 445315	start: 0
+Queue 0, capacity: 57000320, end=start: 2009426
+Time: 2.84672
+workload 2009426
+Queue 0, capacity: 57000320, end=start: 2027022
+Time: 2.89997
+workload 2027022
+Queue 0, capacity: 57000320, end=start: 2053174
+Time: 2.90099
+workload 2053174
+Queue 0, capacity: 57000320, end=start: 2055666
+Time: 2.92864
+workload 2055666
+Queue 0, capacity: 57000320, end=start: 2051982
+Time: 2.8969
+workload 2051982
+Queue 0, capacity: 57000320, end=start: 2019124
+Time: 2.85491
+workload 2019124
+Queue 0, capacity: 57000320, end=start: 2050874
+Time: 2.8969
+workload 2050874
+Queue 0, capacity: 57000320, end=start: 2057180
+Time: 2.91328
+workload 2057180
+Queue 0, capacity: 57000320, end=start: 2010302
+Time: 2.81395
+workload 2010302
+Queue 0, capacity: 57000320, end=start: 2031748
+Time: 2.87027
+workload 2031748
+Queue 0, capacity: 57000320, end=start: 2063202
+Time: 2.9225
+workload 2063202
+Queue 0, capacity: 57000320, end=start: 2037430
+Time: 2.85286
+workload 2037430
+Queue 0, capacity: 57000320, end=start: 2034896
+Time: 2.88768
+workload 2034896
+Queue 0, capacity: 57000320, end=start: 2021640
+Time: 2.89075
+workload 2021640
+Queue 0, capacity: 57000320, end=start: 2041016
+Time: 2.87949
+workload 2041016
+Queue 0, capacity: 57000320, end=start: 2026308
+Time: 2.9399
+workload 2026308
+Queue 0, capacity: 57000320, end=start: 2033068
+Time: 2.85184
+workload 2033068
+Queue 0, capacity: 57000320, end=start: 2014446
+Time: 2.84774
+workload 2014446
+Queue 0, capacity: 57000320, end=start: 2028918
+Time: 2.8672
+workload 2028918
+Queue 0, capacity: 57000320, end=start: 2033662
+Time: 2.85594
+workload 2033662
+Ave. Time: 2.88092
+Ave. Workload(vertices): 1017527
+use color 18
+Pass Validation
+set on device 0
+num of block: 80  num of threads per block: 768
+file: /home/yuxin420/temp/atmosmodd_ud.csr start from 0: 0 write profile file: 0 80x768 min iter 20
+permute 0
+Vertices: 1270432 Edges: 11128320
+max degree 9
+wl_size: 162615296
+min_iter: 20
+warpSize_wl_pop 1920
+Queue 0, capacity: 162615296, end: 1270432	start: 0
+numBlock 80 numThread 768
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543360
+Time: 4.12262
+workload 2543360
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543120
+Time: 4.12262
+workload 2543120
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543082
+Time: 3.82771
+workload 2543082
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543592
+Time: 4.02125
+workload 2543592
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543332
+Time: 3.86458
+workload 2543332
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543182
+Time: 3.85741
+workload 2543182
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543200
+Time: 4.14208
+workload 2543200
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543424
+Time: 4.1216
+workload 2543424
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542712
+Time: 3.96493
+workload 2542712
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543328
+Time: 4.14925
+workload 2543328
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542928
+Time: 3.90246
+workload 2542928
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543070
+Time: 4.1687
+workload 2543070
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543606
+Time: 4.12058
+workload 2543606
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543078
+Time: 3.97517
+workload 2543078
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542674
+Time: 4.07962
+workload 2542674
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543002
+Time: 4.00077
+workload 2543002
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542970
+Time: 4.27008
+workload 2542970
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543108
+Time: 4.40627
+workload 2543108
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542746
+Time: 3.99258
+workload 2542746
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543236
+Time: 4.44006
+workload 2543236
+Ave. Time: 4.07752
+Ave. Workload(vertices): 1271568
+use color 7
+Pass Validation
+set on device 0
+num of block: 160  num of threads per block: 512
+file: /home/yuxin420/temp/atmosmodd_ud.csr start from 0: 0 write profile file: 0 160x512 min iter 10
+permute 0
+Vertices: 1270432 Edges: 11128320
+max degree 9
+wl_size: 162615296
+min_iter: 10
+warpSize_wl_pop 160
+Queue 0, capacity: 162615296, end: 1270432	start: 0
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 39681968
+Time: 52.8579
+workload 39681968
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 39362244
+Time: 52.5445
+workload 39362244
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 40355528
+Time: 53.9034
+workload 40355528
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 39511330
+Time: 52.6653
+workload 39511330
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 39719710
+Time: 53.2613
+workload 39719710
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 39233880
+Time: 52.1779
+workload 39233880
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 39519982
+Time: 52.5885
+workload 39519982
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 40705288
+Time: 54.4758
+workload 40705288
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 39781570
+Time: 53.1374
+workload 39781570
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 40558766
+Time: 54.1174
+workload 40558766
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 40240876
+Time: 53.5183
+workload 40240876
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 40369748
+Time: 53.463
+workload 40369748
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 39673220
+Time: 53.0627
+workload 39673220
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 39131388
+Time: 52.3807
+workload 39131388
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 39203394
+Time: 52.4739
+workload 39203394
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 38946070
+Time: 51.8052
+workload 38946070
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 39565990
+Time: 52.8845
+workload 39565990
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 39294416
+Time: 52.5046
+workload 39294416
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 39697218
+Time: 52.9848
+workload 39697218
+numBlock 160 numThread 512 fetch size 32 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 39736668
+Time: 53.1507
+workload 39736668
+Ave. Time: 52.9979
+Ave. Workload(vertices): 19857231
+use color 7
+Pass Validation
+set on device 0
+num of block: 160  num of threads per block: 512
+file: /home/yuxin420/temp/atmosmodd_ud.csr start from 0: 0 write profile file: 0 160x512 min iter 10
+permute 0
+Vertices: 1270432 Edges: 11128320
+max degree 9
+wl_size: 162615296
+min_iter: 10
+Queue 0, capacity: 162615296, end: 1270432	start: 0
+Queue 0, capacity: 162615296, end=start: 12732004
+Time: 14.8398
+workload 12732004
+Queue 0, capacity: 162615296, end=start: 12785998
+Time: 14.9494
+workload 12785998
+Queue 0, capacity: 162615296, end=start: 12704228
+Time: 14.7978
+workload 12704228
+Queue 0, capacity: 162615296, end=start: 12793966
+Time: 14.8634
+workload 12793966
+Queue 0, capacity: 162615296, end=start: 12731536
+Time: 14.7814
+workload 12731536
+Queue 0, capacity: 162615296, end=start: 12746300
+Time: 14.8378
+workload 12746300
+Queue 0, capacity: 162615296, end=start: 12683140
+Time: 14.719
+workload 12683140
+Queue 0, capacity: 162615296, end=start: 12760556
+Time: 14.8992
+workload 12760556
+Queue 0, capacity: 162615296, end=start: 12718132
+Time: 14.807
+workload 12718132
+Queue 0, capacity: 162615296, end=start: 12794664
+Time: 14.8838
+workload 12794664
+Queue 0, capacity: 162615296, end=start: 12731234
+Time: 14.7845
+workload 12731234
+Queue 0, capacity: 162615296, end=start: 12691968
+Time: 14.7988
+workload 12691968
+Queue 0, capacity: 162615296, end=start: 12756684
+Time: 14.8265
+workload 12756684
+Queue 0, capacity: 162615296, end=start: 12722284
+Time: 14.8746
+workload 12722284
+Queue 0, capacity: 162615296, end=start: 12781810
+Time: 14.8419
+workload 12781810
+Queue 0, capacity: 162615296, end=start: 12694952
+Time: 14.7753
+workload 12694952
+Queue 0, capacity: 162615296, end=start: 12783396
+Time: 14.846
+workload 12783396
+Queue 0, capacity: 162615296, end=start: 12748142
+Time: 14.8234
+workload 12748142
+Queue 0, capacity: 162615296, end=start: 12758990
+Time: 14.8337
+workload 12758990
+Queue 0, capacity: 162615296, end=start: 12766424
+Time: 14.8521
+workload 12766424
+Ave. Time: 14.8318
+Ave. Workload(vertices): 6372160
+use color 7
+Pass Validation
+set on device 0
+num of block: 160  num of threads per block: 512
+file: /home/yuxin420/temp/atmosmodd_ud.csr start from 0: 0 write profile file: 0 160x512 min iter 10
+permute 0
+Vertices: 1270432 Edges: 11128320
+max degree 9
+wl_size: 162615296
+min_iter: 10
+Queue 0, capacity: 162615296, end: 1270432	start: 0
+Queue 0, capacity: 162615296, end=start: 12717192
+Time: 14.7876
+workload 12717192
+Queue 0, capacity: 162615296, end=start: 12721376
+Time: 14.8224
+workload 12721376
+Queue 0, capacity: 162615296, end=start: 12833818
+Time: 14.9555
+workload 12833818
+Queue 0, capacity: 162615296, end=start: 12774484
+Time: 14.9115
+workload 12774484
+Queue 0, capacity: 162615296, end=start: 12715078
+Time: 14.8234
+workload 12715078
+Queue 0, capacity: 162615296, end=start: 12734634
+Time: 14.7272
+workload 12734634
+Queue 0, capacity: 162615296, end=start: 12748784
+Time: 14.8931
+workload 12748784
+Queue 0, capacity: 162615296, end=start: 12738662
+Time: 14.8173
+workload 12738662
+Queue 0, capacity: 162615296, end=start: 12672532
+Time: 14.719
+workload 12672532
+Queue 0, capacity: 162615296, end=start: 12773204
+Time: 14.8285
+workload 12773204
+Queue 0, capacity: 162615296, end=start: 12743380
+Time: 14.8173
+workload 12743380
+Queue 0, capacity: 162615296, end=start: 12784416
+Time: 14.889
+workload 12784416
+Queue 0, capacity: 162615296, end=start: 12820488
+Time: 14.8777
+workload 12820488
+Queue 0, capacity: 162615296, end=start: 12747136
+Time: 14.8838
+workload 12747136
+Queue 0, capacity: 162615296, end=start: 12805220
+Time: 14.8521
+workload 12805220
+Queue 0, capacity: 162615296, end=start: 12740766
+Time: 14.8326
+workload 12740766
+Queue 0, capacity: 162615296, end=start: 12699156
+Time: 14.7497
+workload 12699156
+Queue 0, capacity: 162615296, end=start: 12788690
+Time: 14.8982
+workload 12788690
+Queue 0, capacity: 162615296, end=start: 12757462
+Time: 14.7896
+workload 12757462
+Queue 0, capacity: 162615296, end=start: 12745648
+Time: 14.849
+workload 12745648
+Ave. Time: 14.8362
+Ave. Workload(vertices): 6376553
+use color 7
+Pass Validation
+set on device 0
+num of block: 80  num of threads per block: 768
+file: /home/yuxin420/temp/atmosmodd_ud.csr start from 0: 0 write profile file: 0 80x768 min iter 20
+permute 0
+Vertices: 1270432 Edges: 11128320
+max degree 9
+wl_size: 162615296
+min_iter: 20
+warpSize_wl_pop 1920
+Queue 0, capacity: 162615296, end: 1270432	start: 0
+numBlock 80 numThread 768
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543352
+Time: 4.41856
+workload 2543352
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543048
+Time: 4.08269
+workload 2543048
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542934
+Time: 4.31718
+workload 2542934
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542738
+Time: 4.05299
+workload 2542738
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542986
+Time: 4.22605
+workload 2542986
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543340
+Time: 4.32947
+workload 2543340
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543080
+Time: 4.11648
+workload 2543080
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543324
+Time: 4.31718
+workload 2543324
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543550
+Time: 4.13286
+workload 2543550
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543178
+Time: 4.36224
+workload 2543178
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542908
+Time: 4.40115
+workload 2542908
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543310
+Time: 4.13901
+workload 2543310
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543164
+Time: 4.02739
+workload 2543164
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542892
+Time: 4.22707
+workload 2542892
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542884
+Time: 4.1001
+workload 2542884
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543060
+Time: 4.27315
+workload 2543060
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542968
+Time: 4.31206
+workload 2542968
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542998
+Time: 4.13286
+workload 2542998
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543284
+Time: 4.2496
+workload 2543284
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543098
+Time: 4.0233
+workload 2543098
+Ave. Time: 4.21207
+Ave. Workload(vertices): 1271552
+use color 7
+Pass Validation
+set on device 0
+num of block: 160  num of threads per block: 512
+file: /home/yuxin420/temp/atmosmodd_ud.csr start from 0: 0 write profile file: 0 160x512 min iter 10
+permute 0
+Vertices: 1270432 Edges: 11128320
+max degree 9
+wl_size: 162615296
+min_iter: 10
+warpSize_wl_pop 160
+Queue 0, capacity: 162615296, end: 1270432	start: 0
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13406524
+Time: 10.367
+workload 13406524
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13431798
+Time: 10.2502
+workload 13431798
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13317630
+Time: 10.1192
+workload 13317630
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13327622
+Time: 9.79149
+workload 13327622
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13333086
+Time: 10.3086
+workload 13333086
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13418930
+Time: 10.1489
+workload 13418930
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13324558
+Time: 10.2349
+workload 13324558
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13295558
+Time: 10.1652
+workload 13295558
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13262210
+Time: 10.1755
+workload 13262210
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13339534
+Time: 10.2492
+workload 13339534
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13389162
+Time: 10.0669
+workload 13389162
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13439530
+Time: 10.3731
+workload 13439530
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13375860
+Time: 10.3188
+workload 13375860
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13378560
+Time: 10.0936
+workload 13378560
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13371908
+Time: 10.283
+workload 13371908
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13319578
+Time: 10.0598
+workload 13319578
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13318636
+Time: 10.196
+workload 13318636
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13283378
+Time: 9.99629
+workload 13283378
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13377472
+Time: 10.1345
+workload 13377472
+numBlock 160 numThread 512 fetch size 128 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 13374644
+Time: 10.1704
+workload 13374644
+Ave. Time: 10.1751
+Ave. Workload(vertices): 6677154
+use color 7
+Pass Validation
+set on device 0
+num of block: 160  num of threads per block: 512
+file: /home/yuxin420/temp/atmosmodd_ud.csr start from 0: 0 write profile file: 0 160x512 min iter 10
+permute 0
+Vertices: 1270432 Edges: 11128320
+max degree 9
+wl_size: 162615296
+min_iter: 10
+warpSize_wl_pop 160
+Queue 0, capacity: 162615296, end: 1270432	start: 0
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16570014
+Time: 10.155
+workload 16570014
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16591856
+Time: 10.4315
+workload 16591856
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16547784
+Time: 10.3854
+workload 16547784
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16593446
+Time: 10.112
+workload 16593446
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16568616
+Time: 10.3711
+workload 16568616
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16448208
+Time: 10.367
+workload 16448208
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16602110
+Time: 10.2912
+workload 16602110
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16635460
+Time: 10.4868
+workload 16635460
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16517770
+Time: 10.2328
+workload 16517770
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16508672
+Time: 10.2144
+workload 16508672
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16568556
+Time: 10.3875
+workload 16568556
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16586038
+Time: 10.0936
+workload 16586038
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16560076
+Time: 10.3793
+workload 16560076
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16605934
+Time: 10.4694
+workload 16605934
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16464400
+Time: 9.82938
+workload 16464400
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16519686
+Time: 10.41
+workload 16519686
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16597594
+Time: 10.2574
+workload 16597594
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16547284
+Time: 10.0413
+workload 16547284
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16524646
+Time: 10.114
+workload 16524646
+numBlock 160 numThread 512 fetch size 256 share memory size(bytes) 0
+Queue 0, capacity: 162615296, end=start: 16532142
+Time: 10.0301
+workload 16532142
+Ave. Time: 10.253
+Ave. Workload(vertices): 8277257
+use color 8
+Pass Validation
+set on device 0
+num of block: 80  num of threads per block: 768
+file: /home/yuxin420/temp/atmosmodd_ud.csr start from 0: 0 write profile file: 0 80x768 min iter 10
+permute 0
+Vertices: 1270432 Edges: 11128320
+max degree 9
+wl_size: 162615296
+min_iter: 10
+warpSize_wl_pop 1920
+Queue 0, capacity: 162615296, end: 1270432	start: 0
+numBlock 80 numThread 768
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543390
+Time: 4.24448
+workload 2543390
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end: 2542968	start: 2542966
+Time: 4.12365
+workload 2542966
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end: 2543203	start: 2543202
+Time: 4.25779
+workload 2543202
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543026
+Time: 4.30592
+workload 2543026
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542898
+Time: 4.05197
+workload 2542898
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542896
+Time: 4.31411
+workload 2542896
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542960
+Time: 4.10522
+workload 2542960
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end: 2542960	start: 2542959
+Time: 4.26189
+workload 2542959
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542972
+Time: 4.3008
+workload 2542972
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end: 2543084	start: 2543083
+Time: 3.90246
+workload 2543083
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543146
+Time: 4.1687
+workload 2543146
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end: 2543468	start: 2543467
+Time: 4.00589
+workload 2543467
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end: 2543046	start: 2543045
+Time: 4.36838
+workload 2543045
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542718
+Time: 4.2711
+workload 2542718
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543026
+Time: 4.3008
+workload 2543026
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543250
+Time: 4.11238
+workload 2543250
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end: 2543172	start: 2543171
+Time: 4.20864
+workload 2543171
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543260
+Time: 4.03354
+workload 2543260
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2542966
+Time: 4.34278
+workload 2542966
+numBlock 80 numThread 768
+Queue 0, capacity: 162615296, end=start: 2543020
+Time: 4.29875
+workload 2543020
+Ave. Time: 4.19896
+Ave. Workload(vertices): 1271535
+use color 7
+Pass Validation
+set on device 0
+num of block: 160  num of threads per block: 512
+file: /home/yuxin420/temp/atmosmodd_ud.csr start from 0: 0 write profile file: 0 160x512 min iter 10
+permute 0
+Vertices: 1270432 Edges: 11128320
+max degree 9
+wl_size: 162615296
+min_iter: 10
+Queue 0, capacity: 162615296, end: 1270432	start: 0
+Queue 0, capacity: 162615296, end=start: 12669758
+Time: 14.8296
+workload 12669758
+Queue 0, capacity: 162615296, end=start: 12758144
+Time: 14.8285
+workload 12758144
+Queue 0, capacity: 162615296, end=start: 12707476
+Time: 14.7763
+workload 12707476
+Queue 0, capacity: 162615296, end=start: 12724142
+Time: 14.8132
+workload 12724142
+Queue 0, capacity: 162615296, end=start: 12737330
+Time: 14.8244
+workload 12737330
+Queue 0, capacity: 162615296, end=start: 12713534
+Time: 14.7692
+workload 12713534
+Queue 0, capacity: 162615296, end=start: 12781794
+Time: 14.8644
+workload 12781794
+Queue 0, capacity: 162615296, end=start: 12740040
+Time: 14.7855
+workload 12740040
+Queue 0, capacity: 162615296, end=start: 12789048
+Time: 14.8326
+workload 12789048
+Queue 0, capacity: 162615296, end=start: 12685926
+Time: 14.7948
+workload 12685926
+Queue 0, capacity: 162615296, end=start: 12695656
+Time: 14.7589
+workload 12695656
+Queue 0, capacity: 162615296, end=start: 12793472
+Time: 14.8152
+workload 12793472
+Queue 0, capacity: 162615296, end=start: 12756096
+Time: 14.8081
+workload 12756096
+Queue 0, capacity: 162615296, end=start: 12755572
+Time: 14.9094
+workload 12755572
+Queue 0, capacity: 162615296, end=start: 12808532
+Time: 14.8695
+workload 12808532
+Queue 0, capacity: 162615296, end=start: 12731006
+Time: 14.7569
+workload 12731006
+Queue 0, capacity: 162615296, end=start: 12765072
+Time: 14.8797
+workload 12765072
+Queue 0, capacity: 162615296, end=start: 12705778
+Time: 14.7548
+workload 12705778
+Queue 0, capacity: 162615296, end=start: 12745462
+Time: 14.8009
+workload 12745462
+Queue 0, capacity: 162615296, end=start: 12763296
+Time: 14.8552
+workload 12763296
+Ave. Time: 14.8164
+Ave. Workload(vertices): 6370678
+use color 7
+Pass Validation

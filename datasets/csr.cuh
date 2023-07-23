@@ -127,12 +127,13 @@ struct CSR
         for(VertexId i=0; i<nodes; i++)
         {
             coo_array[i].sort();
-            VertexId lastone = VertexId(MAX_SZ);
+            VertexId lastone = coo_array[i].front();
             for(auto item=coo_array[i].begin(); item!=coo_array[i].end(); item++)
             {
+                if(item == coo_array[i].begin()) continue;
                 if(lastone == *item)
                     item = coo_array[i].erase(item);
-                lastone = *item;
+                else lastone = *item;
             }
         }
 
